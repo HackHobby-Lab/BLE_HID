@@ -1,0 +1,2 @@
+source E:/BLE_HID/build/bootloader/gdbinit/symbols
+source E:/BLE_HID/build/bootloader/gdbinit/connect
