@@ -13,14 +13,13 @@
 
 static const char *TAG = "HID_MIN";
 
-#define VOLUME_UP       (0x00E9)    // Volume Up
-#define VOLUME_DOWN     (0x00EA)    // Volume Down
-#define MUTE            (0x00E2)    // Mute
-#define PLAY_PAUSE      (0x00CD)    // Play/Pause
-#define SCAN_NEXT       (0x00B5)    // Scan Next Track
-#define SCAN_PREVIOUS   (0x00B6)    // Scan Previous Track
-#define STOP            (0x00B7)    // Stop
-
+#define VOLUME_UP (0x00E9)     // Volume Up
+#define VOLUME_DOWN (0x00EA)   // Volume Down
+#define MUTE (0x00E2)          // Mute
+#define PLAY_PAUSE (0x00CD)    // Play/Pause
+#define SCAN_NEXT (0x00B5)     // Scan Next Track
+#define SCAN_PREVIOUS (0x00B6) // Scan Previous Track
+#define STOP (0x00B7)          // Stop
 
 typedef struct
 {
@@ -32,23 +31,51 @@ typedef struct
 
 static local_param_t s_ble_hid_param = {0};
 
-
 /* ───────────────────────── Report Map (Consumer-Control) ──────────────────── */
 static const uint8_t consumer_map[] = {
-    0x05, 0x0C,                    // Usage Page (Consumer Devices)
-    0x09, 0x01,                    // Usage (Consumer Control)
-    0xA1, 0x01,                    // Collection (Application)
-    0x85, 0x01,                    //   Report ID (1)
-    0x15, 0x00,                    //   Logical Minimum (0)
-    0x26, 0xFF, 0x03,              //   Logical Maximum (0x03FF)
-    0x19, 0x00,                    //   Usage Minimum (0)
-    0x2A, 0xFF, 0x03,              //   Usage Maximum (0x03FF)
-    0x75, 0x10,                    //   Report Size (16 bits)
-    0x95, 0x01,                    //   Report Count (1)
-    0x81, 0x00,                    //   Input (Data, Array)
-    0xC0                           // End Collection
-};
+    // Consumer Control (Report ID 1)
+    0x05, 0x0C, // Usage Page (Consumer Devices)
+    0x09, 0x01, // Usage (Consumer Control)
+    0xA1, 0x01, // Collection (Application)
+    0x85, 0x01, //   Report ID (1)
+    0x15, 0x00,
+    0x26, 0xFF, 0x03, //   Logical Maximum (0x03FF)
+    0x19, 0x00,
+    0x2A, 0xFF, 0x03, //   Usage Maximum
+    0x75, 0x10,       //   Report Size (16)
+    0x95, 0x01,       //   Report Count (1)
+    0x81, 0x00,       //   Input (Data, Array)
+    0xC0,             // End Collection
 
+    // Mouse (Report ID 2)
+    0x05, 0x01, // Usage Page (Generic Desktop)
+    0x09, 0x02, // Usage (Mouse)
+    0xA1, 0x01, // Collection (Application)
+    0x85, 0x02, //   Report ID (2)
+    0x09, 0x01, //   Usage (Pointer)
+    0xA1, 0x00, //   Collection (Physical)
+    0x05, 0x09, //     Usage Page (Buttons)
+    0x19, 0x01, //     Usage Minimum (Button 1)
+    0x29, 0x03, //     Usage Maximum (Button 3)
+    0x15, 0x00, //     Logical Minimum (0)
+    0x25, 0x01, //     Logical Maximum (1)
+    0x95, 0x03, //     Report Count (3)
+    0x75, 0x01, //     Report Size (1)
+    0x81, 0x02, //     Input (Data, Var, Abs)
+    0x95, 0x01, //     Report Count (1)
+    0x75, 0x05, //     Report Size (5)
+    0x81, 0x03, //     Input (Const, Var, Abs) – padding
+    0x05, 0x01, //     Usage Page (Generic Desktop)
+    0x09, 0x30, //     Usage (X)
+    0x09, 0x31, //     Usage (Y)
+    0x15, 0x81, //     Logical Minimum (-127)
+    0x25, 0x7F, //     Logical Maximum (127)
+    0x75, 0x08, //     Report Size (8)
+    0x95, 0x02, //     Report Count (2)
+    0x81, 0x06, //     Input (Data, Var, Rel)
+    0xC0,       //   End Collection
+    0xC0        // End Collection
+};
 
 /* ───────────────────────── Globals ─────────────────────────────── */
 static esp_hidd_dev_t *hid_dev;
@@ -56,7 +83,7 @@ static esp_hidd_dev_t *hid_dev;
 /* ───────────────────────── Helpers ─────────────────────────────── */
 static void send_consumer(uint16_t usage)
 {
-    uint8_t rpt[2] = { usage & 0xFF, usage >> 8 };  // Little endian
+    uint8_t rpt[2] = {usage & 0xFF, usage >> 8}; // Little endian
 
     // Send key press
     esp_hidd_dev_input_set(hid_dev, 0, 1, rpt, sizeof(rpt));
@@ -67,46 +94,63 @@ static void send_consumer(uint16_t usage)
     esp_hidd_dev_input_set(hid_dev, 0, 1, rpt, sizeof(rpt));
 }
 
+void send_mouse(int8_t dx, int8_t dy, uint8_t buttons)
+{
+    uint8_t mouse_report[4] = {
+        0x02,    // Report ID (2)
+        buttons, // Button bits
+        dx,      // X delta
+        dy       // Y delta
+    };
+
+    esp_hidd_dev_input_set(hid_dev, 0, mouse_report[0], &mouse_report[1], 3);
+}
+
 void ble_hid_demo_task(void *pvParameters)
 {
-    while (1) {
+    while (1)
+    {
         ESP_LOGI(TAG, "Demo Task");
 
         esp_hidd_dev_battery_set(hid_dev, 10);
         send_consumer(VOLUME_DOWN);
         vTaskDelay(2000 / portTICK_PERIOD_MS);
-        send_consumer(VOLUME_UP);
-
+        // send_consumer(VOLUME_UP);
+        send_mouse(10, 0, 0x01); // Move mouse right with left click
+        vTaskDelay(pdMS_TO_TICKS(20));
+        send_mouse(0, 0, 0x00); // Release button
     }
 }
 
-
 void ble_hid_task_start_up(void)
 {
-    if (s_ble_hid_param.task_hdl) {
+    if (s_ble_hid_param.task_hdl)
+    {
         // Task already exists
         return;
     }
 
-     xTaskCreate(ble_hid_demo_task, "ble_hid_demo_task", 2 * 4096, NULL, configMAX_PRIORITIES - 3,
+    xTaskCreate(ble_hid_demo_task, "ble_hid_demo_task", 2 * 4096, NULL, configMAX_PRIORITIES - 3,
                 &s_ble_hid_param.task_hdl);
-
-
 }
-
 
 /* HID / GAP events: start advertising, spawn task on connect */
 static void hid_cb(void *arg, esp_event_base_t base, int32_t id, void *data)
 {
-    switch (id) {
+    switch (id)
+    {
     case ESP_HIDD_START_EVENT:
-        esp_hid_ble_gap_adv_start();                            break;
+        esp_hid_ble_gap_adv_start();
+        break;
     case ESP_HIDD_CONNECT_EVENT:
-        // xTaskCreate(ble_hid_demo_task, "vol", 4096, NULL, 5, NULL); 
-        ble_hid_task_start_up();                                break;
+        // xTaskCreate(ble_hid_demo_task, "vol", 4096, NULL, 5, NULL);
+        ble_hid_task_start_up();
+        break;
     case ESP_HIDD_DISCONNECT_EVENT:
-        esp_hid_ble_gap_adv_start();                            break;
-    default:                                                    break;
+        esp_hid_ble_gap_adv_start();
+        break;
+    default:
+        break;
     }
 }
 
@@ -129,26 +173,25 @@ void app_main(void)
                                              "Azmuth"));
 
     /* Device-level configuration */
-    esp_hid_raw_report_map_t map = { .data = consumer_map,
-                                     .len  = sizeof(consumer_map) };
+    esp_hid_raw_report_map_t map = {.data = consumer_map,
+                                    .len = sizeof(consumer_map)};
 
-    esp_hid_device_config_t cfg  = {
-        .vendor_id         = 0x16C0,
-        .product_id        = 0x05DF,
-        .version           = 0x0100,
-        .device_name       = "Azmuth",
+    esp_hid_device_config_t cfg = {
+        .vendor_id = 0x16C0,
+        .product_id = 0x05DF,
+        .version = 0x0100,
+        .device_name = "Azmuth",
         .manufacturer_name = "BitForge",
-        .serial_number     = "123456",
-        .report_maps       = &map,
-        .report_maps_len   = 1
-    };
+        .serial_number = "123456",
+        .report_maps = &map,
+        .report_maps_len = 1};
 
     ESP_ERROR_CHECK(esp_hidd_dev_init(&cfg,
                                       ESP_HID_TRANSPORT_BLE,
                                       hid_cb, &hid_dev));
 
     /* Start the NimBLE stack */
-    extern void ble_store_config_init(void);  /* IDF helper */
+    extern void ble_store_config_init(void); /* IDF helper */
     ble_store_config_init();
     ESP_ERROR_CHECK(esp_nimble_enable(ble_host_task));
 }

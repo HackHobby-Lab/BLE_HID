@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "BLE_HID",
-    "project_version":    "e142f01-dirty",
+    "project_version":    "04264d1-dirty",
     "project_path":       "E:/BLE_HID",
     "idf_path":           "C:/Users/AWAN/esp/v5.4.2/esp-idf",
     "build_dir":          "E:/BLE_HID/build",
