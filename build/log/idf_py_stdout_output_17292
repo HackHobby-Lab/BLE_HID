@@ -267,4 +267,260 @@ entry 0x403c8928
 [0;32mI (238393) ESP_HID_GAP: connection updated; status=0[0m
 [0;32mI (243923) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=11 reason=2 prevn=0 curn=0 previ=1 curi=0[0m
 
-[0;32mI (243923) ESP_HID
+[0;32mI (243923) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=21 reason=2 prevn=1 curn=0 previ=0 curi=0[0m
+
+[0;32mI (243923) ESP_HID_GAP: disconnect; reason=531[0m
+[0;32mI (243933) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (243933) NimBLE: disc_mode=2[0m
+[0;32mI (243943) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (243953) NimBLE: [0m
+
+[0;32mI (312143) ESP_HID_GAP: mtu update event; conn_handle=1 cid=4 mtu=256[0m
+[0;32mI (312203) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (312863) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=11 reason=1 prevn=0 curn=0 previ=0 curi=1[0m
+
+[0;32mI (313523) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (313833) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=21 reason=1 prevn=0 curn=1 previ=0 curi=0[0m
+
+[0;32mI (315443) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (317363) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=11 reason=2 prevn=0 curn=0 previ=1 curi=0[0m
+
+[0;32mI (317363) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=21 reason=2 prevn=1 curn=0 previ=0 curi=0[0m
+
+[0;32mI (317373) ESP_HID_GAP: disconnect; reason=531[0m
+[0;32mI (317373) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (317383) NimBLE: disc_mode=2[0m
+[0;32mI (317383) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (317393) NimBLE: [0m
+
+[0;32mI (418523) ESP_HID_GAP: mtu update event; conn_handle=1 cid=4 mtu=256[0m
+[0;32mI (418583) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (419243) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=11 reason=1 prevn=0 curn=0 previ=0 curi=1[0m
+
+[0;32mI (419903) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (420223) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=21 reason=1 prevn=0 curn=1 previ=0 curi=0[0m
+
+[0;32mI (421823) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (423743) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=11 reason=2 prevn=0 curn=0 previ=1 curi=0[0m
+
+[0;32mI (423743) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=21 reason=2 prevn=1 curn=0 previ=0 curi=0[0m
+
+[0;32mI (423753) ESP_HID_GAP: disconnect; reason=531[0m
+[0;32mI (423753) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (423763) NimBLE: disc_mode=2[0m
+[0;32mI (423763) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (423773) NimBLE: [0m
+
+[0;32mI (523533) ESP_HID_GAP: mtu update event; conn_handle=1 cid=4 mtu=256[0m
+[0;32mI (523593) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (524313) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=11 reason=1 prevn=0 curn=0 previ=0 curi=1[0m
+
+[0;32mI (525093) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (525403) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=21 reason=1 prevn=0 curn=1 previ=0 curi=0[0m
+
+[0;32mI (527013) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (528933) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=11 reason=2 prevn=0 curn=0 previ=1 curi=0[0m
+
+[0;32mI (528933) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=21 reason=2 prevn=1 curn=0 previ=0 curi=0[0m
+
+[0;32mI (528933) ESP_HID_GAP: disconnect; reason=531[0m
+[0;32mI (528943) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (528943) NimBLE: disc_mode=2[0m
+[0;32mI (528953) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (528963) NimBLE: [0m
+
+[0;32mI (698913) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (699503) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (699623) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (700523) ESP_HID_GAP: disconnect; reason=531[0m
+[0;32mI (700523) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (700523) NimBLE: disc_mode=2[0m
+[0;32mI (700523) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (700533) NimBLE: [0m
+
+[0;32mI (711733) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (712373) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (712913) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (746483) ESP_HID_GAP: disconnect; reason=531[0m
+[0;32mI (746483) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (746483) NimBLE: disc_mode=2[0m
+[0;32mI (746483) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (746493) NimBLE: [0m
+
+[0;32mI (747153) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (747223) ESP_HID_GAP: mtu update event; conn_handle=1 cid=4 mtu=256[0m
+[0;32mI (747933) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=11 reason=1 prevn=0 curn=0 previ=0 curi=1[0m
+
+[0;32mI (748673) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (748973) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=21 reason=1 prevn=0 curn=1 previ=0 curi=0[0m
+
+[0;32mI (750573) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (752613) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=11 reason=2 prevn=0 curn=0 previ=1 curi=0[0m
+
+[0;32mI (752613) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=21 reason=2 prevn=1 curn=0 previ=0 curi=0[0m
+
+[0;32mI (752623) ESP_HID_GAP: disconnect; reason=531[0m
+[0;32mI (752623) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (752633) NimBLE: disc_mode=2[0m
+[0;32mI (752633) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (752643) NimBLE: [0m
+
+[0;32mI (757303) ESP_HID_GAP: mtu update event; conn_handle=1 cid=4 mtu=256[0m
+[0;32mI (757363) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (758133) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=11 reason=1 prevn=0 curn=0 previ=0 curi=1[0m
+
+[0;32mI (758913) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (759213) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=21 reason=1 prevn=0 curn=1 previ=0 curi=0[0m
+
+[0;32mI (760893) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (762873) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=11 reason=2 prevn=0 curn=0 previ=1 curi=0[0m
+
+[0;32mI (762883) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=21 reason=2 prevn=1 curn=0 previ=0 curi=0[0m
+
+[0;32mI (762883) ESP_HID_GAP: disconnect; reason=531[0m
+[0;32mI (762883) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (762893) NimBLE: disc_mode=2[0m
+[0;32mI (762903) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (762903) NimBLE: [0m
+
+[0;32mI (818923) ESP_HID_GAP: mtu update event; conn_handle=1 cid=4 mtu=256[0m
+[0;32mI (818983) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (819703) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=11 reason=1 prevn=0 curn=0 previ=0 curi=1[0m
+
+[0;32mI (820363) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (820663) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=21 reason=1 prevn=0 curn=1 previ=0 curi=0[0m
+
+[0;32mI (822283) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (824143) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=11 reason=2 prevn=0 curn=0 previ=1 curi=0[0m
+
+[0;32mI (824143) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=21 reason=2 prevn=1 curn=0 previ=0 curi=0[0m
+
+[0;32mI (824153) ESP_HID_GAP: disconnect; reason=531[0m
+[0;32mI (824153) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (824153) NimBLE: disc_mode=2[0m
+[0;32mI (824163) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (824173) NimBLE: [0m
+
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1564
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd24
+load:0x403cb700,len:0x2ed4
+entry 0x403c8928
+[0;32mI (27) boot: ESP-IDF v5.4.2 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jul 13 2025 17:47:07[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c060020 size=158d0h ( 88272) map[0m
+[0;32mI (104) esp_image: segment 1: paddr=000258f8 vaddr=3fc99600 size=04048h ( 16456) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=00029948 vaddr=40374000 size=066d0h ( 26320) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=5961ch (366108) map[0m
+[0;32mI (180) esp_image: segment 4: paddr=00089644 vaddr=4037a6d0 size=0ef14h ( 61204) load[0m
+[0;32mI (194) esp_image: segment 5: paddr=00098560 vaddr=600fe000 size=0001ch (    28) load[0m
+[0;32mI (202) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (202) boot: Disabling RNG early entropy source...[0m
+[0;32mI (212) cpu_start: Multicore app[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (221) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (221) app_init: Application information:[0m
+[0;32mI (222) app_init: Project name:     BLE_HID[0m
+[0;32mI (225) app_init: App version:      c8ceae5-dirty[0m
+[0;32mI (230) app_init: Compile time:     Jul 13 2025 19:09:47[0m
+[0;32mI (235) app_init: ELF file SHA256:  c7bbf3c84...[0m
+[0;32mI (239) app_init: ESP-IDF:          v5.4.2[0m
+[0;32mI (243) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (247) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (251) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (255) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (261) heap_init: At 3FCA1130 len 000485E0 (289 KiB): RAM[0m
+[0;32mI (266) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (271) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (276) heap_init: At 600FE01C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (283) spi_flash: detected chip: gd[0m
+[0;32mI (285) spi_flash: flash io: dio[0m
+[0;33mW (288) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (300) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (307) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (313) coexist: coex firmware version: 7b9a184[0m
+[0;32mI (332) coexist: coexist rom version e7ae62f[0m
+[0;32mI (333) main_task: Started on CPU0[0m
+[0;32mI (343) main_task: Calling app_main()[0m
+[0;32mI (363) BLE_INIT: BT controller compile version [6cfabcd][0m
+[0;32mI (363) BLE_INIT: Feature Config, ADV:1, BLE_50:1, DTM:1, SCAN:1, CCA:0, SMP:1, CONNECT:1[0m
+[0;32mI (363) BLE_INIT: Bluetooth MAC: 48:ca:43:9a:51:ba[0m
+[0;32mI (373) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (413) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (483) HID_MIN: Registering custom GATT service...[0m
+[0;32mI (483) HID_MIN: Custom GATT service registered.[0m
+[0;32mI (483) HID_MIN: NimBLE host running[0m
+[0;32mI (483) NimBLE: GAP procedure initiated: stop advertising.[0m
+
+[0;32mI (493) main_task: Returned from app_main()[0m
+[0;32mI (493) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (493) NimBLE: disc_mode=2[0m
+[0;32mI (503) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (513) NimBLE: [0m
+
+[0;32mI (8823) ESP_HID_GAP: mtu update event; conn_handle=1 cid=4 mtu=256[0m
+[0;32mI (8883) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (9653) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=11 reason=1 prevn=0 curn=0 previ=0 curi=1[0m
+
+[0;32mI (10313) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (10603) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=21 reason=1 prevn=0 curn=1 previ=0 curi=0[0m
+
+[0;32mI (12233) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (14403) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=11 reason=2 prevn=0 curn=0 previ=1 curi=0[0m
+
+[0;32mI (14403) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=21 reason=2 prevn=1 curn=0 previ=0 curi=0[0m
+
+[0;32mI (14403) ESP_HID_GAP: disconnect; reason=531[0m
+[0;32mI (14403) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (14413) NimBLE: disc_mode=2[0m
+[0;32mI (14423) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (14423) NimBLE: [0m
+
+[0;32mI (112383) ESP_HID_GAP: mtu update event; conn_handle=1 cid=4 mtu=256[0m
+[0;32mI (112443) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (113103) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=11 reason=1 prevn=0 curn=0 previ=0 curi=1[0m
+
+[0;32mI (113763) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (114063) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=21 reason=1 prevn=0 curn=1 previ=0 curi=0[0m
+
+[0;32mI (115743) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (121443) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=11 reason=2 prevn=0 curn=0 previ=1 curi=0[0m
+
+[0;32mI (121443) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=21 reason=2 prevn=1 curn=0 previ=0 curi=0[0m
+
+[0;32mI (121453) ESP_HID_GAP: disconnect; reason=531[0m
+[0;32mI (121453) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (121463) NimBLE: disc_mode=2[0m
+[0;32mI (121463) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (121473) NimBLE: [0m
+
+[0;32mI (135723) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (135783) ESP_HID_GAP: mtu update event; conn_handle=1 cid=4 mtu=256[0m
+[0;32mI (136563) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=11 reason=1 prevn=0 curn=0 previ=0 curi=1[0m
+
+[0;32mI (137223) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (137523) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=21 reason=1 prevn=0 curn=1 previ=0 curi=0[0m
+
+[0;32mI (139203) ESP_HID_GAP: connection updated; status=0[0m
+---------------------------------------------------------
+[0;32mI (139623) HID_MIN: Custom Write received (2 bytes): df[0m
+---------------------------------------------------------
+[0;32mI (167163) HID_MIN: Custom Write received (5 bytes): Volup[0m

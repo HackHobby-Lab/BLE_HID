@@ -1,0 +1,807 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D E:\BLE_HID\build\bootloader\esp-idf\esptool_py && C:\Users\AWAN\.espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe C:/Users/AWAN/esp/v5.4.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 E:/BLE_HID/build/bootloader/bootloader.bin"
+Bootloader binary size 0x51c0 bytes. 0x2e40 bytes (36%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/mainHid.c.obj
+E:/BLE_HID/main/mainHid.c:237:6: warning: braces around scalar initializer
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |      ^
+E:/BLE_HID/main/mainHid.c:237:6: note: (near initialization for '(anonymous).value[0]')
+In file included from C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_hs_adv.h:24,
+                 from C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_gap.h:32,
+                 from C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_hs.h:33,
+                 from E:/BLE_HID/main/mainHid.c:12:
+E:/BLE_HID/main/mainHid.c:17:41: warning: excess elements in scalar initializer
+   17 | #define CUSTOM_SERVICE_UUID_BASE {0x56, 0x34, 0x12, 0xef, 0xcd, 0xab, 0x90, 0x78, 0x56, 0x34, 0x12, 0x90, 0x78, 0x56, 0x34, 0x12}
+      |                                         ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:237:14: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |              ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:237:34: note: in expansion of macro 'CUSTOM_SERVICE_UUID_BASE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:17:41: note: (near initialization for '(anonymous).value[0]')
+   17 | #define CUSTOM_SERVICE_UUID_BASE {0x56, 0x34, 0x12, 0xef, 0xcd, 0xab, 0x90, 0x78, 0x56, 0x34, 0x12, 0x90, 0x78, 0x56, 0x34, 0x12}
+      |                                         ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:237:14: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |              ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:237:34: note: in expansion of macro 'CUSTOM_SERVICE_UUID_BASE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:17:47: warning: excess elements in scalar initializer
+   17 | #define CUSTOM_SERVICE_UUID_BASE {0x56, 0x34, 0x12, 0xef, 0xcd, 0xab, 0x90, 0x78, 0x56, 0x34, 0x12, 0x90, 0x78, 0x56, 0x34, 0x12}
+      |                                               ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:237:14: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |              ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:237:34: note: in expansion of macro 'CUSTOM_SERVICE_UUID_BASE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:17:47: note: (near initialization for '(anonymous).value[0]')
+   17 | #define CUSTOM_SERVICE_UUID_BASE {0x56, 0x34, 0x12, 0xef, 0xcd, 0xab, 0x90, 0x78, 0x56, 0x34, 0x12, 0x90, 0x78, 0x56, 0x34, 0x12}
+      |                                               ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:237:14: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |              ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:237:34: note: in expansion of macro 'CUSTOM_SERVICE_UUID_BASE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:17:53: warning: excess elements in scalar initializer
+   17 | #define CUSTOM_SERVICE_UUID_BASE {0x56, 0x34, 0x12, 0xef, 0xcd, 0xab, 0x90, 0x78, 0x56, 0x34, 0x12, 0x90, 0x78, 0x56, 0x34, 0x12}
+      |                                                     ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:237:14: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |              ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:237:34: note: in expansion of macro 'CUSTOM_SERVICE_UUID_BASE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:17:53: note: (near initialization for '(anonymous).value[0]')
+   17 | #define CUSTOM_SERVICE_UUID_BASE {0x56, 0x34, 0x12, 0xef, 0xcd, 0xab, 0x90, 0x78, 0x56, 0x34, 0x12, 0x90, 0x78, 0x56, 0x34, 0x12}
+      |                                                     ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:237:14: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |              ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:237:34: note: in expansion of macro 'CUSTOM_SERVICE_UUID_BASE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:17:59: warning: excess elements in scalar initializer
+   17 | #define CUSTOM_SERVICE_UUID_BASE {0x56, 0x34, 0x12, 0xef, 0xcd, 0xab, 0x90, 0x78, 0x56, 0x34, 0x12, 0x90, 0x78, 0x56, 0x34, 0x12}
+      |                                                           ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:237:14: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |              ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:237:34: note: in expansion of macro 'CUSTOM_SERVICE_UUID_BASE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:17:59: note: (near initialization for '(anonymous).value[0]')
+   17 | #define CUSTOM_SERVICE_UUID_BASE {0x56, 0x34, 0x12, 0xef, 0xcd, 0xab, 0x90, 0x78, 0x56, 0x34, 0x12, 0x90, 0x78, 0x56, 0x34, 0x12}
+      |                                                           ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:237:14: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |              ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:237:34: note: in expansion of macro 'CUSTOM_SERVICE_UUID_BASE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:17:65: warning: excess elements in scalar initializer
+   17 | #define CUSTOM_SERVICE_UUID_BASE {0x56, 0x34, 0x12, 0xef, 0xcd, 0xab, 0x90, 0x78, 0x56, 0x34, 0x12, 0x90, 0x78, 0x56, 0x34, 0x12}
+      |                                                                 ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:237:14: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |              ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:237:34: note: in expansion of macro 'CUSTOM_SERVICE_UUID_BASE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:17:65: note: (near initialization for '(anonymous).value[0]')
+   17 | #define CUSTOM_SERVICE_UUID_BASE {0x56, 0x34, 0x12, 0xef, 0xcd, 0xab, 0x90, 0x78, 0x56, 0x34, 0x12, 0x90, 0x78, 0x56, 0x34, 0x12}
+      |                                                                 ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:237:14: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |              ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:237:34: note: in expansion of macro 'CUSTOM_SERVICE_UUID_BASE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:17:71: warning: excess elements in scalar initializer
+   17 | #define CUSTOM_SERVICE_UUID_BASE {0x56, 0x34, 0x12, 0xef, 0xcd, 0xab, 0x90, 0x78, 0x56, 0x34, 0x12, 0x90, 0x78, 0x56, 0x34, 0x12}
+      |                                                                       ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:237:14: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |              ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:237:34: note: in expansion of macro 'CUSTOM_SERVICE_UUID_BASE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:17:71: note: (near initialization for '(anonymous).value[0]')
+   17 | #define CUSTOM_SERVICE_UUID_BASE {0x56, 0x34, 0x12, 0xef, 0xcd, 0xab, 0x90, 0x78, 0x56, 0x34, 0x12, 0x90, 0x78, 0x56, 0x34, 0x12}
+      |                                                                       ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:237:14: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |              ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:237:34: note: in expansion of macro 'CUSTOM_SERVICE_UUID_BASE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:17:77: warning: excess elements in scalar initializer
+   17 | #define CUSTOM_SERVICE_UUID_BASE {0x56, 0x34, 0x12, 0xef, 0xcd, 0xab, 0x90, 0x78, 0x56, 0x34, 0x12, 0x90, 0x78, 0x56, 0x34, 0x12}
+      |                                                                             ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:237:14: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |              ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:237:34: note: in expansion of macro 'CUSTOM_SERVICE_UUID_BASE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:17:77: note: (near initialization for '(anonymous).value[0]')
+   17 | #define CUSTOM_SERVICE_UUID_BASE {0x56, 0x34, 0x12, 0xef, 0xcd, 0xab, 0x90, 0x78, 0x56, 0x34, 0x12, 0x90, 0x78, 0x56, 0x34, 0x12}
+      |                                                                             ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:237:14: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |              ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:237:34: note: in expansion of macro 'CUSTOM_SERVICE_UUID_BASE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:17:83: warning: excess elements in scalar initializer
+   17 | #define CUSTOM_SERVICE_UUID_BASE {0x56, 0x34, 0x12, 0xef, 0xcd, 0xab, 0x90, 0x78, 0x56, 0x34, 0x12, 0x90, 0x78, 0x56, 0x34, 0x12}
+      |                                                                                   ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:237:14: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |              ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:237:34: note: in expansion of macro 'CUSTOM_SERVICE_UUID_BASE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:17:83: note: (near initialization for '(anonymous).value[0]')
+   17 | #define CUSTOM_SERVICE_UUID_BASE {0x56, 0x34, 0x12, 0xef, 0xcd, 0xab, 0x90, 0x78, 0x56, 0x34, 0x12, 0x90, 0x78, 0x56, 0x34, 0x12}
+      |                                                                                   ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:237:14: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |              ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:237:34: note: in expansion of macro 'CUSTOM_SERVICE_UUID_BASE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:17:89: warning: excess elements in scalar initializer
+   17 | #define CUSTOM_SERVICE_UUID_BASE {0x56, 0x34, 0x12, 0xef, 0xcd, 0xab, 0x90, 0x78, 0x56, 0x34, 0x12, 0x90, 0x78, 0x56, 0x34, 0x12}
+      |                                                                                         ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:237:14: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |              ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:237:34: note: in expansion of macro 'CUSTOM_SERVICE_UUID_BASE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:17:89: note: (near initialization for '(anonymous).value[0]')
+   17 | #define CUSTOM_SERVICE_UUID_BASE {0x56, 0x34, 0x12, 0xef, 0xcd, 0xab, 0x90, 0x78, 0x56, 0x34, 0x12, 0x90, 0x78, 0x56, 0x34, 0x12}
+      |                                                                                         ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:237:14: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |              ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:237:34: note: in expansion of macro 'CUSTOM_SERVICE_UUID_BASE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:17:95: warning: excess elements in scalar initializer
+   17 | #define CUSTOM_SERVICE_UUID_BASE {0x56, 0x34, 0x12, 0xef, 0xcd, 0xab, 0x90, 0x78, 0x56, 0x34, 0x12, 0x90, 0x78, 0x56, 0x34, 0x12}
+      |                                                                                               ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:237:14: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |              ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:237:34: note: in expansion of macro 'CUSTOM_SERVICE_UUID_BASE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:17:95: note: (near initialization for '(anonymous).value[0]')
+   17 | #define CUSTOM_SERVICE_UUID_BASE {0x56, 0x34, 0x12, 0xef, 0xcd, 0xab, 0x90, 0x78, 0x56, 0x34, 0x12, 0x90, 0x78, 0x56, 0x34, 0x12}
+      |                                                                                               ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:237:14: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |              ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:237:34: note: in expansion of macro 'CUSTOM_SERVICE_UUID_BASE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:17:101: warning: excess elements in scalar initializer
+   17 | #define CUSTOM_SERVICE_UUID_BASE {0x56, 0x34, 0x12, 0xef, 0xcd, 0xab, 0x90, 0x78, 0x56, 0x34, 0x12, 0x90, 0x78, 0x56, 0x34, 0x12}
+      |                                                                                                     ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:237:14: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |              ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:237:34: note: in expansion of macro 'CUSTOM_SERVICE_UUID_BASE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:17:101: note: (near initialization for '(anonymous).value[0]')
+   17 | #define CUSTOM_SERVICE_UUID_BASE {0x56, 0x34, 0x12, 0xef, 0xcd, 0xab, 0x90, 0x78, 0x56, 0x34, 0x12, 0x90, 0x78, 0x56, 0x34, 0x12}
+      |                                                                                                     ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:237:14: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |              ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:237:34: note: in expansion of macro 'CUSTOM_SERVICE_UUID_BASE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:17:107: warning: excess elements in scalar initializer
+   17 | #define CUSTOM_SERVICE_UUID_BASE {0x56, 0x34, 0x12, 0xef, 0xcd, 0xab, 0x90, 0x78, 0x56, 0x34, 0x12, 0x90, 0x78, 0x56, 0x34, 0x12}
+      |                                                                                                           ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:237:14: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |              ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:237:34: note: in expansion of macro 'CUSTOM_SERVICE_UUID_BASE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:17:107: note: (near initialization for '(anonymous).value[0]')
+   17 | #define CUSTOM_SERVICE_UUID_BASE {0x56, 0x34, 0x12, 0xef, 0xcd, 0xab, 0x90, 0x78, 0x56, 0x34, 0x12, 0x90, 0x78, 0x56, 0x34, 0x12}
+      |                                                                                                           ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:237:14: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |              ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:237:34: note: in expansion of macro 'CUSTOM_SERVICE_UUID_BASE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:17:113: warning: excess elements in scalar initializer
+   17 | #define CUSTOM_SERVICE_UUID_BASE {0x56, 0x34, 0x12, 0xef, 0xcd, 0xab, 0x90, 0x78, 0x56, 0x34, 0x12, 0x90, 0x78, 0x56, 0x34, 0x12}
+      |                                                                                                                 ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:237:14: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |              ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:237:34: note: in expansion of macro 'CUSTOM_SERVICE_UUID_BASE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:17:113: note: (near initialization for '(anonymous).value[0]')
+   17 | #define CUSTOM_SERVICE_UUID_BASE {0x56, 0x34, 0x12, 0xef, 0xcd, 0xab, 0x90, 0x78, 0x56, 0x34, 0x12, 0x90, 0x78, 0x56, 0x34, 0x12}
+      |                                                                                                                 ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:237:14: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |              ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:237:34: note: in expansion of macro 'CUSTOM_SERVICE_UUID_BASE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:17:119: warning: excess elements in scalar initializer
+   17 | #define CUSTOM_SERVICE_UUID_BASE {0x56, 0x34, 0x12, 0xef, 0xcd, 0xab, 0x90, 0x78, 0x56, 0x34, 0x12, 0x90, 0x78, 0x56, 0x34, 0x12}
+      |                                                                                                                       ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:237:14: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |              ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:237:34: note: in expansion of macro 'CUSTOM_SERVICE_UUID_BASE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:17:119: note: (near initialization for '(anonymous).value[0]')
+   17 | #define CUSTOM_SERVICE_UUID_BASE {0x56, 0x34, 0x12, 0xef, 0xcd, 0xab, 0x90, 0x78, 0x56, 0x34, 0x12, 0x90, 0x78, 0x56, 0x34, 0x12}
+      |                                                                                                                       ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:237:14: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |              ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:237:34: note: in expansion of macro 'CUSTOM_SERVICE_UUID_BASE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:17:125: warning: excess elements in scalar initializer
+   17 | #define CUSTOM_SERVICE_UUID_BASE {0x56, 0x34, 0x12, 0xef, 0xcd, 0xab, 0x90, 0x78, 0x56, 0x34, 0x12, 0x90, 0x78, 0x56, 0x34, 0x12}
+      |                                                                                                                             ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:237:14: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |              ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:237:34: note: in expansion of macro 'CUSTOM_SERVICE_UUID_BASE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:17:125: note: (near initialization for '(anonymous).value[0]')
+   17 | #define CUSTOM_SERVICE_UUID_BASE {0x56, 0x34, 0x12, 0xef, 0xcd, 0xab, 0x90, 0x78, 0x56, 0x34, 0x12, 0x90, 0x78, 0x56, 0x34, 0x12}
+      |                                                                                                                             ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:237:14: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |              ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:237:34: note: in expansion of macro 'CUSTOM_SERVICE_UUID_BASE'
+  237 |      .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:240:14: warning: braces around scalar initializer
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |              ^
+E:/BLE_HID/main/mainHid.c:240:14: note: (near initialization for '(anonymous).value[0]')
+E:/BLE_HID/main/mainHid.c:19:44: warning: excess elements in scalar initializer
+   19 | #define CUSTOM_CHAR_WRITE_UUID_BASE {0xA1, 0xB2, 0xC3, 0xD4, 0xE5, 0xF6, 0xA7, 0xB8, 0xC9, 0xDA, 0xEB, 0xFC, 0x01, 0x02, 0x03, 0x04}
+      |                                            ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:240:22: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                      ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:240:42: note: in expansion of macro 'CUSTOM_CHAR_WRITE_UUID_BASE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:19:44: note: (near initialization for '(anonymous).value[0]')
+   19 | #define CUSTOM_CHAR_WRITE_UUID_BASE {0xA1, 0xB2, 0xC3, 0xD4, 0xE5, 0xF6, 0xA7, 0xB8, 0xC9, 0xDA, 0xEB, 0xFC, 0x01, 0x02, 0x03, 0x04}
+      |                                            ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:240:22: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                      ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:240:42: note: in expansion of macro 'CUSTOM_CHAR_WRITE_UUID_BASE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:19:50: warning: excess elements in scalar initializer
+   19 | #define CUSTOM_CHAR_WRITE_UUID_BASE {0xA1, 0xB2, 0xC3, 0xD4, 0xE5, 0xF6, 0xA7, 0xB8, 0xC9, 0xDA, 0xEB, 0xFC, 0x01, 0x02, 0x03, 0x04}
+      |                                                  ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:240:22: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                      ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:240:42: note: in expansion of macro 'CUSTOM_CHAR_WRITE_UUID_BASE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:19:50: note: (near initialization for '(anonymous).value[0]')
+   19 | #define CUSTOM_CHAR_WRITE_UUID_BASE {0xA1, 0xB2, 0xC3, 0xD4, 0xE5, 0xF6, 0xA7, 0xB8, 0xC9, 0xDA, 0xEB, 0xFC, 0x01, 0x02, 0x03, 0x04}
+      |                                                  ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:240:22: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                      ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:240:42: note: in expansion of macro 'CUSTOM_CHAR_WRITE_UUID_BASE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:19:56: warning: excess elements in scalar initializer
+   19 | #define CUSTOM_CHAR_WRITE_UUID_BASE {0xA1, 0xB2, 0xC3, 0xD4, 0xE5, 0xF6, 0xA7, 0xB8, 0xC9, 0xDA, 0xEB, 0xFC, 0x01, 0x02, 0x03, 0x04}
+      |                                                        ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:240:22: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                      ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:240:42: note: in expansion of macro 'CUSTOM_CHAR_WRITE_UUID_BASE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:19:56: note: (near initialization for '(anonymous).value[0]')
+   19 | #define CUSTOM_CHAR_WRITE_UUID_BASE {0xA1, 0xB2, 0xC3, 0xD4, 0xE5, 0xF6, 0xA7, 0xB8, 0xC9, 0xDA, 0xEB, 0xFC, 0x01, 0x02, 0x03, 0x04}
+      |                                                        ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:240:22: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                      ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:240:42: note: in expansion of macro 'CUSTOM_CHAR_WRITE_UUID_BASE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:19:62: warning: excess elements in scalar initializer
+   19 | #define CUSTOM_CHAR_WRITE_UUID_BASE {0xA1, 0xB2, 0xC3, 0xD4, 0xE5, 0xF6, 0xA7, 0xB8, 0xC9, 0xDA, 0xEB, 0xFC, 0x01, 0x02, 0x03, 0x04}
+      |                                                              ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:240:22: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                      ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:240:42: note: in expansion of macro 'CUSTOM_CHAR_WRITE_UUID_BASE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:19:62: note: (near initialization for '(anonymous).value[0]')
+   19 | #define CUSTOM_CHAR_WRITE_UUID_BASE {0xA1, 0xB2, 0xC3, 0xD4, 0xE5, 0xF6, 0xA7, 0xB8, 0xC9, 0xDA, 0xEB, 0xFC, 0x01, 0x02, 0x03, 0x04}
+      |                                                              ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:240:22: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                      ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:240:42: note: in expansion of macro 'CUSTOM_CHAR_WRITE_UUID_BASE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:19:68: warning: excess elements in scalar initializer
+   19 | #define CUSTOM_CHAR_WRITE_UUID_BASE {0xA1, 0xB2, 0xC3, 0xD4, 0xE5, 0xF6, 0xA7, 0xB8, 0xC9, 0xDA, 0xEB, 0xFC, 0x01, 0x02, 0x03, 0x04}
+      |                                                                    ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:240:22: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                      ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:240:42: note: in expansion of macro 'CUSTOM_CHAR_WRITE_UUID_BASE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:19:68: note: (near initialization for '(anonymous).value[0]')
+   19 | #define CUSTOM_CHAR_WRITE_UUID_BASE {0xA1, 0xB2, 0xC3, 0xD4, 0xE5, 0xF6, 0xA7, 0xB8, 0xC9, 0xDA, 0xEB, 0xFC, 0x01, 0x02, 0x03, 0x04}
+      |                                                                    ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:240:22: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                      ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:240:42: note: in expansion of macro 'CUSTOM_CHAR_WRITE_UUID_BASE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:19:74: warning: excess elements in scalar initializer
+   19 | #define CUSTOM_CHAR_WRITE_UUID_BASE {0xA1, 0xB2, 0xC3, 0xD4, 0xE5, 0xF6, 0xA7, 0xB8, 0xC9, 0xDA, 0xEB, 0xFC, 0x01, 0x02, 0x03, 0x04}
+      |                                                                          ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:240:22: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                      ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:240:42: note: in expansion of macro 'CUSTOM_CHAR_WRITE_UUID_BASE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:19:74: note: (near initialization for '(anonymous).value[0]')
+   19 | #define CUSTOM_CHAR_WRITE_UUID_BASE {0xA1, 0xB2, 0xC3, 0xD4, 0xE5, 0xF6, 0xA7, 0xB8, 0xC9, 0xDA, 0xEB, 0xFC, 0x01, 0x02, 0x03, 0x04}
+      |                                                                          ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:240:22: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                      ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:240:42: note: in expansion of macro 'CUSTOM_CHAR_WRITE_UUID_BASE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:19:80: warning: excess elements in scalar initializer
+   19 | #define CUSTOM_CHAR_WRITE_UUID_BASE {0xA1, 0xB2, 0xC3, 0xD4, 0xE5, 0xF6, 0xA7, 0xB8, 0xC9, 0xDA, 0xEB, 0xFC, 0x01, 0x02, 0x03, 0x04}
+      |                                                                                ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:240:22: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                      ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:240:42: note: in expansion of macro 'CUSTOM_CHAR_WRITE_UUID_BASE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:19:80: note: (near initialization for '(anonymous).value[0]')
+   19 | #define CUSTOM_CHAR_WRITE_UUID_BASE {0xA1, 0xB2, 0xC3, 0xD4, 0xE5, 0xF6, 0xA7, 0xB8, 0xC9, 0xDA, 0xEB, 0xFC, 0x01, 0x02, 0x03, 0x04}
+      |                                                                                ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:240:22: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                      ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:240:42: note: in expansion of macro 'CUSTOM_CHAR_WRITE_UUID_BASE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:19:86: warning: excess elements in scalar initializer
+   19 | #define CUSTOM_CHAR_WRITE_UUID_BASE {0xA1, 0xB2, 0xC3, 0xD4, 0xE5, 0xF6, 0xA7, 0xB8, 0xC9, 0xDA, 0xEB, 0xFC, 0x01, 0x02, 0x03, 0x04}
+      |                                                                                      ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:240:22: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                      ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:240:42: note: in expansion of macro 'CUSTOM_CHAR_WRITE_UUID_BASE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:19:86: note: (near initialization for '(anonymous).value[0]')
+   19 | #define CUSTOM_CHAR_WRITE_UUID_BASE {0xA1, 0xB2, 0xC3, 0xD4, 0xE5, 0xF6, 0xA7, 0xB8, 0xC9, 0xDA, 0xEB, 0xFC, 0x01, 0x02, 0x03, 0x04}
+      |                                                                                      ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:240:22: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                      ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:240:42: note: in expansion of macro 'CUSTOM_CHAR_WRITE_UUID_BASE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:19:92: warning: excess elements in scalar initializer
+   19 | #define CUSTOM_CHAR_WRITE_UUID_BASE {0xA1, 0xB2, 0xC3, 0xD4, 0xE5, 0xF6, 0xA7, 0xB8, 0xC9, 0xDA, 0xEB, 0xFC, 0x01, 0x02, 0x03, 0x04}
+      |                                                                                            ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:240:22: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                      ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:240:42: note: in expansion of macro 'CUSTOM_CHAR_WRITE_UUID_BASE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:19:92: note: (near initialization for '(anonymous).value[0]')
+   19 | #define CUSTOM_CHAR_WRITE_UUID_BASE {0xA1, 0xB2, 0xC3, 0xD4, 0xE5, 0xF6, 0xA7, 0xB8, 0xC9, 0xDA, 0xEB, 0xFC, 0x01, 0x02, 0x03, 0x04}
+      |                                                                                            ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:240:22: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                      ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:240:42: note: in expansion of macro 'CUSTOM_CHAR_WRITE_UUID_BASE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:19:98: warning: excess elements in scalar initializer
+   19 | #define CUSTOM_CHAR_WRITE_UUID_BASE {0xA1, 0xB2, 0xC3, 0xD4, 0xE5, 0xF6, 0xA7, 0xB8, 0xC9, 0xDA, 0xEB, 0xFC, 0x01, 0x02, 0x03, 0x04}
+      |                                                                                                  ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:240:22: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                      ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:240:42: note: in expansion of macro 'CUSTOM_CHAR_WRITE_UUID_BASE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:19:98: note: (near initialization for '(anonymous).value[0]')
+   19 | #define CUSTOM_CHAR_WRITE_UUID_BASE {0xA1, 0xB2, 0xC3, 0xD4, 0xE5, 0xF6, 0xA7, 0xB8, 0xC9, 0xDA, 0xEB, 0xFC, 0x01, 0x02, 0x03, 0x04}
+      |                                                                                                  ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:240:22: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                      ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:240:42: note: in expansion of macro 'CUSTOM_CHAR_WRITE_UUID_BASE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:19:104: warning: excess elements in scalar initializer
+   19 | #define CUSTOM_CHAR_WRITE_UUID_BASE {0xA1, 0xB2, 0xC3, 0xD4, 0xE5, 0xF6, 0xA7, 0xB8, 0xC9, 0xDA, 0xEB, 0xFC, 0x01, 0x02, 0x03, 0x04}
+      |                                                                                                        ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:240:22: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                      ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:240:42: note: in expansion of macro 'CUSTOM_CHAR_WRITE_UUID_BASE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:19:104: note: (near initialization for '(anonymous).value[0]')
+   19 | #define CUSTOM_CHAR_WRITE_UUID_BASE {0xA1, 0xB2, 0xC3, 0xD4, 0xE5, 0xF6, 0xA7, 0xB8, 0xC9, 0xDA, 0xEB, 0xFC, 0x01, 0x02, 0x03, 0x04}
+      |                                                                                                        ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:240:22: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                      ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:240:42: note: in expansion of macro 'CUSTOM_CHAR_WRITE_UUID_BASE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:19:110: warning: excess elements in scalar initializer
+   19 | #define CUSTOM_CHAR_WRITE_UUID_BASE {0xA1, 0xB2, 0xC3, 0xD4, 0xE5, 0xF6, 0xA7, 0xB8, 0xC9, 0xDA, 0xEB, 0xFC, 0x01, 0x02, 0x03, 0x04}
+      |                                                                                                              ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:240:22: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                      ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:240:42: note: in expansion of macro 'CUSTOM_CHAR_WRITE_UUID_BASE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:19:110: note: (near initialization for '(anonymous).value[0]')
+   19 | #define CUSTOM_CHAR_WRITE_UUID_BASE {0xA1, 0xB2, 0xC3, 0xD4, 0xE5, 0xF6, 0xA7, 0xB8, 0xC9, 0xDA, 0xEB, 0xFC, 0x01, 0x02, 0x03, 0x04}
+      |                                                                                                              ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:240:22: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                      ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:240:42: note: in expansion of macro 'CUSTOM_CHAR_WRITE_UUID_BASE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:19:116: warning: excess elements in scalar initializer
+   19 | #define CUSTOM_CHAR_WRITE_UUID_BASE {0xA1, 0xB2, 0xC3, 0xD4, 0xE5, 0xF6, 0xA7, 0xB8, 0xC9, 0xDA, 0xEB, 0xFC, 0x01, 0x02, 0x03, 0x04}
+      |                                                                                                                    ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:240:22: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                      ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:240:42: note: in expansion of macro 'CUSTOM_CHAR_WRITE_UUID_BASE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:19:116: note: (near initialization for '(anonymous).value[0]')
+   19 | #define CUSTOM_CHAR_WRITE_UUID_BASE {0xA1, 0xB2, 0xC3, 0xD4, 0xE5, 0xF6, 0xA7, 0xB8, 0xC9, 0xDA, 0xEB, 0xFC, 0x01, 0x02, 0x03, 0x04}
+      |                                                                                                                    ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:240:22: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                      ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:240:42: note: in expansion of macro 'CUSTOM_CHAR_WRITE_UUID_BASE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:19:122: warning: excess elements in scalar initializer
+   19 | #define CUSTOM_CHAR_WRITE_UUID_BASE {0xA1, 0xB2, 0xC3, 0xD4, 0xE5, 0xF6, 0xA7, 0xB8, 0xC9, 0xDA, 0xEB, 0xFC, 0x01, 0x02, 0x03, 0x04}
+      |                                                                                                                          ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:240:22: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                      ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:240:42: note: in expansion of macro 'CUSTOM_CHAR_WRITE_UUID_BASE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:19:122: note: (near initialization for '(anonymous).value[0]')
+   19 | #define CUSTOM_CHAR_WRITE_UUID_BASE {0xA1, 0xB2, 0xC3, 0xD4, 0xE5, 0xF6, 0xA7, 0xB8, 0xC9, 0xDA, 0xEB, 0xFC, 0x01, 0x02, 0x03, 0x04}
+      |                                                                                                                          ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:240:22: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                      ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:240:42: note: in expansion of macro 'CUSTOM_CHAR_WRITE_UUID_BASE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:19:128: warning: excess elements in scalar initializer
+   19 | #define CUSTOM_CHAR_WRITE_UUID_BASE {0xA1, 0xB2, 0xC3, 0xD4, 0xE5, 0xF6, 0xA7, 0xB8, 0xC9, 0xDA, 0xEB, 0xFC, 0x01, 0x02, 0x03, 0x04}
+      |                                                                                                                                ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:240:22: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                      ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:240:42: note: in expansion of macro 'CUSTOM_CHAR_WRITE_UUID_BASE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:19:128: note: (near initialization for '(anonymous).value[0]')
+   19 | #define CUSTOM_CHAR_WRITE_UUID_BASE {0xA1, 0xB2, 0xC3, 0xD4, 0xE5, 0xF6, 0xA7, 0xB8, 0xC9, 0xDA, 0xEB, 0xFC, 0x01, 0x02, 0x03, 0x04}
+      |                                                                                                                                ^~~~
+C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/include/host/ble_uuid.h:138:20: note: in definition of macro 'BLE_UUID128_INIT'
+  138 |         .value = { uuid128 },           \
+      |                    ^~~~~~~
+E:/BLE_HID/main/mainHid.c:240:22: note: in expansion of macro 'BLE_UUID128_DECLARE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                      ^~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:240:42: note: in expansion of macro 'CUSTOM_CHAR_WRITE_UUID_BASE'
+  240 |              .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:/BLE_HID/main/mainHid.c:228:12: warning: 'custom_read_cb' defined but not used [-Wunused-function]
+  228 | static int custom_read_cb(uint16_t conn_handle, uint16_t attr_handle,
+      |            ^~~~~~~~~~~~~~
+[5/10] Linking C static library esp-idf\main\libmain.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable BLE_HID.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.9.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated E:/BLE_HID/build/BLE_HID.bin
+[9/10] C:\WINDOWS\system32\cmd.exe /C "cd /D E:\BLE_HID\build\esp-idf\esptool_py && C:\Users\AWAN\.espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe C:/Users/AWAN/esp/v5.4.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app E:/BLE_HID/build/partition_table/partition-table.bin E:/BLE_HID/build/BLE_HID.bin"
+BLE_HID.bin binary size 0x8ee70 bytes. Smallest app partition is 0x177000 bytes. 0xe8190 bytes (62%) free.
+[9/10] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\AWAN\esp\v5.4.2\esp-idf\components\esptool_py && C:\Users\AWAN\.espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/Users/AWAN/esp/v5.4.2/esp-idf -D SERIAL_TOOL=C:/Users/AWAN/.espressif/python_env/idf5.4_py3.11_env/Scripts/python.exe;;C:/Users/AWAN/esp/v5.4.2/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=E:/BLE_HID/build -P C:/Users/AWAN/esp/v5.4.2/esp-idf/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32s3 -p COM11 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 BLE_HID.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.9.0
+Serial port COM11
+Connecting....
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: 48:ca:43:9a:51:b8
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x0009efff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 20928 bytes to 13321...
+Writing at 0x00000000... (100 %)
+Wrote 20928 bytes (13321 compressed) at 0x00000000 in 0.6 seconds (effective 270.0 kbit/s)...
+Hash of data verified.
+Compressed 585328 bytes to 345141...
+Writing at 0x00010000... (4 %)
+Writing at 0x0001c68b... (9 %)
+Writing at 0x00025165... (13 %)
+Writing at 0x0002dc82... (18 %)
+Writing at 0x00033d2b... (22 %)
+Writing at 0x0003a1eb... (27 %)
+Writing at 0x00040589... (31 %)
+Writing at 0x00046c3a... (36 %)
+Writing at 0x0004ce51... (40 %)
+Writing at 0x00052f0c... (45 %)
+Writing at 0x00058ed3... (50 %)
+Writing at 0x0005f137... (54 %)
+Writing at 0x00064baf... (59 %)
+Writing at 0x0006a6cf... (63 %)
+Writing at 0x0006fe24... (68 %)
+Writing at 0x000758ed... (72 %)
+Writing at 0x0007c024... (77 %)
+Writing at 0x000851a2... (81 %)
+Writing at 0x0008c796... (86 %)
+Writing at 0x000921ce... (90 %)
+Writing at 0x00097d23... (95 %)
+Writing at 0x0009e8b9... (100 %)
+Wrote 585328 bytes (345141 compressed) at 0x00010000 in 7.9 seconds (effective 591.5 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 105...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (105 compressed) at 0x00008000 in 0.0 seconds (effective 493.2 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

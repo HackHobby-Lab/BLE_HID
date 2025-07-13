@@ -1,0 +1,41 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM11 instead...[0m
+[0;33m--- esp-idf-monitor 1.6.2 on \\.\COM11 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x42021674: task_wdt_isr at C:/Users/AWAN/esp/v5.4.2/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+--- 0x40377901: _xt_lowint1 at C:/Users/AWAN/esp/v5.4.2/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x42048996: write at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/syscalls/syswrite.c:11
+--- 0x42047909: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+--- 0x40387475: esp_log_write at C:/Users/AWAN/esp/v5.4.2/esp-idf/components/log/src/os/log_write.c:44
+[0m
+[0;33m--- 0x42021674: task_wdt_isr at C:/Users/AWAN/esp/v5.4.2/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+--- 0x40377901: _xt_lowint1 at C:/Users/AWAN/esp/v5.4.2/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x42048996: write at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/syscalls/syswrite.c:11
+--- 0x42047909: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+--- 0x40387475: esp_log_write at C:/Users/AWAN/esp/v5.4.2/esp-idf/components/log/src/os/log_write.c:44
+[0m
+[0;33m--- 0x42021674: task_wdt_isr at C:/Users/AWAN/esp/v5.4.2/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+--- 0x40377901: _xt_lowint1 at C:/Users/AWAN/esp/v5.4.2/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x42048996: write at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/syscalls/syswrite.c:11
+--- 0x42047909: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+--- 0x40387475: esp_log_write at C:/Users/AWAN/esp/v5.4.2/esp-idf/components/log/src/os/log_write.c:44
+[0m
+[0;33m--- 0x42021674: task_wdt_isr at C:/Users/AWAN/esp/v5.4.2/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+--- 0x40377901: _xt_lowint1 at C:/Users/AWAN/esp/v5.4.2/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x42048996: write at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/syscalls/syswrite.c:11
+--- 0x42047909: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+--- 0x40387475: esp_log_write at C:/Users/AWAN/esp/v5.4.2/esp-idf/components/log/src/os/log_write.c:44
+[0m
+[0;33m--- 0x42021674: task_wdt_isr at C:/Users/AWAN/esp/v5.4.2/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+--- 0x40377901: _xt_lowint1 at C:/Users/AWAN/esp/v5.4.2/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x42048996: write at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/syscalls/syswrite.c:11
+--- 0x42047909: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+--- 0x40387475: esp_log_write at C:/Users/AWAN/esp/v5.4.2/esp-idf/components/log/src/os/log_write.c:44
+[0m
+[0;33m--- 0x42021674: task_wdt_isr at C:/Users/AWAN/esp/v5.4.2/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+--- 0x40377901: _xt_lowint1 at C:/Users/AWAN/esp/v5.4.2/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x42048996: write at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/syscalls/syswrite.c:11
+--- 0x42047909: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+--- 0x40387475: esp_log_write at C:/Users/AWAN/esp/v5.4.2/esp-idf/components/log/src/os/log_write.c:44
+[0m
+[0m

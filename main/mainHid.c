@@ -120,12 +120,12 @@ void ble_hid_task(void *pvParameters)
         ESP_LOGI(TAG, "Demo Task");
 
         esp_hidd_dev_battery_set(hid_dev, 10);
-        send_consumer(VOLUME_DOWN);
+        // send_consumer(VOLUME_DOWN);
         vTaskDelay(2000 / portTICK_PERIOD_MS);
-        // send_consumer(VOLUME_UP);
-        send_mouse(10, 0, 0x01); // Move mouse right with left click
-        vTaskDelay(pdMS_TO_TICKS(20));
-        send_mouse(0, 0, 0x00); // Release button
+        // // send_consumer(VOLUME_UP);
+        // send_mouse(10, 0, 0x01); // Move mouse right with left click
+        // vTaskDelay(pdMS_TO_TICKS(20));
+        // send_mouse(0, 0, 0x00); // Release button
     }
 }
 
@@ -150,6 +150,7 @@ static void hid_cb(void *arg, esp_event_base_t base, int32_t id, void *data)
         esp_hid_ble_gap_adv_start();
         break;
     case ESP_HIDD_CONNECT_EVENT:
+    esp_hid_ble_gap_adv_start();
         // xTaskCreate(ble_hid_task, "vol", 4096, NULL, 5, NULL);
         // ble_hid_task_start_up();
         break;
@@ -174,19 +175,55 @@ static int custom_write_cb(uint16_t conn_handle, uint16_t attr_handle,
 {
     uint16_t len = OS_MBUF_PKTLEN(ctxt->om);
     uint8_t buffer[64] = {0};
+
     printf("---------------------------------------------------------\n");
+
     int rc = ble_hs_mbuf_to_flat(ctxt->om, buffer, sizeof(buffer), NULL);
-    if (rc == 0 && len > 0)
-    {
-        ESP_LOGI(TAG, "Custom Write received (%d bytes): %.*s", len, len, buffer);
-    }
-    else
-    {
+    if (rc != 0 || len == 0) {
         ESP_LOGW(TAG, "Failed to parse mbuf or empty write.");
+        return 0;
+    }
+
+    ESP_LOGI(TAG, "Custom Write received (%d bytes): %.*s", len, len, buffer);
+
+    // Convert to null-terminated string
+    buffer[len] = '\0';
+
+    // Basic command parsing
+    if (strncmp((char *)buffer, "volup", 5) == 0) {
+        send_consumer(VOLUME_UP);
+    } else if (strncmp((char *)buffer, "voldown", 7) == 0) {
+        ESP_LOGI(TAG, "Command parsed");
+        send_consumer(VOLUME_DOWN);
+    } else if (strncmp((char *)buffer, "mute", 4) == 0) {
+        send_consumer(MUTE);
+    } else if (strncmp((char *)buffer, "play", 4) == 0) {
+        send_consumer(PLAY_PAUSE);
+    } else if (strncmp((char *)buffer, "next", 4) == 0) {
+        send_consumer(SCAN_NEXT);
+    } else if (strncmp((char *)buffer, "prev", 4) == 0) {
+        send_consumer(SCAN_PREVIOUS);
+    } else if (strncmp((char *)buffer, "stop", 4) == 0) {
+        ESP_LOGI(TAG, "Command parsed");
+        send_consumer(STOP);
+    } else if (strncmp((char *)buffer, "move", 4) == 0) {
+        int dx = 0, dy = 0;
+        if (sscanf((char *)buffer + 5, "%d %d", &dx, &dy) == 2) {
+            send_mouse((int8_t)dx, (int8_t)dy, 0);
+        } else {
+            ESP_LOGW(TAG, "Invalid format for 'move' command. Use: move <dx> <dy>");
+        }
+    } else if (strncmp((char *)buffer, "click", 5) == 0) {
+        send_mouse(0, 0, 0x01); // Left click down
+        vTaskDelay(pdMS_TO_TICKS(20));
+        send_mouse(0, 0, 0x00); // Release
+    } else {
+        ESP_LOGW(TAG, "Unknown command: %s", buffer);
     }
 
     return 0;
 }
+
 
 static int custom_read_cb(uint16_t conn_handle, uint16_t attr_handle,
                           struct ble_gatt_access_ctxt *ctxt, void *arg)
