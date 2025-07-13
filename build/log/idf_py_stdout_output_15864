@@ -298,4 +298,301 @@ entry 0x403c8928
 [0;32mI (35412) NimBLE: GATT procedure initiated: notify; [0m
 [0;32mI (35422) NimBLE: att_handle=37[0m
 
-[0;32mI (35422) NimBLE
+[0;32mI (35422) NimBLE: notify_tx event; conn_handle=1 attr_handle=37 status=0 is_indication=0[0m
+[0;32mI (35462) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35462) NimBLE: att_handle=37[0m
+
+[0;32mI (35462) NimBLE: notify_tx event; conn_handle=1 attr_handle=37 status=0 is_indication=0[0m
+[0;32mI (37462) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37462) NimBLE: att_handle=41[0m
+
+[0;32mI (37462) NimBLE: notify_tx event; conn_handle=1 attr_handle=41 status=0 is_indication=0[0m
+[0;32mI (37482) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37482) NimBLE: att_handle=41[0m
+
+[0;32mI (37482) NimBLE: notify_tx event; conn_handle=1 attr_handle=41 status=0 is_indication=0[0m
+[0;32mI (37482) HID_MIN: Demo Task[0m
+[0;32mI (37482) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37492) NimBLE: att_handle=37[0m
+
+[0;32mI (37492) NimBLE: notify_tx event; conn_handle=1 attr_handle=37 status=0 is_indication=0[0m
+[0;32mI (37532) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (37532) NimBLE: att_handle=37[0m
+
+[0;32mI (37532) NimBLE: notify_tx event; conn_handle=1 attr_handle=37 status=0 is_indication=0[0m
+[0;32mI (39532) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (39532) NimBLE: att_handle=41[0m
+
+[0;32mI (39532) NimBLE: notify_tx event; conn_handle=1 attr_handle=41 status=0 is_indication=0[0m
+[0;32mI (39552) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (39552) NimBLE: att_handle=41[0m
+
+[0;32mI (39552) NimBLE: notify_tx event; conn_handle=1 attr_handle=41 status=0 is_indication=0[0m
+[0;32mI (39552) HID_MIN: Demo Task[0m
+[0;32mI (39552) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (39562) NimBLE: att_handle=37[0m
+
+[0;32mI (39562) NimBLE: notify_tx event; conn_handle=1 attr_handle=37 status=0 is_indication=0[0m
+[0;32mI (39602) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (39602) NimBLE: att_handle=37[0m
+
+[0;32mI (39602) NimBLE: notify_tx event; conn_handle=1 attr_handle=37 status=0 is_indication=0[0m
+[0;32mI (41602) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41602) NimBLE: att_handle=41[0m
+
+[0;32mI (41602) NimBLE: notify_tx event; conn_handle=1 attr_handle=41 status=0 is_indication=0[0m
+[0;32mI (41622) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41622) NimBLE: att_handle=41[0m
+
+[0;32mI (41622) NimBLE: notify_tx event; conn_handle=1 attr_handle=41 status=0 is_indication=0[0m
+[0;32mI (41622) HID_MIN: Demo Task[0m
+[0;32mI (41622) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41632) NimBLE: att_handle=37[0m
+
+[0;32mI (41632) NimBLE: notify_tx event; conn_handle=1 attr_handle=37 status=0 is_indication=0[0m
+[0;32mI (41672) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (41672) NimBLE: att_handle=37[0m
+
+[0;32mI (41672) NimBLE: notify_tx event; conn_handle=1 attr_handle=37 status=0 is_indication=0[0m
+[0;32mI (43672) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43672) NimBLE: att_handle=41[0m
+
+[0;32mI (43672) NimBLE: notify_tx event; conn_handle=1 attr_handle=41 status=0 is_indication=0[0m
+[0;32mI (43692) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43692) NimBLE: att_handle=41[0m
+
+[0;32mI (43692) NimBLE: notify_tx event; conn_handle=1 attr_handle=41 status=0 is_indication=0[0m
+[0;32mI (43692) HID_MIN: Demo Task[0m
+[0;32mI (43692) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43702) NimBLE: att_handle=37[0m
+
+[0;32mI (43702) NimBLE: notify_tx event; conn_handle=1 attr_handle=37 status=0 is_indication=0[0m
+[0;32mI (43742) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (43742) NimBLE: att_handle=37[0m
+
+[0;32mI (43742) NimBLE: notify_tx event; conn_handle=1 attr_handle=37 status=0 is_indication=0[0m
+[0;32mI (45742) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (45742) NimBLE: att_handle=41[0m
+
+[0;32mI (45742) NimBLE: notify_tx event; conn_handle=1 attr_handle=41 status=0 is_indication=0[0m
+[0;32mI (45762) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (45762) NimBLE: att_handle=41[0m
+
+[0;32mI (45762) NimBLE: notify_tx event; conn_handle=1 attr_handle=41 status=0 is_indication=0[0m
+[0;32mI (45762) HID_MIN: Demo Task[0m
+[0;32mI (45762) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (45772) NimBLE: att_handle=37[0m
+
+[0;32mI (45772) NimBLE: notify_tx event; conn_handle=1 attr_handle=37 status=0 is_indication=0[0m
+[0;32mI (45812) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (45812) NimBLE: att_handle=37[0m
+
+[0;32mI (45812) NimBLE: notify_tx event; conn_handle=1 attr_handle=37 status=0 is_indication=0[0m
+[0;32mI (47812) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (47812) NimBLE: att_handle=41[0m
+
+[0;32mI (47812) NimBLE: notify_tx event; conn_handle=1 attr_handle=41 status=0 is_indication=0[0m
+[0;32mI (47832) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (47832) NimBLE: att_handle=41[0m
+
+[0;32mI (47832) NimBLE: notify_tx event; conn_handle=1 attr_handle=41 status=0 is_indication=0[0m
+[0;32mI (47832) HID_MIN: Demo Task[0m
+[0;32mI (47832) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (47842) NimBLE: att_handle=37[0m
+
+[0;32mI (47842) NimBLE: notify_tx event; conn_handle=1 attr_handle=37 status=0 is_indication=0[0m
+[0;32mI (47882) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (47882) NimBLE: att_handle=37[0m
+
+[0;32mI (47882) NimBLE: notify_tx event; conn_handle=1 attr_handle=37 status=0 is_indication=0[0m
+[0;32mI (49882) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (49882) NimBLE: att_handle=41[0m
+
+[0;32mI (49882) NimBLE: notify_tx event; conn_handle=1 attr_handle=41 status=0 is_indication=0[0m
+[0;32mI (49902) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (49902) NimBLE: att_handle=41[0m
+
+[0;32mI (49902) NimBLE: notify_tx event; conn_handle=1 attr_handle=41 status=0 is_indication=0[0m
+[0;32mI (49902) HID_MIN: Demo Task[0m
+[0;32mI (49902) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (49912) NimBLE: att_handle=37[0m
+
+[0;32mI (49912) NimBLE: notify_tx event; conn_handle=1 attr_handle=37 status=0 is_indication=0[0m
+[0;32mI (49952) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (49952) NimBLE: att_handle=37[0m
+
+[0;32mI (49952) NimBLE: notify_tx event; conn_handle=1 attr_handle=37 status=0 is_indication=0[0m
+[0;32mI (51952) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (51952) NimBLE: att_handle=41[0m
+
+[0;32mI (51952) NimBLE: notify_tx event; conn_handle=1 attr_handle=41 status=0 is_indication=0[0m
+[0;32mI (51972) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (51972) NimBLE: att_handle=41[0m
+
+[0;32mI (51972) NimBLE: notify_tx event; conn_handle=1 attr_handle=41 status=0 is_indication=0[0m
+[0;32mI (51972) HID_MIN: Demo Task[0m
+[0;32mI (51972) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (51982) NimBLE: att_handle=37[0m
+
+[0;32mI (51982) NimBLE: notify_tx event; conn_handle=1 attr_handle=37 status=0 is_indication=0[0m
+[0;32mI (52022) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (52022) NimBLE: att_handle=37[0m
+
+[0;32mI (52022) NimBLE: notify_tx event; conn_handle=1 attr_handle=37 status=0 is_indication=0[0m
+[0;32mI (54022) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (54022) NimBLE: att_handle=41[0m
+
+[0;32mI (54022) NimBLE: notify_tx event; conn_handle=1 attr_handle=41 status=0 is_indication=0[0m
+[0;32mI (54042) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (54042) NimBLE: att_handle=41[0m
+
+[0;32mI (54042) NimBLE: notify_tx event; conn_handle=1 attr_handle=41 status=0 is_indication=0[0m
+[0;32mI (54042) HID_MIN: Demo Task[0m
+[0;32mI (54042) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (54052) NimBLE: att_handle=37[0m
+
+[0;32mI (54052) NimBLE: notify_tx event; conn_handle=1 attr_handle=37 status=0 is_indication=0[0m
+[0;32mI (54092) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (54092) NimBLE: att_handle=37[0m
+
+[0;32mI (54092) NimBLE: notify_tx event; conn_handle=1 attr_handle=37 status=0 is_indication=0[0m
+[0;32mI (56092) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (56092) NimBLE: att_handle=41[0m
+
+[0;32mI (56092) NimBLE: notify_tx event; conn_handle=1 attr_handle=41 status=0 is_indication=0[0m
+[0;32mI (56112) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (56112) NimBLE: att_handle=41[0m
+
+[0;32mI (56112) NimBLE: notify_tx event; conn_handle=1 attr_handle=41 status=0 is_indication=0[0m
+[0;32mI (56112) HID_MIN: Demo Task[0m
+[0;32mI (56112) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (56122) NimBLE: att_handle=37[0m
+
+[0;32mI (56122) NimBLE: notify_tx event; conn_handle=1 attr_handle=37 status=0 is_indication=0[0m
+[0;32mI (56162) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (56162) NimBLE: att_handle=37[0m
+
+[0;32mI (56162) NimBLE: notify_tx event; conn_handle=1 attr_handle=37 status=0 is_indication=0[0m
+[0;32mI (58162) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (58162) NimBLE: att_handle=41[0m
+
+[0;32mI (58162) NimBLE: notify_tx event; conn_handle=1 attr_handle=41 status=0 is_indication=0[0m
+[0;32mI (58182) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (58182) NimBLE: att_handle=41[0m
+
+[0;32mI (58182) NimBLE: notify_tx event; conn_handle=1 attr_handle=41 status=0 is_indication=0[0m
+[0;32mI (58182) HID_MIN: Demo Task[0m
+[0;32mI (58182) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (58192) NimBLE: att_handle=37[0m
+
+[0;32mI (58192) NimBLE: notify_tx event; conn_handle=1 attr_handle=37 status=0 is_indication=0[0m
+[0;32mI (58232) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (58232) NimBLE: att_handle=37[0m
+
+[0;32mI (58232) NimBLE: notify_tx event; conn_handle=1 attr_handle=37 status=0 is_indication=0[0m
+[0;32mI (60232) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (60232) NimBLE: att_handle=41[0m
+
+[0;32mI (60232) NimBLE: notify_tx event; conn_handle=1 attr_handle=41 status=0 is_indication=0[0m
+[0;32mI (60252) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (60252) NimBLE: att_handle=41[0m
+
+[0;32mI (60252) NimBLE: notify_tx event; conn_handle=1 attr_handle=41 status=0 is_indication=0[0m
+[0;32mI (60252) HID_MIN: Demo Task[0m
+[0;32mI (60252) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (60262) NimBLE: att_handle=37[0m
+
+[0;32mI (60262) NimBLE: notify_tx event; conn_handle=1 attr_handle=37 status=0 is_indication=0[0m
+[0;32mI (60302) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (60302) NimBLE: att_handle=37[0m
+
+[0;32mI (60302) NimBLE: notify_tx event; conn_handle=1 attr_handle=37 status=0 is_indication=0[0m
+[0;32mI (62302) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (62302) NimBLE: att_handle=41[0m
+
+[0;32mI (62302) NimBLE: notify_tx event; conn_handle=1 attr_handle=41 status=0 is_indication=0[0m
+[0;32mI (62322) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (62322) NimBLE: att_handle=41[0m
+
+[0;32mI (62322) NimBLE: notify_tx event; conn_handle=1 attr_handle=41 status=0 is_indication=0[0m
+[0;32mI (62322) HID_MIN: Demo Task[0m
+[0;32mI (62322) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (62332) NimBLE: att_handle=37[0m
+
+[0;32mI (62332) NimBLE: notify_tx event; conn_handle=1 attr_handle=37 status=0 is_indication=0[0m
+[0;32mI (62372) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (62372) NimBLE: att_handle=37[0m
+
+[0;32mI (62372) NimBLE: notify_tx event; conn_handle=1 attr_handle=37 status=0 is_indication=0[0m
+[0;32mI (64372) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (64372) NimBLE: att_handle=41[0m
+
+[0;32mI (64372) NimBLE: notify_tx event; conn_handle=1 attr_handle=41 status=0 is_indication=0[0m
+[0;32mI (64392) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (64392) NimBLE: att_handle=41[0m
+
+[0;32mI (64392) NimBLE: notify_tx event; conn_handle=1 attr_handle=41 status=0 is_indication=0[0m
+[0;32mI (64392) HID_MIN: Demo Task[0m
+[0;32mI (64392) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (64402) NimBLE: att_handle=37[0m
+
+[0;32mI (64402) NimBLE: notify_tx event; conn_handle=1 attr_handle=37 status=0 is_indication=0[0m
+[0;32mI (64442) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (64442) NimBLE: att_handle=37[0m
+
+[0;32mI (64442) NimBLE: notify_tx event; conn_handle=1 attr_handle=37 status=0 is_indication=0[0m
+[0;32mI (66442) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (66442) NimBLE: att_handle=41[0m
+
+[0;32mI (66442) NimBLE: notify_tx event; conn_handle=1 attr_handle=41 status=0 is_indication=0[0m
+[0;32mI (66462) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (66462) NimBLE: att_handle=41[0m
+
+[0;32mI (66462) NimBLE: notify_tx event; conn_handle=1 attr_handle=41 status=0 is_indication=0[0m
+[0;32mI (66462) HID_MIN: Demo Task[0m
+[0;32mI (66462) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (66472) NimBLE: att_handle=37[0m
+
+[0;32mI (66472) NimBLE: notify_tx event; conn_handle=1 attr_handle=37 status=0 is_indication=0[0m
+[0;32mI (66512) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (66512) NimBLE: att_handle=37[0m
+
+[0;32mI (66512) NimBLE: notify_tx event; conn_handle=1 attr_handle=37 status=0 is_indication=0[0m
+[0;32mI (68512) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (68512) NimBLE: att_handle=41[0m
+
+[0;32mI (68512) NimBLE: notify_tx event; conn_handle=1 attr_handle=41 status=0 is_indication=0[0m
+[0;32mI (68532) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (68532) NimBLE: att_handle=41[0m
+
+[0;32mI (68532) NimBLE: notify_tx event; conn_handle=1 attr_handle=41 status=0 is_indication=0[0m
+[0;32mI (68532) HID_MIN: Demo Task[0m
+[0;32mI (68532) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (68542) NimBLE: att_handle=37[0m
+
+[0;32mI (68542) NimBLE: notify_tx event; conn_handle=1 attr_handle=37 status=0 is_indication=0[0m
+[0;32mI (68582) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (68582) NimBLE: att_handle=37[0m
+
+[0;32mI (68582) NimBLE: notify_tx event; conn_handle=1 attr_handle=37 status=0 is_indication=0[0m
+[0;32mI (70582) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (70582) NimBLE: att_handle=41[0m
+
+[0;32mI (70582) NimBLE: notify_tx event; conn_handle=1 attr_handle=41 status=0 is_indication=0[0m
+[0;32mI (70602) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (70602) NimBLE: att_handle=41[0m
+
+[0;32mI (70602) NimBLE: notify_tx event; conn_handle=1 attr_handle=41 status=0 is_indication=0[0m
+[0;32mI (70602) HID_MIN: Demo Task[0m
+[0;32mI (70602) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (70612) NimBLE: att_handle=37[0m
+
+[0;32mI (70612) NimBLE: notify_tx event; conn_handle=1 attr_handle=37 status=0 is_indication=0[0m
+[0;32mI (70652) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (70652) NimBLE: att_handle=37[0m
+
+[0;32mI (70652) NimBLE: notify_tx event; conn_handle=1 attr_handle=37 status=0 is_indication=0[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x0 (DOWNLOAD(USB/UART0))
+waiting for download

@@ -13,6 +13,13 @@
 
 static const char *TAG = "HID_MIN";
 
+// UUIDs: You can generate new ones with any online UUID generator
+#define CUSTOM_SERVICE_UUID_BASE {0x56, 0x34, 0x12, 0xef, 0xcd, 0xab, 0x90, 0x78, 0x56, 0x34, 0x12, 0x90, 0x78, 0x56, 0x34, 0x12}
+
+#define CUSTOM_CHAR_WRITE_UUID_BASE {0xA1, 0xB2, 0xC3, 0xD4, 0xE5, 0xF6, 0xA7, 0xB8, 0xC9, 0xDA, 0xEB, 0xFC, 0x01, 0x02, 0x03, 0x04}
+
+#define CUSTOM_CHAR_READ_UUID_BASE {0xB1, 0xC2, 0xD3, 0xE4, 0xF5, 0x06, 0x17, 0x28, 0x39, 0x4A, 0x5B, 0x6C, 0x11, 0x12, 0x13, 0x14}
+
 #define VOLUME_UP (0x00E9)     // Volume Up
 #define VOLUME_DOWN (0x00EA)   // Volume Down
 #define MUTE (0x00E2)          // Mute
@@ -106,7 +113,7 @@ void send_mouse(int8_t dx, int8_t dy, uint8_t buttons)
     esp_hidd_dev_input_set(hid_dev, 0, mouse_report[0], &mouse_report[1], 3);
 }
 
-void ble_hid_demo_task(void *pvParameters)
+void ble_hid_task(void *pvParameters)
 {
     while (1)
     {
@@ -130,7 +137,7 @@ void ble_hid_task_start_up(void)
         return;
     }
 
-    xTaskCreate(ble_hid_demo_task, "ble_hid_demo_task", 2 * 4096, NULL, configMAX_PRIORITIES - 3,
+    xTaskCreate(ble_hid_task, "ble_hid_task", 2 * 4096, NULL, configMAX_PRIORITIES - 3,
                 &s_ble_hid_param.task_hdl);
 }
 
@@ -143,8 +150,8 @@ static void hid_cb(void *arg, esp_event_base_t base, int32_t id, void *data)
         esp_hid_ble_gap_adv_start();
         break;
     case ESP_HIDD_CONNECT_EVENT:
-        // xTaskCreate(ble_hid_demo_task, "vol", 4096, NULL, 5, NULL);
-        ble_hid_task_start_up();
+        // xTaskCreate(ble_hid_task, "vol", 4096, NULL, 5, NULL);
+        // ble_hid_task_start_up();
         break;
     case ESP_HIDD_DISCONNECT_EVENT:
         esp_hid_ble_gap_adv_start();
@@ -161,6 +168,52 @@ static void ble_host_task(void *param)
     nimble_port_run();
     nimble_port_freertos_deinit();
 }
+
+static int custom_write_cb(uint16_t conn_handle, uint16_t attr_handle,
+                           struct ble_gatt_access_ctxt *ctxt, void *arg)
+{
+    uint16_t len = OS_MBUF_PKTLEN(ctxt->om);
+    uint8_t buffer[64] = {0};
+    printf("---------------------------------------------------------\n");
+    int rc = ble_hs_mbuf_to_flat(ctxt->om, buffer, sizeof(buffer), NULL);
+    if (rc == 0 && len > 0)
+    {
+        ESP_LOGI(TAG, "Custom Write received (%d bytes): %.*s", len, len, buffer);
+    }
+    else
+    {
+        ESP_LOGW(TAG, "Failed to parse mbuf or empty write.");
+    }
+
+    return 0;
+}
+
+static int custom_read_cb(uint16_t conn_handle, uint16_t attr_handle,
+                          struct ble_gatt_access_ctxt *ctxt, void *arg)
+{
+    const char *response = "Hello from ESP32!";
+    os_mbuf_append(ctxt->om, response, strlen(response));
+    return 0;
+}
+static const struct ble_gatt_svc_def gatt_custom_svcs[] = {
+    {.type = BLE_GATT_SVC_TYPE_PRIMARY,
+     .uuid = BLE_UUID128_DECLARE(CUSTOM_SERVICE_UUID_BASE),
+     .characteristics = (struct ble_gatt_chr_def[]){
+         {
+             .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_WRITE_UUID_BASE),
+             .access_cb = custom_write_cb,
+             .flags = BLE_GATT_CHR_F_WRITE | BLE_GATT_CHR_F_WRITE_NO_RSP,
+
+         },
+         // {
+         //     .uuid = BLE_UUID128_DECLARE(CUSTOM_CHAR_READ_UUID_BASE),
+         //     .access_cb = custom_read_cb,
+         //     .flags = BLE_GATT_CHR_F_READ | BLE_GATT_CHR_F_NOTIFY,
+         // },
+         {0} // End
+     }},
+    {0} // End
+};
 
 /* ───────────────────────── app_main ────────────────────────────── */
 void app_main(void)
@@ -185,6 +238,11 @@ void app_main(void)
         .serial_number = "123456",
         .report_maps = &map,
         .report_maps_len = 1};
+
+    ESP_LOGI(TAG, "Registering custom GATT service...");
+    ESP_ERROR_CHECK(ble_gatts_count_cfg(gatt_custom_svcs));
+    ESP_ERROR_CHECK(ble_gatts_add_svcs(gatt_custom_svcs));
+    ESP_LOGI(TAG, "Custom GATT service registered.");
 
     ESP_ERROR_CHECK(esp_hidd_dev_init(&cfg,
                                       ESP_HID_TRANSPORT_BLE,
