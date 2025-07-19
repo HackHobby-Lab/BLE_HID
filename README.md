@@ -1,96 +1,70 @@
 | Supported Targets | ESP32 | ESP32-S3 |
 | ----------------- | ----- | -------- |
 
-# ESP-IDF BT/BLE HID Device Code
+# BLE-HID Keyboard & Mouse 
+A BLE-HID project for microcontroller platforms (e.g., ESP32 series). Enables keyboard, mouse, (HID over GATT Profile) support via BLE and replay the commands over GATT.
 
-This demo use APIs which esp_hid component provided to create a BT, BLE or Bluetooth dual mode hid device. Users can choose mode by setting `HID_DEV_MODE`.
+This features a custom GATT characteristics exposed for communication especially for receiving commands and replaying them. 
+You can use python script to connect to the device and send the commands.
 
 
-This example works in companion with the [BLE HID Host Example](../esp_hid_host/README.md)
 
-## How to Use Example
+## Download
 
-Before project configuration and build, be sure to set the correct chip target using:
+use git to clone the repository.
 
 ```bash
-idf.py set-target <chip_name>
-```
-The BT hid device plays as a mouse. When the connection is successfully established, users can follow the usage below to operate the 'mouse'.
-
-```
-########################################################################
-BT hid mouse demo usage:
-You can input these value to simulate mouse: 'q', 'w', 'e', 'a', 's', 'd', 'h'
-q -- click the left key
-w -- move up
-e -- click the right key
-a -- move left
-s -- move down
-d -- move right
-h -- show the help
-########################################################################
+git clone https://github.com/HackHobby-Lab/BLE_HID.git
+cd BLE_HID
 ```
 
-The BLE hid device plays as a remote control. When the connection is successfully established, the remote control will set volume up and down periodically.
-This example implements a BLE HID device.
+## Usage
 
-### Hardware Required
+You can open this project with ESP-IDF and then build the code and flash it on to your ESP32.
 
-* A development board with ESP32 SoC (e.g., ESP32-DevKitC, ESP-WROVER-KIT, etc.)
-* A USB cable for Power supply and programming
-
-See [Development Boards](https://www.espressif.com/en/products/devkits) for more information about it.
-
-### Configure the Project
-
-### Build and Flash
-
-Build the project and flash it to the board, then run monitor tool to view serial output.
+Start with cleaning the project,
+```
+idf.py fullclean
+```
+To build the code,
+```
+idf.py build
+```
+To flash and monitor the device,
 
 ```
-idf.py -p PORT flash monitor
+idf.py -p COMx flash monitor
 ```
 
-(To exit the serial monitor, type ``Ctrl-]``.)
-
-See the [Getting Started Guide](https://idf.espressif.com/) for full steps to configure and use ESP-IDF to build projects.
-
-## Example Output
+If you need to find your COM port, either go to device manager and look for device under `ports` or a handy trick in `CMD` is,
 
 ```
-I (0) cpu_start: Starting scheduler on APP CPU.
-I (607) BTDM_INIT: BT controller compile version [d03a5d3]
-I (607) system_api: Base MAC address is not set
-I (607) system_api: read default base MAC address from EFUSE
-I (617) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07
-W (1337) BT_BTM: BTM_BleWriteAdvData, Partial data write into ADV
-I (1357) HID_DEV_DEMO: START
-I (25067) HID_DEV_DEMO: CONNECT
-I (25357) HID_DEV_DEMO: Send the volume
-E (25437) BT_SMP: Value for numeric comparison = 125657
-I (25437) ESP_HID_GAP: BLE GAP NC_REQ passkey:125657
-W (25517) BT_SMP: FOR LE SC LTK IS USED INSTEAD OF STK
-I (25587) ESP_HID_GAP: BLE GAP KEY type = ESP_LE_KEY_LENC
-I (25587) ESP_HID_GAP: BLE GAP KEY type = ESP_LE_KEY_PENC
-I (25587) ESP_HID_GAP: BLE GAP KEY type = ESP_LE_KEY_LID
-I (25647) ESP_HID_GAP: BLE GAP KEY type = ESP_LE_KEY_PID
-I (25757) ESP_HID_GAP: BLE GAP AUTH SUCCESS
-I (27457) HID_DEV_DEMO: Send the volume
-I (29557) HID_DEV_DEMO: Send the volume
-I (31657) HID_DEV_DEMO: Send the volume
-I (33757) HID_DEV_DEMO: Send the volume
-I (35857) HID_DEV_DEMO: Send the volume
-I (37957) HID_DEV_DEMO: Send the volume
-I (40057) HID_DEV_DEMO: Send the volume
-I (42157) HID_DEV_DEMO: Send the volume
-I (44257) HID_DEV_DEMO: Send the volume
-I (46357) HID_DEV_DEMO: Send the volume
-I (48457) HID_DEV_DEMO: Send the volume
-I (50557) HID_DEV_DEMO: Send the volume
-...
+mode 
 ```
+It'll print available  COM Ports.
 
-## Troubleshooting
+## Python Client
+Python file is located under `PythonClient` folder.
+It is named `main.py`.  In order to run it you should have the following things installed.
+1. Python 3
+2. bleak 
 
-1. When using NimBLE stack, some iOS devices do not show the volume pop up. To fix this, please set CONFIG_BT_NIMBLE_SM_LVL to value 2. iOS needs Authenticated Pairing with Encryption to show up the pop ups.
-2. For any technical queries, please open an [issue](https://github.com/espressif/esp-idf/issues) on GitHub. We will get back to you soon.
+And then once python is installed just navigate to the `PythonClient` folder and navigate to the `BLEHID\Scripts`
+and from there just run `.\activate`.
+This will create the virtual environment. Or you can simply create your own environment. 
+
+Now you are ready to install the `bleak`. Just run following command,
+```
+pip install bleak
+```
+Make sure you are in virtual environment when you run this.
+
+Once it is down, again navigate back to `PythonClient` main folder and there run,
+```
+python ./main.py
+```
+And your script will start running.  And, your are good to go.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
