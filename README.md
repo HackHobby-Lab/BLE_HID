@@ -1,11 +1,15 @@
-| Supported Targets | ESP32 | ESP32-S3 |
-| ----------------- | ----- | -------- |
+![Platform](https://img.shields.io/badge/Platform-ESP32-yellow.svg) ![ESP-IDF](https://img.shields.io/badge/Framework-ESP--IDF-D32F2F?logo=espressif&logoColor=red)
+
+
+
 
 # BLE-HID Keyboard & Mouse 
 A BLE-HID project for microcontroller platforms (e.g., ESP32 series). Enables keyboard, mouse, (HID over GATT Profile) support via BLE and replay the commands over GATT.
 
 This features a custom GATT characteristics exposed for communication especially for receiving commands and replaying them. 
 You can use python script to connect to the device and send the commands.
+
+
 
 
 
@@ -67,4 +71,5 @@ And your script will start running.  And, your are good to go.
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://choosealicense.com/licenses/mit/)  
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
