@@ -15,6 +15,7 @@ Available Commands:
   stop          - Stop Playback
   move x y      - Move mouse by x and y (e.g., move 10 0)
   click         - Left click
+  rightclick    - Right Click
   exit / quit   - Exit the program
 """
 
@@ -26,7 +27,7 @@ async def main():
     for d in devices:
         if d.name and DEVICE_NAME.lower() in d.name.lower():
             target = d
-            print(f"Found device: {d.name} ({d.address})")
+            print(f"Found device: {d.name} ({d.address})") #print the device name and MAC address
             break
 
     if not target:

@@ -1,0 +1,1412 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1564
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd24
+load:0x403cb700,len:0x2ed4
+entry 0x403c8928
+[0;32mI (27) boot: ESP-IDF v5.4.2 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jul 18 2025 01:08:17[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c060020 size=15edch ( 89820) map[0m
+[0;32mI (104) esp_image: segment 1: paddr=00025f04 vaddr=3fc99600 size=04048h ( 16456) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=00029f54 vaddr=40374000 size=060c4h ( 24772) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=5fcb4h (392372) map[0m
+[0;32mI (185) esp_image: segment 4: paddr=0008fcdc vaddr=4037a0c4 size=0f520h ( 62752) load[0m
+[0;32mI (199) esp_image: segment 5: paddr=0009f204 vaddr=600fe000 size=0001ch (    28) load[0m
+[0;32mI (207) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (207) boot: Disabling RNG early entropy source...[0m
+[0;32mI (217) cpu_start: Multicore app[0m
+[0;32mI (227) cpu_start: Pro cpu start user code[0m
+[0;32mI (227) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (227) app_init: Application information:[0m
+[0;32mI (227) app_init: Project name:     BLE_HID[0m
+[0;32mI (231) app_init: App version:      9dcacda-dirty[0m
+[0;32mI (235) app_init: Compile time:     Jul 18 2025 01:08:06[0m
+[0;32mI (240) app_init: ELF file SHA256:  1f783c288...[0m
+[0;32mI (244) app_init: ESP-IDF:          v5.4.2[0m
+[0;32mI (248) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (252) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (256) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (260) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (266) heap_init: At 3FCA1130 len 000485E0 (289 KiB): RAM[0m
+[0;32mI (271) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (276) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (282) heap_init: At 600FE01C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (288) spi_flash: detected chip: gd[0m
+[0;32mI (290) spi_flash: flash io: dio[0m
+[0;33mW (293) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (306) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (312) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (318) coexist: coex firmware version: 7b9a184[0m
+[0;32mI (337) coexist: coexist rom version e7ae62f[0m
+[0;32mI (338) main_task: Started on CPU0[0m
+[0;32mI (348) main_task: Calling app_main()[0m
+[0;32mI (358) BLE_INIT: BT controller compile version [6cfabcd][0m
+[0;32mI (358) BLE_INIT: Feature Config, ADV:1, BLE_50:1, DTM:1, SCAN:1, CCA:0, SMP:1, CONNECT:1[0m
+[0;32mI (358) BLE_INIT: Bluetooth MAC: 48:ca:43:9a:51:ba[0m
+[0;32mI (358) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (408) HID_MIN: Registering custom GATT service...[0m
+[0;32mI (408) HID_MIN: Custom GATT service registered.[0m
+[0;32mI (408) HID_MIN: NimBLE host running[0m
+[0;32mI (408) NimBLE: GAP procedure initiated: stop advertising.[0m
+
+[0;32mI (418) main_task: Returned from app_main()[0m
+[0;32mI (418) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (418) NimBLE: disc_mode=2[0m
+[0;32mI (428) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (428) NimBLE: [0m
+
+[0;32mI (1468) ESP_HID_GAP: mtu update event; conn_handle=1 cid=4 mtu=256[0m
+[0;32mI (1528) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (1528) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1528) NimBLE: disc_mode=2[0m
+[0;32mI (1528) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (1538) NimBLE: [0m
+
+[0;32mI (2188) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=11 reason=1 prevn=0 curn=0 previ=0 curi=1[0m
+
+[0;32mI (2848) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (3108) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=21 reason=1 prevn=0 curn=1 previ=0 curi=0[0m
+
+[0;32mI (4708) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (16828) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=11 reason=2 prevn=0 curn=0 previ=1 curi=0[0m
+
+[0;32mI (16828) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=21 reason=2 prevn=1 curn=0 previ=0 curi=0[0m
+
+[0;32mI (16838) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (16838) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (21808) ESP_HID_GAP: mtu update event; conn_handle=2 cid=4 mtu=256[0m
+[0;32mI (21868) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (21868) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (21868) NimBLE: disc_mode=2[0m
+[0;32mI (21878) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (21888) NimBLE: [0m
+
+[0;32mI (22528) ESP_HID_GAP: subscribe event; conn_handle=2 attr_handle=11 reason=1 prevn=0 curn=0 previ=0 curi=1[0m
+
+[0;32mI (23188) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (23488) ESP_HID_GAP: subscribe event; conn_handle=2 attr_handle=21 reason=1 prevn=0 curn=1 previ=0 curi=0[0m
+
+[0;32mI (25108) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (39088) ESP_HID_GAP: PASSKEY_ACTION_EVENT started[0m
+[0;32mI (39088) ESP_HID_GAP: Enter passkey 123456on the peer side[0m
+[0;32mI (39088) ESP_HID_GAP: ble_sm_inject_io result: 0[0m
+[0;32mI (49118) NimBLE: GAP procedure initiated: stop advertising.[0m
+
+[0;32mI (49118) ESP_HID_GAP: advertise complete; reason=29[0m
+[0;32mI (49118) NimBLE: encryption change event; status=0 [0m
+[0;32mI (49118) HID_MIN: Demo Task[0m
+[0;32mI (49648) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (51118) HID_MIN: Demo Task[0m
+[0;32mI (51148) ESP_HID_GAP: subscribe event; conn_handle=2 attr_handle=40 reason=1 prevn=0 curn=1 previ=0 curi=0[0m
+
+[0;32mI (51178) ESP_HID_GAP: subscribe event; conn_handle=2 attr_handle=48 reason=1 prevn=0 curn=1 previ=0 curi=0[0m
+
+[0;32mI (51208) ESP_HID_GAP: subscribe event; conn_handle=2 attr_handle=44 reason=1 prevn=0 curn=1 previ=0 curi=0[0m
+
+[0;32mI (52348) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (53118) HID_MIN: Demo Task[0m
+[0;32mI (55118) HID_MIN: Demo Task[0m
+---------------------------------------------------------
+[0;32mI (56688) HID_MIN: Custom Write received (10 bytes): 1234567890[0m
+[0;32mI (56688) HID_MIN: Typing string: 1234567890[0m
+[1;31mE (56688) NIMBLE_HIDD: Unable to fetch protocol_mode[0m
+
+
+***ERROR*** A stack overflow in task nimble_host has been detected.
+
+
+Backtrace: 0x40375bdd:0x3fcb4ea0 0x40380879:0x3fcb4ec0 0x40381686:0x3fcb4ee0 0x4038287f:0x3fcb4f60 0x4038174c:0x3fcb4f80 0x40381742:0x0000000c |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 1f783c288
+
+Rebooting...
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375b1c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1564
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd24
+load:0x403cb700,len:0x2ed4
+entry 0x403c8928
+[0;32mI (31) boot: ESP-IDF v5.4.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 18 2025 01:08:17[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v0.2[0m
+[0;32mI (34) boot: efuse block revision: v1.3[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (42) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (45) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) esp_image: segment 0: paddr=00010020 vaddr=3c060020 size=15edch ( 89820) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=00025f04 vaddr=3fc99600 size=04048h ( 16456) load[0m
+[0;32mI (112) esp_image: segment 2: paddr=00029f54 vaddr=40374000 size=060c4h ( 24772) load[0m
+[0;32mI (118) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=5fcb4h (392372) map[0m
+[0;32mI (189) esp_image: segment 4: paddr=0008fcdc vaddr=4037a0c4 size=0f520h ( 62752) load[0m
+[0;32mI (203) esp_image: segment 5: paddr=0009f204 vaddr=600fe000 size=0001ch (    28) load[0m
+[0;32mI (212) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (212) boot: Disabling RNG early entropy source...[0m
+[0;32mI (222) cpu_start: Multicore app[0m
+[0;32mI (231) cpu_start: Pro cpu start user code[0m
+[0;32mI (231) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (231) app_init: Application information:[0m
+[0;32mI (231) app_init: Project name:     BLE_HID[0m
+[0;32mI (235) app_init: App version:      9dcacda-dirty[0m
+[0;32mI (239) app_init: Compile time:     Jul 18 2025 01:08:06[0m
+[0;32mI (244) app_init: ELF file SHA256:  1f783c288...[0m
+[0;32mI (249) app_init: ESP-IDF:          v5.4.2[0m
+[0;32mI (253) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (256) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (260) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (264) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (271) heap_init: At 3FCA1130 len 000485E0 (289 KiB): RAM[0m
+[0;32mI (276) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (281) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 600FE01C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (292) spi_flash: detected chip: gd[0m
+[0;32mI (295) spi_flash: flash io: dio[0m
+[0;33mW (298) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (310) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (316) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (323) coexist: coex firmware version: 7b9a184[0m
+[0;32mI (342) coexist: coexist rom version e7ae62f[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (362) BLE_INIT: BT controller compile version [6cfabcd][0m
+[0;32mI (362) BLE_INIT: Feature Config, ADV:1, BLE_50:1, DTM:1, SCAN:1, CCA:0, SMP:1, CONNECT:1[0m
+[0;32mI (362) BLE_INIT: Bluetooth MAC: 48:ca:43:9a:51:ba[0m
+[0;32mI (362) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (412) HID_MIN: Registering custom GATT service...[0m
+[0;32mI (412) HID_MIN: Custom GATT service registered.[0m
+[0;32mI (412) HID_MIN: NimBLE host running[0m
+[0;32mI (422) NimBLE: GAP procedure initiated: stop advertising.[0m
+
+[0;32mI (422) main_task: Returned from app_main()[0m
+[0;32mI (422) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (432) NimBLE: disc_mode=2[0m
+[0;32mI (432) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (442) NimBLE: [0m
+
+[0;32mI (2242) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (2242) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (2242) NimBLE: disc_mode=2[0m
+[0;32mI (2242) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (2252) NimBLE: [0m
+
+[0;32mI (2512) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (2512) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (2672) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (2682) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (2682) NimBLE: disc_mode=2[0m
+[0;32mI (2682) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (2692) NimBLE: [0m
+
+[0;32mI (3082) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (3082) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (4282) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (4282) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (4282) NimBLE: disc_mode=2[0m
+[0;32mI (4282) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (4292) NimBLE: [0m
+
+[0;32mI (4352) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (4362) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (4852) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (4852) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (4852) NimBLE: disc_mode=2[0m
+[0;32mI (4852) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (4862) NimBLE: [0m
+
+[0;32mI (4922) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (4932) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (5812) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (5812) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (5812) NimBLE: disc_mode=2[0m
+[0;32mI (5812) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (5822) NimBLE: [0m
+
+[0;32mI (5892) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (5892) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (6082) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (6082) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (6082) NimBLE: disc_mode=2[0m
+[0;32mI (6082) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (6092) NimBLE: [0m
+
+[0;32mI (6452) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (6452) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (6622) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (6622) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (6622) NimBLE: disc_mode=2[0m
+[0;32mI (6622) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (6632) NimBLE: [0m
+
+[0;32mI (7012) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (7012) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (7162) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (7162) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (7162) NimBLE: disc_mode=2[0m
+[0;32mI (7162) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (7172) NimBLE: [0m
+
+[0;32mI (7592) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (7592) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (7832) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (7842) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (7842) NimBLE: disc_mode=2[0m
+[0;32mI (7842) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (7852) NimBLE: [0m
+
+[0;32mI (8152) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (8152) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (8272) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (8272) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (8272) NimBLE: disc_mode=2[0m
+[0;32mI (8272) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (8282) NimBLE: [0m
+
+[0;32mI (8722) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (8722) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (8872) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (8872) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (8872) NimBLE: disc_mode=2[0m
+[0;32mI (8872) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (8882) NimBLE: [0m
+
+[0;32mI (9292) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (9292) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (9532) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (9532) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (9532) NimBLE: disc_mode=2[0m
+[0;32mI (9532) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (9542) NimBLE: [0m
+
+[0;32mI (9872) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (9882) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (10162) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (10162) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (10162) NimBLE: disc_mode=2[0m
+[0;32mI (10162) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (10172) NimBLE: [0m
+
+[0;32mI (10462) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (10462) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (11252) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (11262) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (11262) NimBLE: disc_mode=2[0m
+[0;32mI (11262) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (11272) NimBLE: [0m
+
+[0;32mI (11322) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (11322) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (11782) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (11782) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (11782) NimBLE: disc_mode=2[0m
+[0;32mI (11782) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (11792) NimBLE: [0m
+
+[0;32mI (11842) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (11842) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (11932) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (11932) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (11932) NimBLE: disc_mode=2[0m
+[0;32mI (11932) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (11942) NimBLE: [0m
+
+[0;32mI (12002) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (12012) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (12472) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (12472) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (12472) NimBLE: disc_mode=2[0m
+[0;32mI (12472) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (12482) NimBLE: [0m
+
+[0;32mI (12562) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (12562) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (12802) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (12802) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (12802) NimBLE: disc_mode=2[0m
+[0;32mI (12802) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (12812) NimBLE: [0m
+
+[0;32mI (12862) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (12862) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (12992) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (13002) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (13002) NimBLE: disc_mode=2[0m
+[0;32mI (13002) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (13012) NimBLE: [0m
+
+[0;32mI (13252) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (13252) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (13322) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (13332) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (13332) NimBLE: disc_mode=2[0m
+[0;32mI (13332) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (13342) NimBLE: [0m
+
+[0;32mI (13402) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (13402) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (13532) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (13542) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (13542) NimBLE: disc_mode=2[0m
+[0;32mI (13542) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (13552) NimBLE: [0m
+
+[0;32mI (13852) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (13852) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (14032) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (14032) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (14032) NimBLE: disc_mode=2[0m
+[0;32mI (14032) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (14042) NimBLE: [0m
+
+[0;32mI (14092) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (14092) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (14452) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (14452) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (14452) NimBLE: disc_mode=2[0m
+[0;32mI (14452) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (14462) NimBLE: [0m
+
+[0;32mI (14512) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (14512) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (14602) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (14602) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (14602) NimBLE: disc_mode=2[0m
+[0;32mI (14602) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (14612) NimBLE: [0m
+
+[0;32mI (14662) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (14662) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (14752) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (14752) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (14752) NimBLE: disc_mode=2[0m
+[0;32mI (14752) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (14762) NimBLE: [0m
+
+[0;32mI (15082) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (15082) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (15262) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (15262) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (15262) NimBLE: disc_mode=2[0m
+[0;32mI (15262) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (15272) NimBLE: [0m
+
+[0;32mI (15322) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (15322) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (15362) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (15372) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (15372) NimBLE: disc_mode=2[0m
+[0;32mI (15372) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (15382) NimBLE: [0m
+
+[0;32mI (15432) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (15432) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (15512) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (15522) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (15522) NimBLE: disc_mode=2[0m
+[0;32mI (15522) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (15532) NimBLE: [0m
+
+[0;32mI (15582) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (15582) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (15662) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (15672) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (15672) NimBLE: disc_mode=2[0m
+[0;32mI (15672) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (15682) NimBLE: [0m
+
+[0;32mI (15732) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (15732) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (15862) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (15862) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (15862) NimBLE: disc_mode=2[0m
+[0;32mI (15862) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (15872) NimBLE: [0m
+
+[0;32mI (15922) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (15922) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (16582) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (16582) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (16582) NimBLE: disc_mode=2[0m
+[0;32mI (16582) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (16592) NimBLE: [0m
+
+[0;32mI (16662) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (16662) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (16972) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (16972) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (16972) NimBLE: disc_mode=2[0m
+[0;32mI (16972) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (16982) NimBLE: [0m
+
+[0;32mI (17032) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (17032) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (17182) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (17182) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (17182) NimBLE: disc_mode=2[0m
+[0;32mI (17182) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (17192) NimBLE: [0m
+
+[0;32mI (17262) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (17262) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (17332) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (17332) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (17332) NimBLE: disc_mode=2[0m
+[0;32mI (17332) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (17342) NimBLE: [0m
+
+[0;32mI (17392) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (17392) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (17662) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (17662) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (17662) NimBLE: disc_mode=2[0m
+[0;32mI (17662) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (17672) NimBLE: [0m
+
+[0;32mI (17932) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (17932) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (17972) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (17982) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (17982) NimBLE: disc_mode=2[0m
+[0;32mI (17982) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (17992) NimBLE: [0m
+
+[0;32mI (18042) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (18042) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (18122) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (18132) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (18132) NimBLE: disc_mode=2[0m
+[0;32mI (18132) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (18142) NimBLE: [0m
+
+[0;32mI (18512) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (18522) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (18622) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (18622) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (18622) NimBLE: disc_mode=2[0m
+[0;32mI (18622) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (18632) NimBLE: [0m
+
+[0;32mI (18682) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (18682) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (19102) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (19102) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (19102) NimBLE: disc_mode=2[0m
+[0;32mI (19102) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (19112) NimBLE: [0m
+
+[0;32mI (19162) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (19162) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (19292) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (19302) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (19302) NimBLE: disc_mode=2[0m
+[0;32mI (19302) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (19312) NimBLE: [0m
+
+[0;32mI (19362) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (19362) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (19442) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (19452) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (19452) NimBLE: disc_mode=2[0m
+[0;32mI (19452) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (19462) NimBLE: [0m
+
+[0;32mI (19512) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (19512) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (19552) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (19552) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (19552) NimBLE: disc_mode=2[0m
+[0;32mI (19552) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (19562) NimBLE: [0m
+
+[0;32mI (19612) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (19612) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (19762) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (19762) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (19762) NimBLE: disc_mode=2[0m
+[0;32mI (19762) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (19772) NimBLE: [0m
+
+[0;32mI (19832) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (19842) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (20182) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (20182) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (20182) NimBLE: disc_mode=2[0m
+[0;32mI (20182) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (20192) NimBLE: [0m
+
+[0;32mI (20242) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (20242) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (20282) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (20292) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (20292) NimBLE: disc_mode=2[0m
+[0;32mI (20292) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (20302) NimBLE: [0m
+
+[0;32mI (20352) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (20352) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (20392) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (20392) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (20392) NimBLE: disc_mode=2[0m
+[0;32mI (20392) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (20402) NimBLE: [0m
+
+[0;32mI (20452) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (20452) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (20542) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (20542) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (20542) NimBLE: disc_mode=2[0m
+[0;32mI (20542) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (20552) NimBLE: [0m
+
+[0;32mI (20602) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (20602) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (20642) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (20652) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (20652) NimBLE: disc_mode=2[0m
+[0;32mI (20652) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (20662) NimBLE: [0m
+
+[0;32mI (20712) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (20712) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (20852) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (20862) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (20862) NimBLE: disc_mode=2[0m
+[0;32mI (20862) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (20872) NimBLE: [0m
+
+[0;32mI (20922) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (20922) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (21062) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (21072) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (21072) NimBLE: disc_mode=2[0m
+[0;32mI (21072) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (21082) NimBLE: [0m
+
+[0;32mI (21132) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (21132) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (21212) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (21222) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (21222) NimBLE: disc_mode=2[0m
+[0;32mI (21222) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (21232) NimBLE: [0m
+
+[0;32mI (21282) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (21282) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (21692) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (21702) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (21702) NimBLE: disc_mode=2[0m
+[0;32mI (21702) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (21712) NimBLE: [0m
+
+[0;32mI (21762) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (21762) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (21902) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (21912) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (21912) NimBLE: disc_mode=2[0m
+[0;32mI (21912) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (21922) NimBLE: [0m
+
+[0;32mI (21982) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (21982) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (22402) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (22402) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (22402) NimBLE: disc_mode=2[0m
+[0;32mI (22402) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (22412) NimBLE: [0m
+
+[0;32mI (22462) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (22462) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (22512) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (22512) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (22512) NimBLE: disc_mode=2[0m
+[0;32mI (22512) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (22522) NimBLE: [0m
+
+[0;32mI (22582) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (22582) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (23112) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (23112) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (23112) NimBLE: disc_mode=2[0m
+[0;32mI (23112) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (23122) NimBLE: [0m
+
+[0;32mI (23172) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (23172) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (23322) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (23322) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (23322) NimBLE: disc_mode=2[0m
+[0;32mI (23322) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (23332) NimBLE: [0m
+
+[0;32mI (23382) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (23382) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (23472) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (23472) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (23472) NimBLE: disc_mode=2[0m
+[0;32mI (23472) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (23482) NimBLE: [0m
+
+[0;32mI (23532) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (23532) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (23682) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (23682) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (23682) NimBLE: disc_mode=2[0m
+[0;32mI (23682) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (23692) NimBLE: [0m
+
+[0;32mI (23742) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (23742) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (23892) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (23892) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (23892) NimBLE: disc_mode=2[0m
+[0;32mI (23892) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (23902) NimBLE: [0m
+
+[0;32mI (23952) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (23952) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (24042) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (24042) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (24042) NimBLE: disc_mode=2[0m
+[0;32mI (24042) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (24052) NimBLE: [0m
+
+[0;32mI (24332) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (24342) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (24412) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (24412) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (24412) NimBLE: disc_mode=2[0m
+[0;32mI (24412) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (24422) NimBLE: [0m
+
+[0;32mI (24472) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (24472) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (24622) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (24622) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (24622) NimBLE: disc_mode=2[0m
+[0;32mI (24622) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (24632) NimBLE: [0m
+
+[0;32mI (24902) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (24912) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (25002) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (25002) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (25002) NimBLE: disc_mode=2[0m
+[0;32mI (25002) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (25012) NimBLE: [0m
+
+[0;32mI (25062) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (25062) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (25252) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (25252) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (25252) NimBLE: disc_mode=2[0m
+[0;32mI (25252) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (25262) NimBLE: [0m
+
+[0;32mI (25542) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (25542) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (25582) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (25582) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (25582) NimBLE: disc_mode=2[0m
+[0;32mI (25582) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (25592) NimBLE: [0m
+
+[0;32mI (25642) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (25642) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (25792) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (25792) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (25792) NimBLE: disc_mode=2[0m
+[0;32mI (25792) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (25802) NimBLE: [0m
+
+[0;32mI (25842) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (25842) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (26482) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (26482) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (26482) NimBLE: disc_mode=2[0m
+[0;32mI (26482) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (26492) NimBLE: [0m
+
+[0;32mI (26502) ESP_HID_GAP: mtu update event; conn_handle=2 cid=4 mtu=256[0m
+[0;32mI (27262) ESP_HID_GAP: subscribe event; conn_handle=2 attr_handle=11 reason=1 prevn=0 curn=0 previ=0 curi=1[0m
+
+[0;32mI (27922) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (28172) ESP_HID_GAP: subscribe event; conn_handle=2 attr_handle=21 reason=1 prevn=0 curn=1 previ=0 curi=0[0m
+
+[0;32mI (29782) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (31152) ESP_HID_GAP: PASSKEY_ACTION_EVENT started[0m
+[0;32mI (31152) ESP_HID_GAP: Enter passkey 123456on the peer side[0m
+[0;32mI (31162) ESP_HID_GAP: ble_sm_inject_io result: 0[0m
+[0;32mI (41362) NimBLE: GAP procedure initiated: stop advertising.[0m
+
+[0;32mI (41362) ESP_HID_GAP: advertise complete; reason=29[0m
+[0;32mI (41362) NimBLE: encryption change event; status=0 [0m
+[0;32mI (41372) HID_MIN: Demo Task[0m
+[0;32mI (41902) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (43372) HID_MIN: Demo Task[0m
+[0;32mI (43572) ESP_HID_GAP: subscribe event; conn_handle=2 attr_handle=40 reason=1 prevn=0 curn=1 previ=0 curi=0[0m
+
+[0;32mI (43602) ESP_HID_GAP: subscribe event; conn_handle=2 attr_handle=48 reason=1 prevn=0 curn=1 previ=0 curi=0[0m
+
+[0;32mI (43632) ESP_HID_GAP: subscribe event; conn_handle=2 attr_handle=44 reason=1 prevn=0 curn=1 previ=0 curi=0[0m
+
+[0;32mI (44782) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (45372) HID_MIN: Demo Task[0m
+[0;32mI (47372) HID_MIN: Demo Task[0m
+[0;32mI (49372) HID_MIN: Demo Task[0m
+[0;32mI (51372) HID_MIN: Demo Task[0m
+[0;32mI (53372) HID_MIN: Demo Task[0m
+[0;32mI (55372) HID_MIN: Demo Task[0m
+[0;32mI (57372) HID_MIN: Demo Task[0m
+[0;32mI (59372) HID_MIN: Demo Task[0m
+[0;32mI (61372) HID_MIN: Demo Task[0m
+[0;32mI (63372) HID_MIN: Demo Task[0m
+[0;32mI (65372) HID_MIN: Demo Task[0m
+[0;32mI (67372) HID_MIN: Demo Task[0m
+[0;32mI (69372) HID_MIN: Demo Task[0m
+[0;32mI (71372) HID_MIN: Demo Task[0m
+[0;32mI (73372) HID_MIN: Demo Task[0m
+[0;32mI (75372) HID_MIN: Demo Task[0m
+[0;32mI (77372) HID_MIN: Demo Task[0m
+[0;32mI (79372) HID_MIN: Demo Task[0m
+[0;32mI (81372) HID_MIN: Demo Task[0m
+[0;32mI (83372) HID_MIN: Demo Task[0m
+[0;32mI (85372) HID_MIN: Demo Task[0m
+[0;32mI (87372) HID_MIN: Demo Task[0m
+[0;32mI (89372) HID_MIN: Demo Task[0m
+[0;32mI (91372) HID_MIN: Demo Task[0m
+[0;32mI (93372) HID_MIN: Demo Task[0m
+[0;32mI (95372) HID_MIN: Demo Task[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1564
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd24
+load:0x403cb700,len:0x2ed4
+entry 0x403c8928
+[0;32mI (27) boot: ESP-IDF v5.4.2 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jul 18 2025 01:08:17[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c060020 size=15edch ( 89820) map[0m
+[0;32mI (104) esp_image: segment 1: paddr=00025f04 vaddr=3fc99600 size=04048h ( 16456) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=00029f54 vaddr=40374000 size=060c4h ( 24772) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=5fcb4h (392372) map[0m
+[0;32mI (185) esp_image: segment 4: paddr=0008fcdc vaddr=4037a0c4 size=0f520h ( 62752) load[0m
+[0;32mI (199) esp_image: segment 5: paddr=0009f204 vaddr=600fe000 size=0001ch (    28) load[0m
+[0;32mI (207) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (207) boot: Disabling RNG early entropy source...[0m
+[0;32mI (217) cpu_start: Multicore app[0m
+[0;32mI (227) cpu_start: Pro cpu start user code[0m
+[0;32mI (227) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (227) app_init: Application information:[0m
+[0;32mI (227) app_init: Project name:     BLE_HID[0m
+[0;32mI (231) app_init: App version:      9dcacda-dirty[0m
+[0;32mI (235) app_init: Compile time:     Jul 18 2025 01:08:06[0m
+[0;32mI (240) app_init: ELF file SHA256:  1f783c288...[0m
+[0;32mI (244) app_init: ESP-IDF:          v5.4.2[0m
+[0;32mI (248) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (252) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (256) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (260) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (266) heap_init: At 3FCA1130 len 000485E0 (289 KiB): RAM[0m
+[0;32mI (271) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (276) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (282) heap_init: At 600FE01C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (288) spi_flash: detected chip: gd[0m
+[0;32mI (290) spi_flash: flash io: dio[0m
+[0;33mW (293) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (306) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (312) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (318) coexist: coex firmware version: 7b9a184[0m
+[0;32mI (337) coexist: coexist rom version e7ae62f[0m
+[0;32mI (338) main_task: Started on CPU0[0m
+[0;32mI (348) main_task: Calling app_main()[0m
+[0;32mI (358) BLE_INIT: BT controller compile version [6cfabcd][0m
+[0;32mI (358) BLE_INIT: Feature Config, ADV:1, BLE_50:1, DTM:1, SCAN:1, CCA:0, SMP:1, CONNECT:1[0m
+[0;32mI (358) BLE_INIT: Bluetooth MAC: 48:ca:43:9a:51:ba[0m
+[0;32mI (358) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (418) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (478) HID_MIN: Registering custom GATT service...[0m
+[0;32mI (478) HID_MIN: Custom GATT service registered.[0m
+[0;32mI (478) HID_MIN: NimBLE host running[0m
+[0;32mI (478) NimBLE: GAP procedure initiated: stop advertising.[0m
+
+[0;32mI (478) main_task: Returned from app_main()[0m
+[0;32mI (488) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (488) NimBLE: disc_mode=2[0m
+[0;32mI (488) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (498) NimBLE: [0m
+
+[0;32mI (2118) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (2118) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (2118) NimBLE: disc_mode=2[0m
+[0;32mI (2118) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (2128) NimBLE: [0m
+
+[0;32mI (2418) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (2418) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (3038) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (3038) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (3038) NimBLE: disc_mode=2[0m
+[0;32mI (3038) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (3048) NimBLE: [0m
+
+[0;32mI (3108) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (3108) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (3738) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (3738) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (3738) NimBLE: disc_mode=2[0m
+[0;32mI (3738) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (3748) NimBLE: [0m
+
+[0;32mI (3818) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (3818) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (4068) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (4068) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (4068) NimBLE: disc_mode=2[0m
+[0;32mI (4068) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (4078) NimBLE: [0m
+
+[0;32mI (4368) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (4368) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (4668) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (4668) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (4668) NimBLE: disc_mode=2[0m
+[0;32mI (4668) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (4678) NimBLE: [0m
+
+[0;32mI (4938) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (4938) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (5328) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (5328) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (5328) NimBLE: disc_mode=2[0m
+[0;32mI (5328) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (5338) NimBLE: [0m
+
+[0;32mI (5598) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (5598) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (5808) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (5808) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (5808) NimBLE: disc_mode=2[0m
+[0;32mI (5808) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (5818) NimBLE: [0m
+
+[0;32mI (6168) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (6168) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (6798) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (6798) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (6798) NimBLE: disc_mode=2[0m
+[0;32mI (6798) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (6808) NimBLE: [0m
+
+[0;32mI (6878) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (6878) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (7358) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (7358) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (7358) NimBLE: disc_mode=2[0m
+[0;32mI (7358) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (7368) NimBLE: [0m
+
+[0;32mI (7448) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (7448) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (7568) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (7568) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (7568) NimBLE: disc_mode=2[0m
+[0;32mI (7568) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (7578) NimBLE: [0m
+
+[0;32mI (8018) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (8018) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (8168) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (8168) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (8168) NimBLE: disc_mode=2[0m
+[0;32mI (8168) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (8178) NimBLE: [0m
+
+[0;32mI (8598) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (8598) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (9488) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (9488) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (9488) NimBLE: disc_mode=2[0m
+[0;32mI (9488) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (9498) NimBLE: [0m
+
+[0;32mI (9558) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (9558) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (9798) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (9798) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (9798) NimBLE: disc_mode=2[0m
+[0;32mI (9798) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (9808) NimBLE: [0m
+
+[0;32mI (10128) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (10128) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (10278) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (10278) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (10278) NimBLE: disc_mode=2[0m
+[0;32mI (10278) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (10288) NimBLE: [0m
+
+[0;32mI (10698) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (10698) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (10868) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (10868) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (10868) NimBLE: disc_mode=2[0m
+[0;32mI (10868) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (10878) NimBLE: [0m
+
+[0;32mI (11258) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (11258) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (11778) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (11778) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (11778) NimBLE: disc_mode=2[0m
+[0;32mI (11778) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (11788) NimBLE: [0m
+
+[0;32mI (11838) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (11838) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (12758) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (12758) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (12758) NimBLE: disc_mode=2[0m
+[0;32mI (12758) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (12768) NimBLE: [0m
+
+[0;32mI (12818) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (12818) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (13068) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (13068) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (13068) NimBLE: disc_mode=2[0m
+[0;32mI (13068) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (13078) NimBLE: [0m
+
+[0;32mI (13388) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (13388) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (13548) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (13548) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (13548) NimBLE: disc_mode=2[0m
+[0;32mI (13548) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (13558) NimBLE: [0m
+
+[0;32mI (13958) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (13958) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (14088) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (14088) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (14088) NimBLE: disc_mode=2[0m
+[0;32mI (14088) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (14098) NimBLE: [0m
+
+[0;32mI (14508) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (14508) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (14648) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (14648) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (14648) NimBLE: disc_mode=2[0m
+[0;32mI (14648) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (14658) NimBLE: [0m
+
+[0;32mI (14708) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (14708) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (14918) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (14918) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (14918) NimBLE: disc_mode=2[0m
+[0;32mI (14918) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (14928) NimBLE: [0m
+
+[0;32mI (14988) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (14988) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (15458) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (15458) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (15458) NimBLE: disc_mode=2[0m
+[0;32mI (15458) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (15468) NimBLE: [0m
+
+[0;32mI (15528) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (15528) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (16058) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (16058) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (16058) NimBLE: disc_mode=2[0m
+[0;32mI (16058) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (16068) NimBLE: [0m
+
+[0;32mI (16148) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (16148) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (16538) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (16538) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (16538) NimBLE: disc_mode=2[0m
+[0;32mI (16538) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (16548) NimBLE: [0m
+
+[0;32mI (16808) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (16808) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (18008) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (18008) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (18008) NimBLE: disc_mode=2[0m
+[0;32mI (18008) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (18018) NimBLE: [0m
+
+[0;32mI (18068) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (18068) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (18768) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (18768) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (18768) NimBLE: disc_mode=2[0m
+[0;32mI (18768) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (18778) NimBLE: [0m
+
+[0;32mI (18828) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (18828) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (19188) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (19188) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (19188) NimBLE: disc_mode=2[0m
+[0;32mI (19188) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (19198) NimBLE: [0m
+
+[0;32mI (19448) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (19448) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (19788) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (19788) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (19788) NimBLE: disc_mode=2[0m
+[0;32mI (19788) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (19798) NimBLE: [0m
+
+[0;32mI (20058) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (20058) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (20168) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (20168) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (20168) NimBLE: disc_mode=2[0m
+[0;32mI (20168) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (20178) NimBLE: [0m
+
+[0;32mI (20238) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (20238) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (20868) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (20868) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (20868) NimBLE: disc_mode=2[0m
+[0;32mI (20868) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (20878) NimBLE: [0m
+
+[0;32mI (20928) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (20928) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (21788) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (21788) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (21788) NimBLE: disc_mode=2[0m
+[0;32mI (21788) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (21798) NimBLE: [0m
+
+[0;32mI (21848) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (21848) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (21978) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (21978) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (21978) NimBLE: disc_mode=2[0m
+[0;32mI (21978) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (21988) NimBLE: [0m
+
+[0;32mI (22038) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (22038) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (22128) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (22128) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (22128) NimBLE: disc_mode=2[0m
+[0;32mI (22128) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (22138) NimBLE: [0m
+
+[0;32mI (22188) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (22188) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (22458) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (22458) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (22458) NimBLE: disc_mode=2[0m
+[0;32mI (22458) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (22468) NimBLE: [0m
+
+[0;32mI (22518) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (22518) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (23108) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (23108) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (23108) NimBLE: disc_mode=2[0m
+[0;32mI (23108) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (23118) NimBLE: [0m
+
+[0;32mI (23118) ESP_HID_GAP: mtu update event; conn_handle=2 cid=4 mtu=256[0m
+[0;32mI (23298) ESP_HID_GAP: subscribe event; conn_handle=2 attr_handle=11 reason=1 prevn=0 curn=0 previ=0 curi=1[0m
+
+[0;32mI (23468) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (23718) ESP_HID_GAP: subscribe event; conn_handle=2 attr_handle=21 reason=1 prevn=0 curn=1 previ=0 curi=0[0m
+
+[0;32mI (25328) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (34988) ESP_HID_GAP: subscribe event; conn_handle=2 attr_handle=11 reason=2 prevn=0 curn=0 previ=1 curi=0[0m
+
+[0;32mI (34988) ESP_HID_GAP: subscribe event; conn_handle=2 attr_handle=21 reason=2 prevn=1 curn=0 previ=0 curi=0[0m
+
+[0;32mI (34988) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (34998) NimBLE: error enabling advertisement; rc=2[0m
+
+[0;32mI (39548) ESP_HID_GAP: mtu update event; conn_handle=1 cid=4 mtu=256[0m
+[0;32mI (39608) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (39608) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (39608) NimBLE: disc_mode=2[0m
+[0;32mI (39608) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (39618) NimBLE: [0m
+
+[0;32mI (40268) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=11 reason=1 prevn=0 curn=0 previ=0 curi=1[0m
+
+[0;32mI (40928) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (41228) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=21 reason=1 prevn=0 curn=1 previ=0 curi=0[0m
+
+[0;32mI (42848) ESP_HID_GAP: connection updated; status=0[0m
+---------------------------------------------------------
+[0;32mI (49028) HID_MIN: Custom Write received (1 bytes): l[0m
+[0;32mI (49028) HID_MIN: Typing string: l[0m
+[1;31mE (49028) NIMBLE_HIDD: Unable to fetch protocol_mode[0m
+
+
+***ERROR*** A stack overflow in task nimble_host has been detected.
+
+
+Backtrace: 0x40375bdd:0x3fcb4eb0 0x40380879:0x3fcb4ed0 0x40381686:0x3fcb4ef0 0x4038287f:0x3fcb4f70 0x4038174c:0x3fcb4f90 0x40381742:0x0000000c |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 1f783c288
+
+Rebooting...
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375b1c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1564
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd24
+load:0x403cb700,len:0x2ed4
+entry 0x403c8928
+[0;32mI (31) boot: ESP-IDF v5.4.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 18 2025 01:08:17[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v0.2[0m
+[0;32mI (34) boot: efuse block revision: v1.3[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (42) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (45) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (56) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) esp_image: segment 0: paddr=00010020 vaddr=3c060020 size=15edch ( 89820) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=00025f04 vaddr=3fc99600 size=04048h ( 16456) load[0m
+[0;32mI (112) esp_image: segment 2: paddr=00029f54 vaddr=40374000 size=060c4h ( 24772) load[0m
+[0;32mI (118) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=5fcb4h (392372) map[0m
+[0;32mI (189) esp_image: segment 4: paddr=0008fcdc vaddr=4037a0c4 size=0f520h ( 62752) load[0m
+[0;32mI (203) esp_image: segment 5: paddr=0009f204 vaddr=600fe000 size=0001ch (    28) load[0m
+[0;32mI (212) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (212) boot: Disabling RNG early entropy source...[0m
+[0;32mI (222) cpu_start: Multicore app[0m
+[0;32mI (231) cpu_start: Pro cpu start user code[0m
+[0;32mI (231) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (231) app_init: Application information:[0m
+[0;32mI (231) app_init: Project name:     BLE_HID[0m
+[0;32mI (235) app_init: App version:      9dcacda-dirty[0m
+[0;32mI (239) app_init: Compile time:     Jul 18 2025 01:08:06[0m
+[0;32mI (244) app_init: ELF file SHA256:  1f783c288...[0m
+[0;32mI (249) app_init: ESP-IDF:          v5.4.2[0m
+[0;32mI (253) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (256) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (260) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (264) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (271) heap_init: At 3FCA1130 len 000485E0 (289 KiB): RAM[0m
+[0;32mI (276) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (281) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 600FE01C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (292) spi_flash: detected chip: gd[0m
+[0;32mI (295) spi_flash: flash io: dio[0m
+[0;33mW (298) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (310) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (316) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (323) coexist: coex firmware version: 7b9a184[0m
+[0;32mI (342) coexist: coexist rom version e7ae62f[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (362) BLE_INIT: BT controller compile version [6cfabcd][0m
+[0;32mI (362) BLE_INIT: Feature Config, ADV:1, BLE_50:1, DTM:1, SCAN:1, CCA:0, SMP:1, CONNECT:1[0m
+[0;32mI (362) BLE_INIT: Bluetooth MAC: 48:ca:43:9a:51:ba[0m
+[0;32mI (362) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (412) HID_MIN: Registering custom GATT service...[0m
+[0;32mI (412) HID_MIN: Custom GATT service registered.[0m
+[0;32mI (412) HID_MIN: NimBLE host running[0m
+[0;32mI (422) NimBLE: GAP procedure initiated: stop advertising.[0m
+
+[0;32mI (422) main_task: Returned from app_main()[0m
+[0;32mI (422) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (422) NimBLE: disc_mode=2[0m
+[0;32mI (432) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (442) NimBLE: [0m
+
+[0;32mI (9702) ESP_HID_GAP: mtu update event; conn_handle=1 cid=4 mtu=256[0m
+[0;32mI (9762) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (9762) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (9762) NimBLE: disc_mode=2[0m
+[0;32mI (9762) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (9772) NimBLE: [0m
+
+[0;32mI (10362) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=11 reason=1 prevn=0 curn=0 previ=0 curi=1[0m
+
+[0;32mI (11382) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (11542) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=21 reason=1 prevn=0 curn=1 previ=0 curi=0[0m
+
+[0;32mI (13242) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (14622) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=11 reason=2 prevn=0 curn=0 previ=1 curi=0[0m
+
+[0;32mI (14622) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=21 reason=2 prevn=1 curn=0 previ=0 curi=0[0m
+
+[0;32mI (14622) ESP_HID_GAP: disconnect; reason=531[0m
+[1;31mE (14632) NimBLE: error enabling advertisement; rc=2[0m
+

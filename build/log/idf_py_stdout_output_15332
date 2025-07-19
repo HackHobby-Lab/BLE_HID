@@ -1,0 +1,2361 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1564
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd24
+load:0x403cb700,len:0x2ed4
+entry 0x403c8928
+[0;32mI (27) boot: ESP-IDF v5.4.2 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jul 18 2025 01:08:17[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c060020 size=15edch ( 89820) map[0m
+[0;32mI (104) esp_image: segment 1: paddr=00025f04 vaddr=3fc99600 size=04048h ( 16456) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=00029f54 vaddr=40374000 size=060c4h ( 24772) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=5fcb0h (392368) map[0m
+[0;32mI (185) esp_image: segment 4: paddr=0008fcd8 vaddr=4037a0c4 size=0f520h ( 62752) load[0m
+[0;32mI (199) esp_image: segment 5: paddr=0009f200 vaddr=600fe000 size=0001ch (    28) load[0m
+[0;32mI (207) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (207) boot: Disabling RNG early entropy source...[0m
+[0;32mI (217) cpu_start: Multicore app[0m
+[0;32mI (227) cpu_start: Pro cpu start user code[0m
+[0;32mI (227) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (227) app_init: Application information:[0m
+[0;32mI (227) app_init: Project name:     BLE_HID[0m
+[0;32mI (231) app_init: App version:      9dcacda-dirty[0m
+[0;32mI (235) app_init: Compile time:     Jul 18 2025 01:08:06[0m
+[0;32mI (240) app_init: ELF file SHA256:  3134ca121...[0m
+[0;32mI (244) app_init: ESP-IDF:          v5.4.2[0m
+[0;32mI (248) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (252) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (256) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (260) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (266) heap_init: At 3FCA1130 len 000485E0 (289 KiB): RAM[0m
+[0;32mI (271) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (276) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (282) heap_init: At 600FE01C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (288) spi_flash: detected chip: gd[0m
+[0;32mI (290) spi_flash: flash io: dio[0m
+[0;33mW (293) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (306) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (312) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (318) coexist: coex firmware version: 7b9a184[0m
+[0;32mI (337) coexist: coexist rom version e7ae62f[0m
+[0;32mI (338) main_task: Started on CPU0[0m
+[0;32mI (348) main_task: Calling app_main()[0m
+[0;32mI (358) BLE_INIT: BT controller compile version [6cfabcd][0m
+[0;32mI (358) BLE_INIT: Feature Config, ADV:1, BLE_50:1, DTM:1, SCAN:1, CCA:0, SMP:1, CONNECT:1[0m
+[0;32mI (358) BLE_INIT: Bluetooth MAC: 48:ca:43:9a:51:ba[0m
+[0;32mI (358) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (408) HID_MIN: Registering custom GATT service...[0m
+[0;32mI (408) HID_MIN: Custom GATT service registered.[0m
+[0;32mI (408) HID_MIN: NimBLE host running[0m
+[0;32mI (408) NimBLE: GAP procedure initiated: stop advertising.[0m
+
+[0;32mI (418) main_task: Returned from app_main()[0m
+[0;32mI (418) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (418) NimBLE: disc_mode=2[0m
+[0;32mI (418) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (428) NimBLE: [0m
+
+[0;32mI (10938) ESP_HID_GAP: mtu update event; conn_handle=1 cid=4 mtu=256[0m
+[0;32mI (10998) ESP_HID_GAP: connection established; status=0[0m
+[0;32mI (10998) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (10998) NimBLE: disc_mode=2[0m
+[0;32mI (10998) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=48 adv_itvl_max=80[0m
+[0;32mI (11008) NimBLE: [0m
+
+[0;32mI (11648) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=11 reason=1 prevn=0 curn=0 previ=0 curi=1[0m
+
+[0;32mI (12308) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (12668) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=21 reason=1 prevn=0 curn=1 previ=0 curi=0[0m
+
+[0;32mI (14228) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (17948) ESP_HID_GAP: PASSKEY_ACTION_EVENT started[0m
+[0;32mI (17948) ESP_HID_GAP: Enter passkey 123456on the peer side[0m
+[0;32mI (17948) ESP_HID_GAP: ble_sm_inject_io result: 0[0m
+[0;32mI (28038) NimBLE: GAP procedure initiated: stop advertising.[0m
+
+[0;32mI (28038) ESP_HID_GAP: advertise complete; reason=29[0m
+[0;32mI (28038) NimBLE: encryption change event; status=0 [0m
+[0;32mI (28038) HID_MIN: Demo Task[0m
+[0;32mI (28578) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (29998) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=40 reason=1 prevn=0 curn=1 previ=0 curi=0[0m
+
+[0;32mI (30028) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=48 reason=1 prevn=0 curn=1 previ=0 curi=0[0m
+
+[0;32mI (30038) HID_MIN: Demo Task[0m
+[0;32mI (30058) ESP_HID_GAP: subscribe event; conn_handle=1 attr_handle=44 reason=1 prevn=0 curn=1 previ=0 curi=0[0m
+
+[0;32mI (31228) ESP_HID_GAP: connection updated; status=0[0m
+[0;32mI (32038) HID_MIN: Demo Task[0m
+[0;32mI (34038) HID_MIN: Demo Task[0m
+---------------------------------------------------------
+[0;32mI (35688) HID_MIN: Custom Write received (10 bytes): 1234567890[0m
+[0;32mI (35688) HID_MIN: Typing string: 1234567890[0m
+[0;32mI (35688) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35688) NimBLE: att_handle=44[0m
+
+[0;32mI (35698) NimBLE: notify_tx event; conn_handle=1 attr_handle=44 status=0 is_indication=0[0m
+[0;32mI (35718) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35718) NimBLE: att_handle=44[0m
+
+[0;32mI (35718) NimBLE: notify_tx event; conn_handle=1 attr_handle=44 status=0 is_indication=0[0m
+[0;32mI (35738) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35738) NimBLE: att_handle=44[0m
+
+[0;32mI (35738) NimBLE: notify_tx event; conn_handle=1 attr_handle=44 status=0 is_indication=0[0m
+[0;32mI (35748) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35748) NimBLE: att_handle=44[0m
+
+[0;32mI (35748) NimBLE: notify_tx event; conn_handle=1 attr_handle=44 status=0 is_indication=0[0m
+[0;32mI (35778) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35778) NimBLE: att_handle=44[0m
+
+[0;32mI (35778) NimBLE: notify_tx event; conn_handle=1 attr_handle=44 status=0 is_indication=0[0m
+[0;32mI (35788) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35788) NimBLE: att_handle=44[0m
+
+[0;32mI (35788) NimBLE: notify_tx event; conn_handle=1 attr_handle=44 status=0 is_indication=0[0m
+[0;32mI (35818) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35818) NimBLE: att_handle=44[0m
+
+[0;32mI (35818) NimBLE: notify_tx event; conn_handle=1 attr_handle=44 status=0 is_indication=0[0m
+[0;32mI (35828) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35828) NimBLE: att_handle=44[0m
+
+[0;32mI (35828) NimBLE: notify_tx event; conn_handle=1 attr_handle=44 status=0 is_indication=0[0m
+[0;32mI (35858) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35858) NimBLE: att_handle=44[0m
+
+[0;32mI (35858) NimBLE: notify_tx event; conn_handle=1 attr_handle=44 status=0 is_indication=0[0m
+[0;32mI (35868) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35868) NimBLE: att_handle=44[0m
+
+[0;32mI (35868) NimBLE: notify_tx event; conn_handle=1 attr_handle=44 status=0 is_indication=0[0m
+[0;32mI (35898) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35898) NimBLE: att_handle=44[0m
+
+[0;32mI (35898) NimBLE: notify_tx event; conn_handle=1 attr_handle=44 status=0 is_indication=0[0m
+[0;32mI (35908) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35908) NimBLE: att_handle=44[0m
+
+[0;32mI (35908) NimBLE: notify_tx event; conn_handle=1 attr_handle=44 status=0 is_indication=0[0m
+[0;32mI (35938) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35938) NimBLE: att_handle=44[0m
+
+[0;32mI (35938) NimBLE: notify_tx event; conn_handle=1 attr_handle=44 status=0 is_indication=0[0m
+[0;32mI (35948) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35948) NimBLE: att_handle=44[0m
+
+[0;32mI (35948) NimBLE: notify_tx event; conn_handle=1 attr_handle=44 status=0 is_indication=0[0m
+[0;32mI (35978) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35978) NimBLE: att_handle=44[0m
+
+[0;32mI (35978) NimBLE: notify_tx event; conn_handle=1 attr_handle=44 status=0 is_indication=0[0m
+[0;32mI (35988) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (35988) NimBLE: att_handle=44[0m
+
+[0;32mI (35988) NimBLE: notify_tx event; conn_handle=1 attr_handle=44 status=0 is_indication=0[0m
+[0;32mI (36018) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36018) NimBLE: att_handle=44[0m
+
+[0;32mI (36018) NimBLE: notify_tx event; conn_handle=1 attr_handle=44 status=0 is_indication=0[0m
+[0;32mI (36028) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (36028) NimBLE: att_handle=44[0m
+
+[0;32mI (36028) NimBLE: notify_tx event; conn_handle=1 attr_handle=44 status=0 is_indication=0[0m
+[0;32mI (36038) HID_MIN: Demo Task[0m
+[1;31mE (36058) NIMBLE_HIDD: Unable to fetch protocol_mode[0m
+
+[1;31mE (36068) NIMBLE_HIDD: Unable to fetch protocol_mode[0m
+
+[0;32mI (38038) HID_MIN: Demo Task[0m
+[0;32mI (40038) HID_MIN: Demo Task[0m
+[0;32mI (42038) HID_MIN: Demo Task[0m
+[0;32mI (44038) HID_MIN: Demo Task[0m
+[0;32mI (46038) HID_MIN: Demo Task[0m
+[0;32mI (48038) HID_MIN: Demo Task[0m
+[0;32mI (50038) HID_MIN: Demo Task[0m
+[0;32mI (52038) HID_MIN: Demo Task[0m
+[0;32mI (54038) HID_MIN: Demo Task[0m
+[0;32mI (56038) HID_MIN: Demo Task[0m
+[0;32mI (58038) HID_MIN: Demo Task[0m
+[0;32mI (60038) HID_MIN: Demo Task[0m
+[0;32mI (62038) HID_MIN: Demo Task[0m
+[0;32mI (64038) HID_MIN: Demo Task[0m
+[0;32mI (66038) HID_MIN: Demo Task[0m
+[0;32mI (68038) HID_MIN: Demo Task[0m
+[0;32mI (70038) HID_MIN: Demo Task[0m
+[0;32mI (72038) HID_MIN: Demo Task[0m
+[0;32mI (74038) HID_MIN: Demo Task[0m
+[0;32mI (76038) HID_MIN: Demo Task[0m
+[0;32mI (78038) HID_MIN: Demo Task[0m
+[0;32mI (80038) HID_MIN: Demo Task[0m
+[0;32mI (82038) HID_MIN: Demo Task[0m
+[0;32mI (84038) HID_MIN: Demo Task[0m
+[0;32mI (86038) HID_MIN: Demo Task[0m
+[0;32mI (88038) HID_MIN: Demo Task[0m
+[0;32mI (90038) HID_MIN: Demo Task[0m
+[0;32mI (92038) HID_MIN: Demo Task[0m
+[0;32mI (94038) HID_MIN: Demo Task[0m
+[0;32mI (96038) HID_MIN: Demo Task[0m
+[0;32mI (98038) HID_MIN: Demo Task[0m
+[0;32mI (100038) HID_MIN: Demo Task[0m
+[0;32mI (102038) HID_MIN: Demo Task[0m
+[0;32mI (104038) HID_MIN: Demo Task[0m
+[0;32mI (106038) HID_MIN: Demo Task[0m
+[0;32mI (108038) HID_MIN: Demo Task[0m
+[0;32mI (110038) HID_MIN: Demo Task[0m
+[0;32mI (112038) HID_MIN: Demo Task[0m
+[0;32mI (114038) HID_MIN: Demo Task[0m
+[0;32mI (116038) HID_MIN: Demo Task[0m
+[0;32mI (118038) HID_MIN: Demo Task[0m
+[0;32mI (120038) HID_MIN: Demo Task[0m
+[0;32mI (122038) HID_MIN: Demo Task[0m
+[0;32mI (124038) HID_MIN: Demo Task[0m
+[0;32mI (126038) HID_MIN: Demo Task[0m
+[0;32mI (128038) HID_MIN: Demo Task[0m
+[0;32mI (130038) HID_MIN: Demo Task[0m
+[0;32mI (132038) HID_MIN: Demo Task[0m
+[0;32mI (134038) HID_MIN: Demo Task[0m
+[0;32mI (136038) HID_MIN: Demo Task[0m
+[0;32mI (138038) HID_MIN: Demo Task[0m
+[0;32mI (140038) HID_MIN: Demo Task[0m
+[0;32mI (142038) HID_MIN: Demo Task[0m
+[0;32mI (144038) HID_MIN: Demo Task[0m
+[0;32mI (146038) HID_MIN: Demo Task[0m
+[0;32mI (148038) HID_MIN: Demo Task[0m
+[0;32mI (150038) HID_MIN: Demo Task[0m
+[0;32mI (152038) HID_MIN: Demo Task[0m
+[0;32mI (154038) HID_MIN: Demo Task[0m
+[0;32mI (156038) HID_MIN: Demo Task[0m
+[0;32mI (158038) HID_MIN: Demo Task[0m
+[0;32mI (160038) HID_MIN: Demo Task[0m
+[0;32mI (162038) HID_MIN: Demo Task[0m
+[0;32mI (164038) HID_MIN: Demo Task[0m
+[0;32mI (166038) HID_MIN: Demo Task[0m
+[0;32mI (168038) HID_MIN: Demo Task[0m
+[0;32mI (170038) HID_MIN: Demo Task[0m
+[0;32mI (172038) HID_MIN: Demo Task[0m
+[0;32mI (174038) HID_MIN: Demo Task[0m
+[0;32mI (176038) HID_MIN: Demo Task[0m
+[0;32mI (178038) HID_MIN: Demo Task[0m
+[0;32mI (180038) HID_MIN: Demo Task[0m
+[0;32mI (182038) HID_MIN: Demo Task[0m
+[0;32mI (184038) HID_MIN: Demo Task[0m
+[0;32mI (186038) HID_MIN: Demo Task[0m
+[0;32mI (188038) HID_MIN: Demo Task[0m
+[0;32mI (190038) HID_MIN: Demo Task[0m
+[0;32mI (192038) HID_MIN: Demo Task[0m
+[0;32mI (194038) HID_MIN: Demo Task[0m
+[0;32mI (196038) HID_MIN: Demo Task[0m
+[0;32mI (198038) HID_MIN: Demo Task[0m
+[0;32mI (200038) HID_MIN: Demo Task[0m
+[0;32mI (202038) HID_MIN: Demo Task[0m
+[0;32mI (204038) HID_MIN: Demo Task[0m
+[0;32mI (206038) HID_MIN: Demo Task[0m
+[0;32mI (208038) HID_MIN: Demo Task[0m
+[0;32mI (210038) HID_MIN: Demo Task[0m
+[0;32mI (212038) HID_MIN: Demo Task[0m
+[0;32mI (214038) HID_MIN: Demo Task[0m
+[0;32mI (216038) HID_MIN: Demo Task[0m
+[0;32mI (218038) HID_MIN: Demo Task[0m
+[0;32mI (220038) HID_MIN: Demo Task[0m
+[0;32mI (222038) HID_MIN: Demo Task[0m
+[0;32mI (224038) HID_MIN: Demo Task[0m
+[0;32mI (226038) HID_MIN: Demo Task[0m
+[0;32mI (228038) HID_MIN: Demo Task[0m
+[0;32mI (230038) HID_MIN: Demo Task[0m
+[0;32mI (232038) HID_MIN: Demo Task[0m
+[0;32mI (234038) HID_MIN: Demo Task[0m
+[0;32mI (236038) HID_MIN: Demo Task[0m
+[0;32mI (238038) HID_MIN: Demo Task[0m
+[0;32mI (240038) HID_MIN: Demo Task[0m
+[0;32mI (242038) HID_MIN: Demo Task[0m
+[0;32mI (244038) HID_MIN: Demo Task[0m
+[0;32mI (246038) HID_MIN: Demo Task[0m
+[0;32mI (248038) HID_MIN: Demo Task[0m
+[0;32mI (250038) HID_MIN: Demo Task[0m
+[0;32mI (252038) HID_MIN: Demo Task[0m
+[0;32mI (254038) HID_MIN: Demo Task[0m
+[0;32mI (256038) HID_MIN: Demo Task[0m
+[0;32mI (258038) HID_MIN: Demo Task[0m
+[0;32mI (260038) HID_MIN: Demo Task[0m
+[0;32mI (262038) HID_MIN: Demo Task[0m
+[0;32mI (264038) HID_MIN: Demo Task[0m
+[0;32mI (266038) HID_MIN: Demo Task[0m
+[0;32mI (268038) HID_MIN: Demo Task[0m
+[0;32mI (270038) HID_MIN: Demo Task[0m
+[0;32mI (272038) HID_MIN: Demo Task[0m
+[0;32mI (274038) HID_MIN: Demo Task[0m
+[0;32mI (276038) HID_MIN: Demo Task[0m
+[0;32mI (278038) HID_MIN: Demo Task[0m
+[0;32mI (280038) HID_MIN: Demo Task[0m
+[0;32mI (282038) HID_MIN: Demo Task[0m
+[0;32mI (284038) HID_MIN: Demo Task[0m
+[0;32mI (286038) HID_MIN: Demo Task[0m
+[0;32mI (288038) HID_MIN: Demo Task[0m
+[0;32mI (290038) HID_MIN: Demo Task[0m
+[0;32mI (292038) HID_MIN: Demo Task[0m
+[0;32mI (294038) HID_MIN: Demo Task[0m
+[0;32mI (296038) HID_MIN: Demo Task[0m
+[0;32mI (298038) HID_MIN: Demo Task[0m
+[0;32mI (300038) HID_MIN: Demo Task[0m
+[0;32mI (302038) HID_MIN: Demo Task[0m
+[0;32mI (304038) HID_MIN: Demo Task[0m
+[0;32mI (306038) HID_MIN: Demo Task[0m
+[0;32mI (308038) HID_MIN: Demo Task[0m
+[0;32mI (310038) HID_MIN: Demo Task[0m
+[0;32mI (312038) HID_MIN: Demo Task[0m
+[0;32mI (314038) HID_MIN: Demo Task[0m
+[0;32mI (316038) HID_MIN: Demo Task[0m
+[0;32mI (318038) HID_MIN: Demo Task[0m
+[0;32mI (320038) HID_MIN: Demo Task[0m
+[0;32mI (322038) HID_MIN: Demo Task[0m
+[0;32mI (324038) HID_MIN: Demo Task[0m
+[0;32mI (326038) HID_MIN: Demo Task[0m
+[0;32mI (328038) HID_MIN: Demo Task[0m
+[0;32mI (330038) HID_MIN: Demo Task[0m
+[0;32mI (332038) HID_MIN: Demo Task[0m
+[0;32mI (334038) HID_MIN: Demo Task[0m
+[0;32mI (336038) HID_MIN: Demo Task[0m
+[0;32mI (338038) HID_MIN: Demo Task[0m
+[0;32mI (340038) HID_MIN: Demo Task[0m
+[0;32mI (342038) HID_MIN: Demo Task[0m
+[0;32mI (344038) HID_MIN: Demo Task[0m
+[0;32mI (346038) HID_MIN: Demo Task[0m
+[0;32mI (348038) HID_MIN: Demo Task[0m
+[0;32mI (350038) HID_MIN: Demo Task[0m
+[0;32mI (352038) HID_MIN: Demo Task[0m
+[0;32mI (354038) HID_MIN: Demo Task[0m
+[0;32mI (356038) HID_MIN: Demo Task[0m
+[0;32mI (358038) HID_MIN: Demo Task[0m
+[0;32mI (360038) HID_MIN: Demo Task[0m
+[0;32mI (362038) HID_MIN: Demo Task[0m
+[0;32mI (364038) HID_MIN: Demo Task[0m
+[0;32mI (366038) HID_MIN: Demo Task[0m
+[0;32mI (368038) HID_MIN: Demo Task[0m
+[0;32mI (370038) HID_MIN: Demo Task[0m
+[0;32mI (372038) HID_MIN: Demo Task[0m
+[0;32mI (374038) HID_MIN: Demo Task[0m
+[0;32mI (376038) HID_MIN: Demo Task[0m
+[0;32mI (378038) HID_MIN: Demo Task[0m
+[0;32mI (380038) HID_MIN: Demo Task[0m
+[0;32mI (382038) HID_MIN: Demo Task[0m
+[0;32mI (384038) HID_MIN: Demo Task[0m
+[0;32mI (386038) HID_MIN: Demo Task[0m
+[0;32mI (388038) HID_MIN: Demo Task[0m
+[0;32mI (390038) HID_MIN: Demo Task[0m
+[0;32mI (392038) HID_MIN: Demo Task[0m
+[0;32mI (394038) HID_MIN: Demo Task[0m
+[0;32mI (396038) HID_MIN: Demo Task[0m
+[0;32mI (398038) HID_MIN: Demo Task[0m
+[0;32mI (400038) HID_MIN: Demo Task[0m
+[0;32mI (402038) HID_MIN: Demo Task[0m
+[0;32mI (404038) HID_MIN: Demo Task[0m
+[0;32mI (406038) HID_MIN: Demo Task[0m
+[0;32mI (408038) HID_MIN: Demo Task[0m
+[0;32mI (410038) HID_MIN: Demo Task[0m
+[0;32mI (412038) HID_MIN: Demo Task[0m
+[0;32mI (414038) HID_MIN: Demo Task[0m
+[0;32mI (416038) HID_MIN: Demo Task[0m
+[0;32mI (418038) HID_MIN: Demo Task[0m
+[0;32mI (420038) HID_MIN: Demo Task[0m
+[0;32mI (422038) HID_MIN: Demo Task[0m
+[0;32mI (424038) HID_MIN: Demo Task[0m
+[0;32mI (426038) HID_MIN: Demo Task[0m
+[0;32mI (428038) HID_MIN: Demo Task[0m
+[0;32mI (430038) HID_MIN: Demo Task[0m
+[0;32mI (432038) HID_MIN: Demo Task[0m
+[0;32mI (434038) HID_MIN: Demo Task[0m
+[0;32mI (436038) HID_MIN: Demo Task[0m
+[0;32mI (438038) HID_MIN: Demo Task[0m
+[0;32mI (440038) HID_MIN: Demo Task[0m
+[0;32mI (442038) HID_MIN: Demo Task[0m
+[0;32mI (444038) HID_MIN: Demo Task[0m
+[0;32mI (446038) HID_MIN: Demo Task[0m
+[0;32mI (448038) HID_MIN: Demo Task[0m
+[0;32mI (450038) HID_MIN: Demo Task[0m
+[0;32mI (452038) HID_MIN: Demo Task[0m
+[0;32mI (454038) HID_MIN: Demo Task[0m
+[0;32mI (456038) HID_MIN: Demo Task[0m
+[0;32mI (458038) HID_MIN: Demo Task[0m
+[0;32mI (460038) HID_MIN: Demo Task[0m
+[0;32mI (462038) HID_MIN: Demo Task[0m
+[0;32mI (464038) HID_MIN: Demo Task[0m
+[0;32mI (466038) HID_MIN: Demo Task[0m
+[0;32mI (468038) HID_MIN: Demo Task[0m
+[0;32mI (470038) HID_MIN: Demo Task[0m
+[0;32mI (472038) HID_MIN: Demo Task[0m
+[0;32mI (474038) HID_MIN: Demo Task[0m
+[0;32mI (476038) HID_MIN: Demo Task[0m
+[0;32mI (478038) HID_MIN: Demo Task[0m
+[0;32mI (480038) HID_MIN: Demo Task[0m
+[0;32mI (482038) HID_MIN: Demo Task[0m
+[0;32mI (484038) HID_MIN: Demo Task[0m
+[0;32mI (486038) HID_MIN: Demo Task[0m
+[0;32mI (488038) HID_MIN: Demo Task[0m
+[0;32mI (490038) HID_MIN: Demo Task[0m
+[0;32mI (492038) HID_MIN: Demo Task[0m
+[0;32mI (494038) HID_MIN: Demo Task[0m
+[0;32mI (496038) HID_MIN: Demo Task[0m
+[0;32mI (498038) HID_MIN: Demo Task[0m
+[0;32mI (500038) HID_MIN: Demo Task[0m
+[0;32mI (502038) HID_MIN: Demo Task[0m
+[0;32mI (504038) HID_MIN: Demo Task[0m
+[0;32mI (506038) HID_MIN: Demo Task[0m
+[0;32mI (508038) HID_MIN: Demo Task[0m
+[0;32mI (510038) HID_MIN: Demo Task[0m
+[0;32mI (512038) HID_MIN: Demo Task[0m
+[0;32mI (514038) HID_MIN: Demo Task[0m
+[0;32mI (516038) HID_MIN: Demo Task[0m
+[0;32mI (518038) HID_MIN: Demo Task[0m
+[0;32mI (520038) HID_MIN: Demo Task[0m
+[0;32mI (522038) HID_MIN: Demo Task[0m
+[0;32mI (524038) HID_MIN: Demo Task[0m
+[0;32mI (526038) HID_MIN: Demo Task[0m
+[0;32mI (528038) HID_MIN: Demo Task[0m
+[0;32mI (530038) HID_MIN: Demo Task[0m
+[0;32mI (532038) HID_MIN: Demo Task[0m
+[0;32mI (534038) HID_MIN: Demo Task[0m
+[0;32mI (536038) HID_MIN: Demo Task[0m
+[0;32mI (538038) HID_MIN: Demo Task[0m
+[0;32mI (540038) HID_MIN: Demo Task[0m
+[0;32mI (542038) HID_MIN: Demo Task[0m
+[0;32mI (544038) HID_MIN: Demo Task[0m
+[0;32mI (546038) HID_MIN: Demo Task[0m
+[0;32mI (548038) HID_MIN: Demo Task[0m
+[0;32mI (550038) HID_MIN: Demo Task[0m
+[0;32mI (552038) HID_MIN: Demo Task[0m
+[0;32mI (554038) HID_MIN: Demo Task[0m
+[0;32mI (556038) HID_MIN: Demo Task[0m
+[0;32mI (558038) HID_MIN: Demo Task[0m
+[0;32mI (560038) HID_MIN: Demo Task[0m
+[0;32mI (562038) HID_MIN: Demo Task[0m
+[0;32mI (564038) HID_MIN: Demo Task[0m
+[0;32mI (566038) HID_MIN: Demo Task[0m
+[0;32mI (568038) HID_MIN: Demo Task[0m
+[0;32mI (570038) HID_MIN: Demo Task[0m
+[0;32mI (572038) HID_MIN: Demo Task[0m
+[0;32mI (574038) HID_MIN: Demo Task[0m
+[0;32mI (576038) HID_MIN: Demo Task[0m
+[0;32mI (578038) HID_MIN: Demo Task[0m
+[0;32mI (580038) HID_MIN: Demo Task[0m
+[0;32mI (582038) HID_MIN: Demo Task[0m
+[0;32mI (584038) HID_MIN: Demo Task[0m
+[0;32mI (586038) HID_MIN: Demo Task[0m
+[0;32mI (588038) HID_MIN: Demo Task[0m
+[0;32mI (590038) HID_MIN: Demo Task[0m
+[0;32mI (592038) HID_MIN: Demo Task[0m
+[0;32mI (594038) HID_MIN: Demo Task[0m
+[0;32mI (596038) HID_MIN: Demo Task[0m
+[0;32mI (598038) HID_MIN: Demo Task[0m
+[0;32mI (600038) HID_MIN: Demo Task[0m
+[0;32mI (602038) HID_MIN: Demo Task[0m
+[0;32mI (604038) HID_MIN: Demo Task[0m
+[0;32mI (606038) HID_MIN: Demo Task[0m
+[0;32mI (608038) HID_MIN: Demo Task[0m
+[0;32mI (610038) HID_MIN: Demo Task[0m
+[0;32mI (612038) HID_MIN: Demo Task[0m
+[0;32mI (614038) HID_MIN: Demo Task[0m
+[0;32mI (616038) HID_MIN: Demo Task[0m
+[0;32mI (618038) HID_MIN: Demo Task[0m
+[0;32mI (620038) HID_MIN: Demo Task[0m
+[0;32mI (622038) HID_MIN: Demo Task[0m
+[0;32mI (624038) HID_MIN: Demo Task[0m
+[0;32mI (626038) HID_MIN: Demo Task[0m
+[0;32mI (628038) HID_MIN: Demo Task[0m
+[0;32mI (630038) HID_MIN: Demo Task[0m
+[0;32mI (632038) HID_MIN: Demo Task[0m
+[0;32mI (634038) HID_MIN: Demo Task[0m
+[0;32mI (636038) HID_MIN: Demo Task[0m
+[0;32mI (638038) HID_MIN: Demo Task[0m
+[0;32mI (640038) HID_MIN: Demo Task[0m
+[0;32mI (642038) HID_MIN: Demo Task[0m
+[0;32mI (644038) HID_MIN: Demo Task[0m
+[0;32mI (646038) HID_MIN: Demo Task[0m
+[0;32mI (648038) HID_MIN: Demo Task[0m
+[0;32mI (650038) HID_MIN: Demo Task[0m
+[0;32mI (652038) HID_MIN: Demo Task[0m
+[0;32mI (654038) HID_MIN: Demo Task[0m
+[0;32mI (656038) HID_MIN: Demo Task[0m
+[0;32mI (658038) HID_MIN: Demo Task[0m
+[0;32mI (660038) HID_MIN: Demo Task[0m
+[0;32mI (662038) HID_MIN: Demo Task[0m
+[0;32mI (664038) HID_MIN: Demo Task[0m
+[0;32mI (666038) HID_MIN: Demo Task[0m
+[0;32mI (668038) HID_MIN: Demo Task[0m
+[0;32mI (670038) HID_MIN: Demo Task[0m
+[0;32mI (672038) HID_MIN: Demo Task[0m
+[0;32mI (674038) HID_MIN: Demo Task[0m
+[0;32mI (676038) HID_MIN: Demo Task[0m
+[0;32mI (678038) HID_MIN: Demo Task[0m
+[0;32mI (680038) HID_MIN: Demo Task[0m
+[0;32mI (682038) HID_MIN: Demo Task[0m
+[0;32mI (684038) HID_MIN: Demo Task[0m
+[0;32mI (686038) HID_MIN: Demo Task[0m
+[0;32mI (688038) HID_MIN: Demo Task[0m
+[0;32mI (690038) HID_MIN: Demo Task[0m
+[0;32mI (692038) HID_MIN: Demo Task[0m
+[0;32mI (694038) HID_MIN: Demo Task[0m
+[0;32mI (696038) HID_MIN: Demo Task[0m
+[0;32mI (698038) HID_MIN: Demo Task[0m
+[0;32mI (700038) HID_MIN: Demo Task[0m
+[0;32mI (702038) HID_MIN: Demo Task[0m
+[0;32mI (704038) HID_MIN: Demo Task[0m
+[0;32mI (706038) HID_MIN: Demo Task[0m
+[0;32mI (708038) HID_MIN: Demo Task[0m
+[0;32mI (710038) HID_MIN: Demo Task[0m
+[0;32mI (712038) HID_MIN: Demo Task[0m
+[0;32mI (714038) HID_MIN: Demo Task[0m
+[0;32mI (716038) HID_MIN: Demo Task[0m
+[0;32mI (718038) HID_MIN: Demo Task[0m
+[0;32mI (720038) HID_MIN: Demo Task[0m
+[0;32mI (722038) HID_MIN: Demo Task[0m
+[0;32mI (724038) HID_MIN: Demo Task[0m
+[0;32mI (726038) HID_MIN: Demo Task[0m
+[0;32mI (728038) HID_MIN: Demo Task[0m
+[0;32mI (730038) HID_MIN: Demo Task[0m
+[0;32mI (732038) HID_MIN: Demo Task[0m
+[0;32mI (734038) HID_MIN: Demo Task[0m
+[0;32mI (736038) HID_MIN: Demo Task[0m
+[0;32mI (738038) HID_MIN: Demo Task[0m
+[0;32mI (740038) HID_MIN: Demo Task[0m
+[0;32mI (742038) HID_MIN: Demo Task[0m
+[0;32mI (744038) HID_MIN: Demo Task[0m
+[0;32mI (746038) HID_MIN: Demo Task[0m
+[0;32mI (748038) HID_MIN: Demo Task[0m
+[0;32mI (750038) HID_MIN: Demo Task[0m
+[0;32mI (752038) HID_MIN: Demo Task[0m
+[0;32mI (754038) HID_MIN: Demo Task[0m
+[0;32mI (756038) HID_MIN: Demo Task[0m
+[0;32mI (758038) HID_MIN: Demo Task[0m
+[0;32mI (760038) HID_MIN: Demo Task[0m
+[0;32mI (762038) HID_MIN: Demo Task[0m
+[0;32mI (764038) HID_MIN: Demo Task[0m
+[0;32mI (766038) HID_MIN: Demo Task[0m
+[0;32mI (768038) HID_MIN: Demo Task[0m
+[0;32mI (770038) HID_MIN: Demo Task[0m
+[0;32mI (772038) HID_MIN: Demo Task[0m
+[0;32mI (774038) HID_MIN: Demo Task[0m
+[0;32mI (776038) HID_MIN: Demo Task[0m
+[0;32mI (778038) HID_MIN: Demo Task[0m
+[0;32mI (780038) HID_MIN: Demo Task[0m
+[0;32mI (782038) HID_MIN: Demo Task[0m
+[0;32mI (784038) HID_MIN: Demo Task[0m
+[0;32mI (786038) HID_MIN: Demo Task[0m
+[0;32mI (788038) HID_MIN: Demo Task[0m
+[0;32mI (790038) HID_MIN: Demo Task[0m
+[0;32mI (792038) HID_MIN: Demo Task[0m
+[0;32mI (794038) HID_MIN: Demo Task[0m
+[0;32mI (796038) HID_MIN: Demo Task[0m
+[0;32mI (798038) HID_MIN: Demo Task[0m
+[0;32mI (800038) HID_MIN: Demo Task[0m
+[0;32mI (802038) HID_MIN: Demo Task[0m
+[0;32mI (804038) HID_MIN: Demo Task[0m
+[0;32mI (806038) HID_MIN: Demo Task[0m
+[0;32mI (808038) HID_MIN: Demo Task[0m
+[0;32mI (810038) HID_MIN: Demo Task[0m
+[0;32mI (812038) HID_MIN: Demo Task[0m
+[0;32mI (814038) HID_MIN: Demo Task[0m
+[0;32mI (816038) HID_MIN: Demo Task[0m
+[0;32mI (818038) HID_MIN: Demo Task[0m
+[0;32mI (820038) HID_MIN: Demo Task[0m
+[0;32mI (822038) HID_MIN: Demo Task[0m
+[0;32mI (824038) HID_MIN: Demo Task[0m
+[0;32mI (826038) HID_MIN: Demo Task[0m
+[0;32mI (828038) HID_MIN: Demo Task[0m
+[0;32mI (830038) HID_MIN: Demo Task[0m
+[0;32mI (832038) HID_MIN: Demo Task[0m
+[0;32mI (834038) HID_MIN: Demo Task[0m
+[0;32mI (836038) HID_MIN: Demo Task[0m
+[0;32mI (838038) HID_MIN: Demo Task[0m
+[0;32mI (840038) HID_MIN: Demo Task[0m
+[0;32mI (842038) HID_MIN: Demo Task[0m
+[0;32mI (844038) HID_MIN: Demo Task[0m
+[0;32mI (846038) HID_MIN: Demo Task[0m
+[0;32mI (848038) HID_MIN: Demo Task[0m
+[0;32mI (850038) HID_MIN: Demo Task[0m
+[0;32mI (852038) HID_MIN: Demo Task[0m
+[0;32mI (854038) HID_MIN: Demo Task[0m
+[0;32mI (856038) HID_MIN: Demo Task[0m
+[0;32mI (858038) HID_MIN: Demo Task[0m
+[0;32mI (860038) HID_MIN: Demo Task[0m
+[0;32mI (862038) HID_MIN: Demo Task[0m
+[0;32mI (864038) HID_MIN: Demo Task[0m
+[0;32mI (866038) HID_MIN: Demo Task[0m
+[0;32mI (868038) HID_MIN: Demo Task[0m
+[0;32mI (870038) HID_MIN: Demo Task[0m
+[0;32mI (872038) HID_MIN: Demo Task[0m
+[0;32mI (874038) HID_MIN: Demo Task[0m
+[0;32mI (876038) HID_MIN: Demo Task[0m
+[0;32mI (878038) HID_MIN: Demo Task[0m
+[0;32mI (880038) HID_MIN: Demo Task[0m
+[0;32mI (882038) HID_MIN: Demo Task[0m
+[0;32mI (884038) HID_MIN: Demo Task[0m
+[0;32mI (886038) HID_MIN: Demo Task[0m
+[0;32mI (888038) HID_MIN: Demo Task[0m
+[0;32mI (890038) HID_MIN: Demo Task[0m
+[0;32mI (892038) HID_MIN: Demo Task[0m
+[0;32mI (894038) HID_MIN: Demo Task[0m
+[0;32mI (896038) HID_MIN: Demo Task[0m
+[0;32mI (898038) HID_MIN: Demo Task[0m
+[0;32mI (900038) HID_MIN: Demo Task[0m
+[0;32mI (902038) HID_MIN: Demo Task[0m
+[0;32mI (904038) HID_MIN: Demo Task[0m
+[0;32mI (906038) HID_MIN: Demo Task[0m
+[0;32mI (908038) HID_MIN: Demo Task[0m
+[0;32mI (910038) HID_MIN: Demo Task[0m
+[0;32mI (912038) HID_MIN: Demo Task[0m
+[0;32mI (914038) HID_MIN: Demo Task[0m
+[0;32mI (916038) HID_MIN: Demo Task[0m
+[0;32mI (918038) HID_MIN: Demo Task[0m
+[0;32mI (920038) HID_MIN: Demo Task[0m
+[0;32mI (922038) HID_MIN: Demo Task[0m
+[0;32mI (924038) HID_MIN: Demo Task[0m
+[0;32mI (926038) HID_MIN: Demo Task[0m
+[0;32mI (928038) HID_MIN: Demo Task[0m
+[0;32mI (930038) HID_MIN: Demo Task[0m
+[0;32mI (932038) HID_MIN: Demo Task[0m
+[0;32mI (934038) HID_MIN: Demo Task[0m
+[0;32mI (936038) HID_MIN: Demo Task[0m
+[0;32mI (938038) HID_MIN: Demo Task[0m
+[0;32mI (940038) HID_MIN: Demo Task[0m
+[0;32mI (942038) HID_MIN: Demo Task[0m
+[0;32mI (944038) HID_MIN: Demo Task[0m
+[0;32mI (946038) HID_MIN: Demo Task[0m
+[0;32mI (948038) HID_MIN: Demo Task[0m
+[0;32mI (950038) HID_MIN: Demo Task[0m
+[0;32mI (952038) HID_MIN: Demo Task[0m
+[0;32mI (954038) HID_MIN: Demo Task[0m
+[0;32mI (956038) HID_MIN: Demo Task[0m
+[0;32mI (958038) HID_MIN: Demo Task[0m
+[0;32mI (960038) HID_MIN: Demo Task[0m
+[0;32mI (962038) HID_MIN: Demo Task[0m
+[0;32mI (964038) HID_MIN: Demo Task[0m
+[0;32mI (966038) HID_MIN: Demo Task[0m
+[0;32mI (968038) HID_MIN: Demo Task[0m
+[0;32mI (970038) HID_MIN: Demo Task[0m
+[0;32mI (972038) HID_MIN: Demo Task[0m
+[0;32mI (974038) HID_MIN: Demo Task[0m
+[0;32mI (976038) HID_MIN: Demo Task[0m
+[0;32mI (978038) HID_MIN: Demo Task[0m
+[0;32mI (980038) HID_MIN: Demo Task[0m
+[0;32mI (982038) HID_MIN: Demo Task[0m
+[0;32mI (984038) HID_MIN: Demo Task[0m
+[0;32mI (986038) HID_MIN: Demo Task[0m
+[0;32mI (988038) HID_MIN: Demo Task[0m
+[0;32mI (990038) HID_MIN: Demo Task[0m
+[0;32mI (992038) HID_MIN: Demo Task[0m
+[0;32mI (994038) HID_MIN: Demo Task[0m
+[0;32mI (996038) HID_MIN: Demo Task[0m
+[0;32mI (998038) HID_MIN: Demo Task[0m
+[0;32mI (1000038) HID_MIN: Demo Task[0m
+[0;32mI (1002038) HID_MIN: Demo Task[0m
+[0;32mI (1004038) HID_MIN: Demo Task[0m
+[0;32mI (1006038) HID_MIN: Demo Task[0m
+[0;32mI (1008038) HID_MIN: Demo Task[0m
+[0;32mI (1010038) HID_MIN: Demo Task[0m
+[0;32mI (1012038) HID_MIN: Demo Task[0m
+[0;32mI (1014038) HID_MIN: Demo Task[0m
+[0;32mI (1016038) HID_MIN: Demo Task[0m
+[0;32mI (1018038) HID_MIN: Demo Task[0m
+[0;32mI (1020038) HID_MIN: Demo Task[0m
+[0;32mI (1022038) HID_MIN: Demo Task[0m
+[0;32mI (1024038) HID_MIN: Demo Task[0m
+[0;32mI (1026038) HID_MIN: Demo Task[0m
+[0;32mI (1028038) HID_MIN: Demo Task[0m
+[0;32mI (1030038) HID_MIN: Demo Task[0m
+[0;32mI (1032038) HID_MIN: Demo Task[0m
+[0;32mI (1034038) HID_MIN: Demo Task[0m
+[0;32mI (1036038) HID_MIN: Demo Task[0m
+[0;32mI (1038038) HID_MIN: Demo Task[0m
+[0;32mI (1040038) HID_MIN: Demo Task[0m
+[0;32mI (1042038) HID_MIN: Demo Task[0m
+[0;32mI (1044038) HID_MIN: Demo Task[0m
+[0;32mI (1046038) HID_MIN: Demo Task[0m
+[0;32mI (1048038) HID_MIN: Demo Task[0m
+[0;32mI (1050038) HID_MIN: Demo Task[0m
+[0;32mI (1052038) HID_MIN: Demo Task[0m
+[0;32mI (1054038) HID_MIN: Demo Task[0m
+[0;32mI (1056038) HID_MIN: Demo Task[0m
+[0;32mI (1058038) HID_MIN: Demo Task[0m
+[0;32mI (1060038) HID_MIN: Demo Task[0m
+[0;32mI (1062038) HID_MIN: Demo Task[0m
+[0;32mI (1064038) HID_MIN: Demo Task[0m
+[0;32mI (1066038) HID_MIN: Demo Task[0m
+[0;32mI (1068038) HID_MIN: Demo Task[0m
+[0;32mI (1070038) HID_MIN: Demo Task[0m
+[0;32mI (1072038) HID_MIN: Demo Task[0m
+[0;32mI (1074038) HID_MIN: Demo Task[0m
+[0;32mI (1076038) HID_MIN: Demo Task[0m
+[0;32mI (1078038) HID_MIN: Demo Task[0m
+[0;32mI (1080038) HID_MIN: Demo Task[0m
+[0;32mI (1082038) HID_MIN: Demo Task[0m
+[0;32mI (1084038) HID_MIN: Demo Task[0m
+[0;32mI (1086038) HID_MIN: Demo Task[0m
+[0;32mI (1088038) HID_MIN: Demo Task[0m
+[0;32mI (1090038) HID_MIN: Demo Task[0m
+[0;32mI (1092038) HID_MIN: Demo Task[0m
+[0;32mI (1094038) HID_MIN: Demo Task[0m
+[0;32mI (1096038) HID_MIN: Demo Task[0m
+[0;32mI (1098038) HID_MIN: Demo Task[0m
+[0;32mI (1100038) HID_MIN: Demo Task[0m
+[0;32mI (1102038) HID_MIN: Demo Task[0m
+[0;32mI (1104038) HID_MIN: Demo Task[0m
+[0;32mI (1106038) HID_MIN: Demo Task[0m
+[0;32mI (1108038) HID_MIN: Demo Task[0m
+[0;32mI (1110038) HID_MIN: Demo Task[0m
+[0;32mI (1112038) HID_MIN: Demo Task[0m
+[0;32mI (1114038) HID_MIN: Demo Task[0m
+[0;32mI (1116038) HID_MIN: Demo Task[0m
+[0;32mI (1118038) HID_MIN: Demo Task[0m
+[0;32mI (1120038) HID_MIN: Demo Task[0m
+[0;32mI (1122038) HID_MIN: Demo Task[0m
+[0;32mI (1124038) HID_MIN: Demo Task[0m
+[0;32mI (1126038) HID_MIN: Demo Task[0m
+[0;32mI (1128038) HID_MIN: Demo Task[0m
+[0;32mI (1130038) HID_MIN: Demo Task[0m
+[0;32mI (1132038) HID_MIN: Demo Task[0m
+[0;32mI (1134038) HID_MIN: Demo Task[0m
+[0;32mI (1136038) HID_MIN: Demo Task[0m
+[0;32mI (1138038) HID_MIN: Demo Task[0m
+[0;32mI (1140038) HID_MIN: Demo Task[0m
+[0;32mI (1142038) HID_MIN: Demo Task[0m
+[0;32mI (1144038) HID_MIN: Demo Task[0m
+[0;32mI (1146038) HID_MIN: Demo Task[0m
+[0;32mI (1148038) HID_MIN: Demo Task[0m
+[0;32mI (1150038) HID_MIN: Demo Task[0m
+[0;32mI (1152038) HID_MIN: Demo Task[0m
+[0;32mI (1154038) HID_MIN: Demo Task[0m
+[0;32mI (1156038) HID_MIN: Demo Task[0m
+[0;32mI (1158038) HID_MIN: Demo Task[0m
+[0;32mI (1160038) HID_MIN: Demo Task[0m
+[0;32mI (1162038) HID_MIN: Demo Task[0m
+[0;32mI (1164038) HID_MIN: Demo Task[0m
+[0;32mI (1166038) HID_MIN: Demo Task[0m
+[0;32mI (1168038) HID_MIN: Demo Task[0m
+[0;32mI (1170038) HID_MIN: Demo Task[0m
+[0;32mI (1172038) HID_MIN: Demo Task[0m
+[0;32mI (1174038) HID_MIN: Demo Task[0m
+[0;32mI (1176038) HID_MIN: Demo Task[0m
+[0;32mI (1178038) HID_MIN: Demo Task[0m
+[0;32mI (1180038) HID_MIN: Demo Task[0m
+[0;32mI (1182038) HID_MIN: Demo Task[0m
+[0;32mI (1184038) HID_MIN: Demo Task[0m
+[0;32mI (1186038) HID_MIN: Demo Task[0m
+[0;32mI (1188038) HID_MIN: Demo Task[0m
+[0;32mI (1190038) HID_MIN: Demo Task[0m
+[0;32mI (1192038) HID_MIN: Demo Task[0m
+[0;32mI (1194038) HID_MIN: Demo Task[0m
+[0;32mI (1196038) HID_MIN: Demo Task[0m
+[0;32mI (1198038) HID_MIN: Demo Task[0m
+[0;32mI (1200038) HID_MIN: Demo Task[0m
+[0;32mI (1202038) HID_MIN: Demo Task[0m
+[0;32mI (1204038) HID_MIN: Demo Task[0m
+[0;32mI (1206038) HID_MIN: Demo Task[0m
+[0;32mI (1208038) HID_MIN: Demo Task[0m
+[0;32mI (1210038) HID_MIN: Demo Task[0m
+[0;32mI (1212038) HID_MIN: Demo Task[0m
+[0;32mI (1214038) HID_MIN: Demo Task[0m
+[0;32mI (1216038) HID_MIN: Demo Task[0m
+[0;32mI (1218038) HID_MIN: Demo Task[0m
+[0;32mI (1220038) HID_MIN: Demo Task[0m
+[0;32mI (1222038) HID_MIN: Demo Task[0m
+[0;32mI (1224038) HID_MIN: Demo Task[0m
+[0;32mI (1226038) HID_MIN: Demo Task[0m
+[0;32mI (1228038) HID_MIN: Demo Task[0m
+[0;32mI (1230038) HID_MIN: Demo Task[0m
+[0;32mI (1232038) HID_MIN: Demo Task[0m
+[0;32mI (1234038) HID_MIN: Demo Task[0m
+[0;32mI (1236038) HID_MIN: Demo Task[0m
+[0;32mI (1238038) HID_MIN: Demo Task[0m
+[0;32mI (1240038) HID_MIN: Demo Task[0m
+[0;32mI (1242038) HID_MIN: Demo Task[0m
+[0;32mI (1244038) HID_MIN: Demo Task[0m
+[0;32mI (1246038) HID_MIN: Demo Task[0m
+[0;32mI (1248038) HID_MIN: Demo Task[0m
+[0;32mI (1250038) HID_MIN: Demo Task[0m
+[0;32mI (1252038) HID_MIN: Demo Task[0m
+[0;32mI (1254038) HID_MIN: Demo Task[0m
+[0;32mI (1256038) HID_MIN: Demo Task[0m
+[0;32mI (1258038) HID_MIN: Demo Task[0m
+[0;32mI (1260038) HID_MIN: Demo Task[0m
+[0;32mI (1262038) HID_MIN: Demo Task[0m
+[0;32mI (1264038) HID_MIN: Demo Task[0m
+[0;32mI (1266038) HID_MIN: Demo Task[0m
+[0;32mI (1268038) HID_MIN: Demo Task[0m
+[0;32mI (1270038) HID_MIN: Demo Task[0m
+[0;32mI (1272038) HID_MIN: Demo Task[0m
+[0;32mI (1274038) HID_MIN: Demo Task[0m
+[0;32mI (1276038) HID_MIN: Demo Task[0m
+[0;32mI (1278038) HID_MIN: Demo Task[0m
+[0;32mI (1280038) HID_MIN: Demo Task[0m
+[0;32mI (1282038) HID_MIN: Demo Task[0m
+[0;32mI (1284038) HID_MIN: Demo Task[0m
+[0;32mI (1286038) HID_MIN: Demo Task[0m
+[0;32mI (1288038) HID_MIN: Demo Task[0m
+[0;32mI (1290038) HID_MIN: Demo Task[0m
+[0;32mI (1292038) HID_MIN: Demo Task[0m
+[0;32mI (1294038) HID_MIN: Demo Task[0m
+[0;32mI (1296038) HID_MIN: Demo Task[0m
+[0;32mI (1298038) HID_MIN: Demo Task[0m
+[0;32mI (1300038) HID_MIN: Demo Task[0m
+[0;32mI (1302038) HID_MIN: Demo Task[0m
+[0;32mI (1304038) HID_MIN: Demo Task[0m
+[0;32mI (1306038) HID_MIN: Demo Task[0m
+[0;32mI (1308038) HID_MIN: Demo Task[0m
+[0;32mI (1310038) HID_MIN: Demo Task[0m
+[0;32mI (1312038) HID_MIN: Demo Task[0m
+[0;32mI (1314038) HID_MIN: Demo Task[0m
+[0;32mI (1316038) HID_MIN: Demo Task[0m
+[0;32mI (1318038) HID_MIN: Demo Task[0m
+[0;32mI (1320038) HID_MIN: Demo Task[0m
+[0;32mI (1322038) HID_MIN: Demo Task[0m
+[0;32mI (1324038) HID_MIN: Demo Task[0m
+[0;32mI (1326038) HID_MIN: Demo Task[0m
+[0;32mI (1328038) HID_MIN: Demo Task[0m
+[0;32mI (1330038) HID_MIN: Demo Task[0m
+[0;32mI (1332038) HID_MIN: Demo Task[0m
+[0;32mI (1334038) HID_MIN: Demo Task[0m
+[0;32mI (1336038) HID_MIN: Demo Task[0m
+[0;32mI (1338038) HID_MIN: Demo Task[0m
+[0;32mI (1340038) HID_MIN: Demo Task[0m
+[0;32mI (1342038) HID_MIN: Demo Task[0m
+[0;32mI (1344038) HID_MIN: Demo Task[0m
+[0;32mI (1346038) HID_MIN: Demo Task[0m
+[0;32mI (1348038) HID_MIN: Demo Task[0m
+[0;32mI (1350038) HID_MIN: Demo Task[0m
+[0;32mI (1352038) HID_MIN: Demo Task[0m
+[0;32mI (1354038) HID_MIN: Demo Task[0m
+[0;32mI (1356038) HID_MIN: Demo Task[0m
+[0;32mI (1358038) HID_MIN: Demo Task[0m
+[0;32mI (1360038) HID_MIN: Demo Task[0m
+[0;32mI (1362038) HID_MIN: Demo Task[0m
+[0;32mI (1364038) HID_MIN: Demo Task[0m
+[0;32mI (1366038) HID_MIN: Demo Task[0m
+[0;32mI (1368038) HID_MIN: Demo Task[0m
+[0;32mI (1370038) HID_MIN: Demo Task[0m
+[0;32mI (1372038) HID_MIN: Demo Task[0m
+[0;32mI (1374038) HID_MIN: Demo Task[0m
+[0;32mI (1376038) HID_MIN: Demo Task[0m
+[0;32mI (1378038) HID_MIN: Demo Task[0m
+[0;32mI (1380038) HID_MIN: Demo Task[0m
+[0;32mI (1382038) HID_MIN: Demo Task[0m
+[0;32mI (1384038) HID_MIN: Demo Task[0m
+[0;32mI (1386038) HID_MIN: Demo Task[0m
+[0;32mI (1388038) HID_MIN: Demo Task[0m
+[0;32mI (1390038) HID_MIN: Demo Task[0m
+[0;32mI (1392038) HID_MIN: Demo Task[0m
+[0;32mI (1394038) HID_MIN: Demo Task[0m
+[0;32mI (1396038) HID_MIN: Demo Task[0m
+[0;32mI (1398038) HID_MIN: Demo Task[0m
+[0;32mI (1400038) HID_MIN: Demo Task[0m
+[0;32mI (1402038) HID_MIN: Demo Task[0m
+[0;32mI (1404038) HID_MIN: Demo Task[0m
+[0;32mI (1406038) HID_MIN: Demo Task[0m
+[0;32mI (1408038) HID_MIN: Demo Task[0m
+[0;32mI (1410038) HID_MIN: Demo Task[0m
+[0;32mI (1412038) HID_MIN: Demo Task[0m
+[0;32mI (1414038) HID_MIN: Demo Task[0m
+[0;32mI (1416038) HID_MIN: Demo Task[0m
+[0;32mI (1418038) HID_MIN: Demo Task[0m
+[0;32mI (1420038) HID_MIN: Demo Task[0m
+[0;32mI (1422038) HID_MIN: Demo Task[0m
+[0;32mI (1424038) HID_MIN: Demo Task[0m
+[0;32mI (1426038) HID_MIN: Demo Task[0m
+[0;32mI (1428038) HID_MIN: Demo Task[0m
+[0;32mI (1430038) HID_MIN: Demo Task[0m
+[0;32mI (1432038) HID_MIN: Demo Task[0m
+[0;32mI (1434038) HID_MIN: Demo Task[0m
+[0;32mI (1436038) HID_MIN: Demo Task[0m
+[0;32mI (1438038) HID_MIN: Demo Task[0m
+[0;32mI (1440038) HID_MIN: Demo Task[0m
+[0;32mI (1442038) HID_MIN: Demo Task[0m
+[0;32mI (1444038) HID_MIN: Demo Task[0m
+[0;32mI (1446038) HID_MIN: Demo Task[0m
+[0;32mI (1448038) HID_MIN: Demo Task[0m
+[0;32mI (1450038) HID_MIN: Demo Task[0m
+[0;32mI (1452038) HID_MIN: Demo Task[0m
+[0;32mI (1454038) HID_MIN: Demo Task[0m
+[0;32mI (1456038) HID_MIN: Demo Task[0m
+[0;32mI (1458038) HID_MIN: Demo Task[0m
+[0;32mI (1460038) HID_MIN: Demo Task[0m
+[0;32mI (1462038) HID_MIN: Demo Task[0m
+[0;32mI (1464038) HID_MIN: Demo Task[0m
+[0;32mI (1466038) HID_MIN: Demo Task[0m
+[0;32mI (1468038) HID_MIN: Demo Task[0m
+[0;32mI (1470038) HID_MIN: Demo Task[0m
+[0;32mI (1472038) HID_MIN: Demo Task[0m
+[0;32mI (1474038) HID_MIN: Demo Task[0m
+[0;32mI (1476038) HID_MIN: Demo Task[0m
+[0;32mI (1478038) HID_MIN: Demo Task[0m
+[0;32mI (1480038) HID_MIN: Demo Task[0m
+[0;32mI (1482038) HID_MIN: Demo Task[0m
+[0;32mI (1484038) HID_MIN: Demo Task[0m
+[0;32mI (1486038) HID_MIN: Demo Task[0m
+[0;32mI (1488038) HID_MIN: Demo Task[0m
+[0;32mI (1490038) HID_MIN: Demo Task[0m
+[0;32mI (1492038) HID_MIN: Demo Task[0m
+[0;32mI (1494038) HID_MIN: Demo Task[0m
+[0;32mI (1496038) HID_MIN: Demo Task[0m
+[0;32mI (1498038) HID_MIN: Demo Task[0m
+[0;32mI (1500038) HID_MIN: Demo Task[0m
+[0;32mI (1502038) HID_MIN: Demo Task[0m
+[0;32mI (1504038) HID_MIN: Demo Task[0m
+[0;32mI (1506038) HID_MIN: Demo Task[0m
+[0;32mI (1508038) HID_MIN: Demo Task[0m
+[0;32mI (1510038) HID_MIN: Demo Task[0m
+[0;32mI (1512038) HID_MIN: Demo Task[0m
+[0;32mI (1514038) HID_MIN: Demo Task[0m
+[0;32mI (1516038) HID_MIN: Demo Task[0m
+[0;32mI (1518038) HID_MIN: Demo Task[0m
+[0;32mI (1520038) HID_MIN: Demo Task[0m
+[0;32mI (1522038) HID_MIN: Demo Task[0m
+[0;32mI (1524038) HID_MIN: Demo Task[0m
+[0;32mI (1526038) HID_MIN: Demo Task[0m
+[0;32mI (1528038) HID_MIN: Demo Task[0m
+[0;32mI (1530038) HID_MIN: Demo Task[0m
+[0;32mI (1532038) HID_MIN: Demo Task[0m
+[0;32mI (1534038) HID_MIN: Demo Task[0m
+[0;32mI (1536038) HID_MIN: Demo Task[0m
+[0;32mI (1538038) HID_MIN: Demo Task[0m
+[0;32mI (1540038) HID_MIN: Demo Task[0m
+[0;32mI (1542038) HID_MIN: Demo Task[0m
+[0;32mI (1544038) HID_MIN: Demo Task[0m
+[0;32mI (1546038) HID_MIN: Demo Task[0m
+[0;32mI (1548038) HID_MIN: Demo Task[0m
+[0;32mI (1550038) HID_MIN: Demo Task[0m
+[0;32mI (1552038) HID_MIN: Demo Task[0m
+[0;32mI (1554038) HID_MIN: Demo Task[0m
+[0;32mI (1556038) HID_MIN: Demo Task[0m
+[0;32mI (1558038) HID_MIN: Demo Task[0m
+[0;32mI (1560038) HID_MIN: Demo Task[0m
+[0;32mI (1562038) HID_MIN: Demo Task[0m
+[0;32mI (1564038) HID_MIN: Demo Task[0m
+[0;32mI (1566038) HID_MIN: Demo Task[0m
+[0;32mI (1568038) HID_MIN: Demo Task[0m
+[0;32mI (1570038) HID_MIN: Demo Task[0m
+[0;32mI (1572038) HID_MIN: Demo Task[0m
+[0;32mI (1574038) HID_MIN: Demo Task[0m
+[0;32mI (1576038) HID_MIN: Demo Task[0m
+[0;32mI (1578038) HID_MIN: Demo Task[0m
+[0;32mI (1580038) HID_MIN: Demo Task[0m
+[0;32mI (1582038) HID_MIN: Demo Task[0m
+[0;32mI (1584038) HID_MIN: Demo Task[0m
+[0;32mI (1586038) HID_MIN: Demo Task[0m
+[0;32mI (1588038) HID_MIN: Demo Task[0m
+[0;32mI (1590038) HID_MIN: Demo Task[0m
+[0;32mI (1592038) HID_MIN: Demo Task[0m
+[0;32mI (1594038) HID_MIN: Demo Task[0m
+[0;32mI (1596038) HID_MIN: Demo Task[0m
+[0;32mI (1598038) HID_MIN: Demo Task[0m
+[0;32mI (1600038) HID_MIN: Demo Task[0m
+[0;32mI (1602038) HID_MIN: Demo Task[0m
+[0;32mI (1604038) HID_MIN: Demo Task[0m
+[0;32mI (1606038) HID_MIN: Demo Task[0m
+[0;32mI (1608038) HID_MIN: Demo Task[0m
+[0;32mI (1610038) HID_MIN: Demo Task[0m
+[0;32mI (1612038) HID_MIN: Demo Task[0m
+[0;32mI (1614038) HID_MIN: Demo Task[0m
+[0;32mI (1616038) HID_MIN: Demo Task[0m
+[0;32mI (1618038) HID_MIN: Demo Task[0m
+[0;32mI (1620038) HID_MIN: Demo Task[0m
+[0;32mI (1622038) HID_MIN: Demo Task[0m
+[0;32mI (1624038) HID_MIN: Demo Task[0m
+[0;32mI (1626038) HID_MIN: Demo Task[0m
+[0;32mI (1628038) HID_MIN: Demo Task[0m
+[0;32mI (1630038) HID_MIN: Demo Task[0m
+[0;32mI (1632038) HID_MIN: Demo Task[0m
+[0;32mI (1634038) HID_MIN: Demo Task[0m
+[0;32mI (1636038) HID_MIN: Demo Task[0m
+[0;32mI (1638038) HID_MIN: Demo Task[0m
+[0;32mI (1640038) HID_MIN: Demo Task[0m
+[0;32mI (1642038) HID_MIN: Demo Task[0m
+[0;32mI (1644038) HID_MIN: Demo Task[0m
+[0;32mI (1646038) HID_MIN: Demo Task[0m
+[0;32mI (1648038) HID_MIN: Demo Task[0m
+[0;32mI (1650038) HID_MIN: Demo Task[0m
+[0;32mI (1652038) HID_MIN: Demo Task[0m
+[0;32mI (1654038) HID_MIN: Demo Task[0m
+[0;32mI (1656038) HID_MIN: Demo Task[0m
+[0;32mI (1658038) HID_MIN: Demo Task[0m
+[0;32mI (1660038) HID_MIN: Demo Task[0m
+[0;32mI (1662038) HID_MIN: Demo Task[0m
+[0;32mI (1664038) HID_MIN: Demo Task[0m
+[0;32mI (1666038) HID_MIN: Demo Task[0m
+[0;32mI (1668038) HID_MIN: Demo Task[0m
+[0;32mI (1670038) HID_MIN: Demo Task[0m
+[0;32mI (1672038) HID_MIN: Demo Task[0m
+[0;32mI (1674038) HID_MIN: Demo Task[0m
+[0;32mI (1676038) HID_MIN: Demo Task[0m
+[0;32mI (1678038) HID_MIN: Demo Task[0m
+[0;32mI (1680038) HID_MIN: Demo Task[0m
+[0;32mI (1682038) HID_MIN: Demo Task[0m
+[0;32mI (1684038) HID_MIN: Demo Task[0m
+[0;32mI (1686038) HID_MIN: Demo Task[0m
+[0;32mI (1688038) HID_MIN: Demo Task[0m
+[0;32mI (1690038) HID_MIN: Demo Task[0m
+[0;32mI (1692038) HID_MIN: Demo Task[0m
+[0;32mI (1694038) HID_MIN: Demo Task[0m
+[0;32mI (1696038) HID_MIN: Demo Task[0m
+[0;32mI (1698038) HID_MIN: Demo Task[0m
+[0;32mI (1700038) HID_MIN: Demo Task[0m
+[0;32mI (1702038) HID_MIN: Demo Task[0m
+[0;32mI (1704038) HID_MIN: Demo Task[0m
+[0;32mI (1706038) HID_MIN: Demo Task[0m
+[0;32mI (1708038) HID_MIN: Demo Task[0m
+[0;32mI (1710038) HID_MIN: Demo Task[0m
+[0;32mI (1712038) HID_MIN: Demo Task[0m
+[0;32mI (1714038) HID_MIN: Demo Task[0m
+[0;32mI (1716038) HID_MIN: Demo Task[0m
+[0;32mI (1718038) HID_MIN: Demo Task[0m
+[0;32mI (1720038) HID_MIN: Demo Task[0m
+[0;32mI (1722038) HID_MIN: Demo Task[0m
+[0;32mI (1724038) HID_MIN: Demo Task[0m
+[0;32mI (1726038) HID_MIN: Demo Task[0m
+[0;32mI (1728038) HID_MIN: Demo Task[0m
+[0;32mI (1730038) HID_MIN: Demo Task[0m
+[0;32mI (1732038) HID_MIN: Demo Task[0m
+[0;32mI (1734038) HID_MIN: Demo Task[0m
+[0;32mI (1736038) HID_MIN: Demo Task[0m
+[0;32mI (1738038) HID_MIN: Demo Task[0m
+[0;32mI (1740038) HID_MIN: Demo Task[0m
+[0;32mI (1742038) HID_MIN: Demo Task[0m
+[0;32mI (1744038) HID_MIN: Demo Task[0m
+[0;32mI (1746038) HID_MIN: Demo Task[0m
+[0;32mI (1748038) HID_MIN: Demo Task[0m
+[0;32mI (1750038) HID_MIN: Demo Task[0m
+[0;32mI (1752038) HID_MIN: Demo Task[0m
+[0;32mI (1754038) HID_MIN: Demo Task[0m
+[0;32mI (1756038) HID_MIN: Demo Task[0m
+[0;32mI (1758038) HID_MIN: Demo Task[0m
+[0;32mI (1760038) HID_MIN: Demo Task[0m
+[0;32mI (1762038) HID_MIN: Demo Task[0m
+[0;32mI (1764038) HID_MIN: Demo Task[0m
+[0;32mI (1766038) HID_MIN: Demo Task[0m
+[0;32mI (1768038) HID_MIN: Demo Task[0m
+[0;32mI (1770038) HID_MIN: Demo Task[0m
+[0;32mI (1772038) HID_MIN: Demo Task[0m
+[0;32mI (1774038) HID_MIN: Demo Task[0m
+[0;32mI (1776038) HID_MIN: Demo Task[0m
+[0;32mI (1778038) HID_MIN: Demo Task[0m
+[0;32mI (1780038) HID_MIN: Demo Task[0m
+[0;32mI (1782038) HID_MIN: Demo Task[0m
+[0;32mI (1784038) HID_MIN: Demo Task[0m
+[0;32mI (1786038) HID_MIN: Demo Task[0m
+[0;32mI (1788038) HID_MIN: Demo Task[0m
+[0;32mI (1790038) HID_MIN: Demo Task[0m
+[0;32mI (1792038) HID_MIN: Demo Task[0m
+[0;32mI (1794038) HID_MIN: Demo Task[0m
+[0;32mI (1796038) HID_MIN: Demo Task[0m
+[0;32mI (1798038) HID_MIN: Demo Task[0m
+[0;32mI (1800038) HID_MIN: Demo Task[0m
+[0;32mI (1802038) HID_MIN: Demo Task[0m
+[0;32mI (1804038) HID_MIN: Demo Task[0m
+[0;32mI (1806038) HID_MIN: Demo Task[0m
+[0;32mI (1808038) HID_MIN: Demo Task[0m
+[0;32mI (1810038) HID_MIN: Demo Task[0m
+[0;32mI (1812038) HID_MIN: Demo Task[0m
+[0;32mI (1814038) HID_MIN: Demo Task[0m
+[0;32mI (1816038) HID_MIN: Demo Task[0m
+[0;32mI (1818038) HID_MIN: Demo Task[0m
+[0;32mI (1820038) HID_MIN: Demo Task[0m
+[0;32mI (1822038) HID_MIN: Demo Task[0m
+[0;32mI (1824038) HID_MIN: Demo Task[0m
+[0;32mI (1826038) HID_MIN: Demo Task[0m
+[0;32mI (1828038) HID_MIN: Demo Task[0m
+[0;32mI (1830038) HID_MIN: Demo Task[0m
+[0;32mI (1832038) HID_MIN: Demo Task[0m
+[0;32mI (1834038) HID_MIN: Demo Task[0m
+[0;32mI (1836038) HID_MIN: Demo Task[0m
+[0;32mI (1838038) HID_MIN: Demo Task[0m
+[0;32mI (1840038) HID_MIN: Demo Task[0m
+[0;32mI (1842038) HID_MIN: Demo Task[0m
+[0;32mI (1844038) HID_MIN: Demo Task[0m
+[0;32mI (1846038) HID_MIN: Demo Task[0m
+[0;32mI (1848038) HID_MIN: Demo Task[0m
+[0;32mI (1850038) HID_MIN: Demo Task[0m
+[0;32mI (1852038) HID_MIN: Demo Task[0m
+[0;32mI (1854038) HID_MIN: Demo Task[0m
+[0;32mI (1856038) HID_MIN: Demo Task[0m
+[0;32mI (1858038) HID_MIN: Demo Task[0m
+[0;32mI (1860038) HID_MIN: Demo Task[0m
+[0;32mI (1862038) HID_MIN: Demo Task[0m
+[0;32mI (1864038) HID_MIN: Demo Task[0m
+[0;32mI (1866038) HID_MIN: Demo Task[0m
+[0;32mI (1868038) HID_MIN: Demo Task[0m
+[0;32mI (1870038) HID_MIN: Demo Task[0m
+[0;32mI (1872038) HID_MIN: Demo Task[0m
+[0;32mI (1874038) HID_MIN: Demo Task[0m
+[0;32mI (1876038) HID_MIN: Demo Task[0m
+[0;32mI (1878038) HID_MIN: Demo Task[0m
+[0;32mI (1880038) HID_MIN: Demo Task[0m
+[0;32mI (1882038) HID_MIN: Demo Task[0m
+[0;32mI (1884038) HID_MIN: Demo Task[0m
+[0;32mI (1886038) HID_MIN: Demo Task[0m
+[0;32mI (1888038) HID_MIN: Demo Task[0m
+[0;32mI (1890038) HID_MIN: Demo Task[0m
+[0;32mI (1892038) HID_MIN: Demo Task[0m
+[0;32mI (1894038) HID_MIN: Demo Task[0m
+[0;32mI (1896038) HID_MIN: Demo Task[0m
+[0;32mI (1898038) HID_MIN: Demo Task[0m
+[0;32mI (1900038) HID_MIN: Demo Task[0m
+[0;32mI (1902038) HID_MIN: Demo Task[0m
+[0;32mI (1904038) HID_MIN: Demo Task[0m
+[0;32mI (1906038) HID_MIN: Demo Task[0m
+[0;32mI (1908038) HID_MIN: Demo Task[0m
+[0;32mI (1910038) HID_MIN: Demo Task[0m
+[0;32mI (1912038) HID_MIN: Demo Task[0m
+[0;32mI (1914038) HID_MIN: Demo Task[0m
+[0;32mI (1916038) HID_MIN: Demo Task[0m
+[0;32mI (1918038) HID_MIN: Demo Task[0m
+[0;32mI (1920038) HID_MIN: Demo Task[0m
+[0;32mI (1922038) HID_MIN: Demo Task[0m
+[0;32mI (1924038) HID_MIN: Demo Task[0m
+[0;32mI (1926038) HID_MIN: Demo Task[0m
+[0;32mI (1928038) HID_MIN: Demo Task[0m
+[0;32mI (1930038) HID_MIN: Demo Task[0m
+[0;32mI (1932038) HID_MIN: Demo Task[0m
+[0;32mI (1934038) HID_MIN: Demo Task[0m
+[0;32mI (1936038) HID_MIN: Demo Task[0m
+[0;32mI (1938038) HID_MIN: Demo Task[0m
+[0;32mI (1940038) HID_MIN: Demo Task[0m
+[0;32mI (1942038) HID_MIN: Demo Task[0m
+[0;32mI (1944038) HID_MIN: Demo Task[0m
+[0;32mI (1946038) HID_MIN: Demo Task[0m
+[0;32mI (1948038) HID_MIN: Demo Task[0m
+[0;32mI (1950038) HID_MIN: Demo Task[0m
+[0;32mI (1952038) HID_MIN: Demo Task[0m
+[0;32mI (1954038) HID_MIN: Demo Task[0m
+[0;32mI (1956038) HID_MIN: Demo Task[0m
+[0;32mI (1958038) HID_MIN: Demo Task[0m
+[0;32mI (1960038) HID_MIN: Demo Task[0m
+[0;32mI (1962038) HID_MIN: Demo Task[0m
+[0;32mI (1964038) HID_MIN: Demo Task[0m
+[0;32mI (1966038) HID_MIN: Demo Task[0m
+[0;32mI (1968038) HID_MIN: Demo Task[0m
+[0;32mI (1970038) HID_MIN: Demo Task[0m
+[0;32mI (1972038) HID_MIN: Demo Task[0m
+[0;32mI (1974038) HID_MIN: Demo Task[0m
+[0;32mI (1976038) HID_MIN: Demo Task[0m
+[0;32mI (1978038) HID_MIN: Demo Task[0m
+[0;32mI (1980038) HID_MIN: Demo Task[0m
+[0;32mI (1982038) HID_MIN: Demo Task[0m
+[0;32mI (1984038) HID_MIN: Demo Task[0m
+[0;32mI (1986038) HID_MIN: Demo Task[0m
+[0;32mI (1988038) HID_MIN: Demo Task[0m
+[0;32mI (1990038) HID_MIN: Demo Task[0m
+[0;32mI (1992038) HID_MIN: Demo Task[0m
+[0;32mI (1994038) HID_MIN: Demo Task[0m
+[0;32mI (1996038) HID_MIN: Demo Task[0m
+[0;32mI (1998038) HID_MIN: Demo Task[0m
+[0;32mI (2000038) HID_MIN: Demo Task[0m
+[0;32mI (2002038) HID_MIN: Demo Task[0m
+[0;32mI (2004038) HID_MIN: Demo Task[0m
+[0;32mI (2006038) HID_MIN: Demo Task[0m
+[0;32mI (2008038) HID_MIN: Demo Task[0m
+[0;32mI (2010038) HID_MIN: Demo Task[0m
+[0;32mI (2012038) HID_MIN: Demo Task[0m
+[0;32mI (2014038) HID_MIN: Demo Task[0m
+[0;32mI (2016038) HID_MIN: Demo Task[0m
+[0;32mI (2018038) HID_MIN: Demo Task[0m
+[0;32mI (2020038) HID_MIN: Demo Task[0m
+[0;32mI (2022038) HID_MIN: Demo Task[0m
+[0;32mI (2024038) HID_MIN: Demo Task[0m
+[0;32mI (2026038) HID_MIN: Demo Task[0m
+[0;32mI (2028038) HID_MIN: Demo Task[0m
+[0;32mI (2030038) HID_MIN: Demo Task[0m
+[0;32mI (2032038) HID_MIN: Demo Task[0m
+[0;32mI (2034038) HID_MIN: Demo Task[0m
+[0;32mI (2036038) HID_MIN: Demo Task[0m
+[0;32mI (2038038) HID_MIN: Demo Task[0m
+[0;32mI (2040038) HID_MIN: Demo Task[0m
+[0;32mI (2042038) HID_MIN: Demo Task[0m
+[0;32mI (2044038) HID_MIN: Demo Task[0m
+[0;32mI (2046038) HID_MIN: Demo Task[0m
+[0;32mI (2048038) HID_MIN: Demo Task[0m
+[0;32mI (2050038) HID_MIN: Demo Task[0m
+[0;32mI (2052038) HID_MIN: Demo Task[0m
+[0;32mI (2054038) HID_MIN: Demo Task[0m
+[0;32mI (2056038) HID_MIN: Demo Task[0m
+[0;32mI (2058038) HID_MIN: Demo Task[0m
+[0;32mI (2060038) HID_MIN: Demo Task[0m
+[0;32mI (2062038) HID_MIN: Demo Task[0m
+[0;32mI (2064038) HID_MIN: Demo Task[0m
+[0;32mI (2066038) HID_MIN: Demo Task[0m
+[0;32mI (2068038) HID_MIN: Demo Task[0m
+[0;32mI (2070038) HID_MIN: Demo Task[0m
+[0;32mI (2072038) HID_MIN: Demo Task[0m
+[0;32mI (2074038) HID_MIN: Demo Task[0m
+[0;32mI (2076038) HID_MIN: Demo Task[0m
+[0;32mI (2078038) HID_MIN: Demo Task[0m
+[0;32mI (2080038) HID_MIN: Demo Task[0m
+[0;32mI (2082038) HID_MIN: Demo Task[0m
+[0;32mI (2084038) HID_MIN: Demo Task[0m
+[0;32mI (2086038) HID_MIN: Demo Task[0m
+[0;32mI (2088038) HID_MIN: Demo Task[0m
+[0;32mI (2090038) HID_MIN: Demo Task[0m
+[0;32mI (2092038) HID_MIN: Demo Task[0m
+[0;32mI (2094038) HID_MIN: Demo Task[0m
+[0;32mI (2096038) HID_MIN: Demo Task[0m
+[0;32mI (2098038) HID_MIN: Demo Task[0m
+[0;32mI (2100038) HID_MIN: Demo Task[0m
+[0;32mI (2102038) HID_MIN: Demo Task[0m
+[0;32mI (2104038) HID_MIN: Demo Task[0m
+[0;32mI (2106038) HID_MIN: Demo Task[0m
+[0;32mI (2108038) HID_MIN: Demo Task[0m
+[0;32mI (2110038) HID_MIN: Demo Task[0m
+[0;32mI (2112038) HID_MIN: Demo Task[0m
+[0;32mI (2114038) HID_MIN: Demo Task[0m
+[0;32mI (2116038) HID_MIN: Demo Task[0m
+[0;32mI (2118038) HID_MIN: Demo Task[0m
+[0;32mI (2120038) HID_MIN: Demo Task[0m
+[0;32mI (2122038) HID_MIN: Demo Task[0m
+[0;32mI (2124038) HID_MIN: Demo Task[0m
+[0;32mI (2126038) HID_MIN: Demo Task[0m
+[0;32mI (2128038) HID_MIN: Demo Task[0m
+[0;32mI (2130038) HID_MIN: Demo Task[0m
+[0;32mI (2132038) HID_MIN: Demo Task[0m
+[0;32mI (2134038) HID_MIN: Demo Task[0m
+[0;32mI (2136038) HID_MIN: Demo Task[0m
+[0;32mI (2138038) HID_MIN: Demo Task[0m
+[0;32mI (2140038) HID_MIN: Demo Task[0m
+[0;32mI (2142038) HID_MIN: Demo Task[0m
+[0;32mI (2144038) HID_MIN: Demo Task[0m
+[0;32mI (2146038) HID_MIN: Demo Task[0m
+[0;32mI (2148038) HID_MIN: Demo Task[0m
+[0;32mI (2150038) HID_MIN: Demo Task[0m
+[0;32mI (2152038) HID_MIN: Demo Task[0m
+[0;32mI (2154038) HID_MIN: Demo Task[0m
+[0;32mI (2156038) HID_MIN: Demo Task[0m
+[0;32mI (2158038) HID_MIN: Demo Task[0m
+[0;32mI (2160038) HID_MIN: Demo Task[0m
+[0;32mI (2162038) HID_MIN: Demo Task[0m
+[0;32mI (2164038) HID_MIN: Demo Task[0m
+[0;32mI (2166038) HID_MIN: Demo Task[0m
+[0;32mI (2168038) HID_MIN: Demo Task[0m
+[0;32mI (2170038) HID_MIN: Demo Task[0m
+[0;32mI (2172038) HID_MIN: Demo Task[0m
+[0;32mI (2174038) HID_MIN: Demo Task[0m
+[0;32mI (2176038) HID_MIN: Demo Task[0m
+[0;32mI (2178038) HID_MIN: Demo Task[0m
+[0;32mI (2180038) HID_MIN: Demo Task[0m
+[0;32mI (2182038) HID_MIN: Demo Task[0m
+[0;32mI (2184038) HID_MIN: Demo Task[0m
+[0;32mI (2186038) HID_MIN: Demo Task[0m
+[0;32mI (2188038) HID_MIN: Demo Task[0m
+[0;32mI (2190038) HID_MIN: Demo Task[0m
+[0;32mI (2192038) HID_MIN: Demo Task[0m
+[0;32mI (2194038) HID_MIN: Demo Task[0m
+[0;32mI (2196038) HID_MIN: Demo Task[0m
+[0;32mI (2198038) HID_MIN: Demo Task[0m
+[0;32mI (2200038) HID_MIN: Demo Task[0m
+[0;32mI (2202038) HID_MIN: Demo Task[0m
+[0;32mI (2204038) HID_MIN: Demo Task[0m
+[0;32mI (2206038) HID_MIN: Demo Task[0m
+[0;32mI (2208038) HID_MIN: Demo Task[0m
+[0;32mI (2210038) HID_MIN: Demo Task[0m
+[0;32mI (2212038) HID_MIN: Demo Task[0m
+[0;32mI (2214038) HID_MIN: Demo Task[0m
+[0;32mI (2216038) HID_MIN: Demo Task[0m
+[0;32mI (2218038) HID_MIN: Demo Task[0m
+[0;32mI (2220038) HID_MIN: Demo Task[0m
+[0;32mI (2222038) HID_MIN: Demo Task[0m
+[0;32mI (2224038) HID_MIN: Demo Task[0m
+[0;32mI (2226038) HID_MIN: Demo Task[0m
+[0;32mI (2228038) HID_MIN: Demo Task[0m
+[0;32mI (2230038) HID_MIN: Demo Task[0m
+[0;32mI (2232038) HID_MIN: Demo Task[0m
+[0;32mI (2234038) HID_MIN: Demo Task[0m
+[0;32mI (2236038) HID_MIN: Demo Task[0m
+[0;32mI (2238038) HID_MIN: Demo Task[0m
+[0;32mI (2240038) HID_MIN: Demo Task[0m
+[0;32mI (2242038) HID_MIN: Demo Task[0m
+[0;32mI (2244038) HID_MIN: Demo Task[0m
+[0;32mI (2246038) HID_MIN: Demo Task[0m
+[0;32mI (2248038) HID_MIN: Demo Task[0m
+[0;32mI (2250038) HID_MIN: Demo Task[0m
+[0;32mI (2252038) HID_MIN: Demo Task[0m
+[0;32mI (2254038) HID_MIN: Demo Task[0m
+[0;32mI (2256038) HID_MIN: Demo Task[0m
+[0;32mI (2258038) HID_MIN: Demo Task[0m
+[0;32mI (2260038) HID_MIN: Demo Task[0m
+[0;32mI (2262038) HID_MIN: Demo Task[0m
+[0;32mI (2264038) HID_MIN: Demo Task[0m
+[0;32mI (2266038) HID_MIN: Demo Task[0m
+[0;32mI (2268038) HID_MIN: Demo Task[0m
+[0;32mI (2270038) HID_MIN: Demo Task[0m
+[0;32mI (2272038) HID_MIN: Demo Task[0m
+[0;32mI (2274038) HID_MIN: Demo Task[0m
+[0;32mI (2276038) HID_MIN: Demo Task[0m
+[0;32mI (2278038) HID_MIN: Demo Task[0m
+[0;32mI (2280038) HID_MIN: Demo Task[0m
+[0;32mI (2282038) HID_MIN: Demo Task[0m
+[0;32mI (2284038) HID_MIN: Demo Task[0m
+[0;32mI (2286038) HID_MIN: Demo Task[0m
+[0;32mI (2288038) HID_MIN: Demo Task[0m
+[0;32mI (2290038) HID_MIN: Demo Task[0m
+[0;32mI (2292038) HID_MIN: Demo Task[0m
+[0;32mI (2294038) HID_MIN: Demo Task[0m
+[0;32mI (2296038) HID_MIN: Demo Task[0m
+[0;32mI (2298038) HID_MIN: Demo Task[0m
+[0;32mI (2300038) HID_MIN: Demo Task[0m
+[0;32mI (2302038) HID_MIN: Demo Task[0m
+[0;32mI (2304038) HID_MIN: Demo Task[0m
+[0;32mI (2306038) HID_MIN: Demo Task[0m
+[0;32mI (2308038) HID_MIN: Demo Task[0m
+[0;32mI (2310038) HID_MIN: Demo Task[0m
+[0;32mI (2312038) HID_MIN: Demo Task[0m
+[0;32mI (2314038) HID_MIN: Demo Task[0m
+[0;32mI (2316038) HID_MIN: Demo Task[0m
+[0;32mI (2318038) HID_MIN: Demo Task[0m
+[0;32mI (2320038) HID_MIN: Demo Task[0m
+[0;32mI (2322038) HID_MIN: Demo Task[0m
+[0;32mI (2324038) HID_MIN: Demo Task[0m
+[0;32mI (2326038) HID_MIN: Demo Task[0m
+[0;32mI (2328038) HID_MIN: Demo Task[0m
+[0;32mI (2330038) HID_MIN: Demo Task[0m
+[0;32mI (2332038) HID_MIN: Demo Task[0m
+[0;32mI (2334038) HID_MIN: Demo Task[0m
+[0;32mI (2336038) HID_MIN: Demo Task[0m
+[0;32mI (2338038) HID_MIN: Demo Task[0m
+[0;32mI (2340038) HID_MIN: Demo Task[0m
+[0;32mI (2342038) HID_MIN: Demo Task[0m
+[0;32mI (2344038) HID_MIN: Demo Task[0m
+[0;32mI (2346038) HID_MIN: Demo Task[0m
+[0;32mI (2348038) HID_MIN: Demo Task[0m
+[0;32mI (2350038) HID_MIN: Demo Task[0m
+[0;32mI (2352038) HID_MIN: Demo Task[0m
+[0;32mI (2354038) HID_MIN: Demo Task[0m
+[0;32mI (2356038) HID_MIN: Demo Task[0m
+[0;32mI (2358038) HID_MIN: Demo Task[0m
+[0;32mI (2360038) HID_MIN: Demo Task[0m
+[0;32mI (2362038) HID_MIN: Demo Task[0m
+[0;32mI (2364038) HID_MIN: Demo Task[0m
+[0;32mI (2366038) HID_MIN: Demo Task[0m
+[0;32mI (2368038) HID_MIN: Demo Task[0m
+[0;32mI (2370038) HID_MIN: Demo Task[0m
+[0;32mI (2372038) HID_MIN: Demo Task[0m
+[0;32mI (2374038) HID_MIN: Demo Task[0m
+[0;32mI (2376038) HID_MIN: Demo Task[0m
+[0;32mI (2378038) HID_MIN: Demo Task[0m
+[0;32mI (2380038) HID_MIN: Demo Task[0m
+[0;32mI (2382038) HID_MIN: Demo Task[0m
+[0;32mI (2384038) HID_MIN: Demo Task[0m
+[0;32mI (2386038) HID_MIN: Demo Task[0m
+[0;32mI (2388038) HID_MIN: Demo Task[0m
+[0;32mI (2390038) HID_MIN: Demo Task[0m
+[0;32mI (2392038) HID_MIN: Demo Task[0m
+[0;32mI (2394038) HID_MIN: Demo Task[0m
+[0;32mI (2396038) HID_MIN: Demo Task[0m
+[0;32mI (2398038) HID_MIN: Demo Task[0m
+[0;32mI (2400038) HID_MIN: Demo Task[0m
+[0;32mI (2402038) HID_MIN: Demo Task[0m
+[0;32mI (2404038) HID_MIN: Demo Task[0m
+[0;32mI (2406038) HID_MIN: Demo Task[0m
+[0;32mI (2408038) HID_MIN: Demo Task[0m
+[0;32mI (2410038) HID_MIN: Demo Task[0m
+[0;32mI (2412038) HID_MIN: Demo Task[0m
+[0;32mI (2414038) HID_MIN: Demo Task[0m
+[0;32mI (2416038) HID_MIN: Demo Task[0m
+[0;32mI (2418038) HID_MIN: Demo Task[0m
+[0;32mI (2420038) HID_MIN: Demo Task[0m
+[0;32mI (2422038) HID_MIN: Demo Task[0m
+[0;32mI (2424038) HID_MIN: Demo Task[0m
+[0;32mI (2426038) HID_MIN: Demo Task[0m
+[0;32mI (2428038) HID_MIN: Demo Task[0m
+[0;32mI (2430038) HID_MIN: Demo Task[0m
+[0;32mI (2432038) HID_MIN: Demo Task[0m
+[0;32mI (2434038) HID_MIN: Demo Task[0m
+[0;32mI (2436038) HID_MIN: Demo Task[0m
+[0;32mI (2438038) HID_MIN: Demo Task[0m
+[0;32mI (2440038) HID_MIN: Demo Task[0m
+[0;32mI (2442038) HID_MIN: Demo Task[0m
+[0;32mI (2444038) HID_MIN: Demo Task[0m
+[0;32mI (2446038) HID_MIN: Demo Task[0m
+[0;32mI (2448038) HID_MIN: Demo Task[0m
+[0;32mI (2450038) HID_MIN: Demo Task[0m
+[0;32mI (2452038) HID_MIN: Demo Task[0m
+[0;32mI (2454038) HID_MIN: Demo Task[0m
+[0;32mI (2456038) HID_MIN: Demo Task[0m
+[0;32mI (2458038) HID_MIN: Demo Task[0m
+[0;32mI (2460038) HID_MIN: Demo Task[0m
+[0;32mI (2462038) HID_MIN: Demo Task[0m
+[0;32mI (2464038) HID_MIN: Demo Task[0m
+[0;32mI (2466038) HID_MIN: Demo Task[0m
+[0;32mI (2468038) HID_MIN: Demo Task[0m
+[0;32mI (2470038) HID_MIN: Demo Task[0m
+[0;32mI (2472038) HID_MIN: Demo Task[0m
+[0;32mI (2474038) HID_MIN: Demo Task[0m
+[0;32mI (2476038) HID_MIN: Demo Task[0m
+[0;32mI (2478038) HID_MIN: Demo Task[0m
+[0;32mI (2480038) HID_MIN: Demo Task[0m
+[0;32mI (2482038) HID_MIN: Demo Task[0m
+[0;32mI (2484038) HID_MIN: Demo Task[0m
+[0;32mI (2486038) HID_MIN: Demo Task[0m
+[0;32mI (2488038) HID_MIN: Demo Task[0m
+[0;32mI (2490038) HID_MIN: Demo Task[0m
+[0;32mI (2492038) HID_MIN: Demo Task[0m
+[0;32mI (2494038) HID_MIN: Demo Task[0m
+[0;32mI (2496038) HID_MIN: Demo Task[0m
+[0;32mI (2498038) HID_MIN: Demo Task[0m
+[0;32mI (2500038) HID_MIN: Demo Task[0m
+[0;32mI (2502038) HID_MIN: Demo Task[0m
+[0;32mI (2504038) HID_MIN: Demo Task[0m
+[0;32mI (2506038) HID_MIN: Demo Task[0m
+[0;32mI (2508038) HID_MIN: Demo Task[0m
+[0;32mI (2510038) HID_MIN: Demo Task[0m
+[0;32mI (2512038) HID_MIN: Demo Task[0m
+[0;32mI (2514038) HID_MIN: Demo Task[0m
+[0;32mI (2516038) HID_MIN: Demo Task[0m
+[0;32mI (2518038) HID_MIN: Demo Task[0m
+[0;32mI (2520038) HID_MIN: Demo Task[0m
+[0;32mI (2522038) HID_MIN: Demo Task[0m
+[0;32mI (2524038) HID_MIN: Demo Task[0m
+[0;32mI (2526038) HID_MIN: Demo Task[0m
+[0;32mI (2528038) HID_MIN: Demo Task[0m
+[0;32mI (2530038) HID_MIN: Demo Task[0m
+[0;32mI (2532038) HID_MIN: Demo Task[0m
+[0;32mI (2534038) HID_MIN: Demo Task[0m
+[0;32mI (2536038) HID_MIN: Demo Task[0m
+[0;32mI (2538038) HID_MIN: Demo Task[0m
+[0;32mI (2540038) HID_MIN: Demo Task[0m
+[0;32mI (2542038) HID_MIN: Demo Task[0m
+[0;32mI (2544038) HID_MIN: Demo Task[0m
+[0;32mI (2546038) HID_MIN: Demo Task[0m
+[0;32mI (2548038) HID_MIN: Demo Task[0m
+[0;32mI (2550038) HID_MIN: Demo Task[0m
+[0;32mI (2552038) HID_MIN: Demo Task[0m
+[0;32mI (2554038) HID_MIN: Demo Task[0m
+[0;32mI (2556038) HID_MIN: Demo Task[0m
+[0;32mI (2558038) HID_MIN: Demo Task[0m
+[0;32mI (2560038) HID_MIN: Demo Task[0m
+[0;32mI (2562038) HID_MIN: Demo Task[0m
+[0;32mI (2564038) HID_MIN: Demo Task[0m
+[0;32mI (2566038) HID_MIN: Demo Task[0m
+[0;32mI (2568038) HID_MIN: Demo Task[0m
+[0;32mI (2570038) HID_MIN: Demo Task[0m
+[0;32mI (2572038) HID_MIN: Demo Task[0m
+[0;32mI (2574038) HID_MIN: Demo Task[0m
+[0;32mI (2576038) HID_MIN: Demo Task[0m
+[0;32mI (2578038) HID_MIN: Demo Task[0m
+[0;32mI (2580038) HID_MIN: Demo Task[0m
+[0;32mI (2582038) HID_MIN: Demo Task[0m
+[0;32mI (2584038) HID_MIN: Demo Task[0m
+[0;32mI (2586038) HID_MIN: Demo Task[0m
+[0;32mI (2588038) HID_MIN: Demo Task[0m
+[0;32mI (2590038) HID_MIN: Demo Task[0m
+[0;32mI (2592038) HID_MIN: Demo Task[0m
+[0;32mI (2594038) HID_MIN: Demo Task[0m
+[0;32mI (2596038) HID_MIN: Demo Task[0m
+[0;32mI (2598038) HID_MIN: Demo Task[0m
+[0;32mI (2600038) HID_MIN: Demo Task[0m
+[0;32mI (2602038) HID_MIN: Demo Task[0m
+[0;32mI (2604038) HID_MIN: Demo Task[0m
+[0;32mI (2606038) HID_MIN: Demo Task[0m
+[0;32mI (2608038) HID_MIN: Demo Task[0m
+[0;32mI (2610038) HID_MIN: Demo Task[0m
+[0;32mI (2612038) HID_MIN: Demo Task[0m
+[0;32mI (2614038) HID_MIN: Demo Task[0m
+[0;32mI (2616038) HID_MIN: Demo Task[0m
+[0;32mI (2618038) HID_MIN: Demo Task[0m
+[0;32mI (2620038) HID_MIN: Demo Task[0m
+[0;32mI (2622038) HID_MIN: Demo Task[0m
+[0;32mI (2624038) HID_MIN: Demo Task[0m
+[0;32mI (2626038) HID_MIN: Demo Task[0m
+[0;32mI (2628038) HID_MIN: Demo Task[0m
+[0;32mI (2630038) HID_MIN: Demo Task[0m
+[0;32mI (2632038) HID_MIN: Demo Task[0m
+[0;32mI (2634038) HID_MIN: Demo Task[0m
+[0;32mI (2636038) HID_MIN: Demo Task[0m
+[0;32mI (2638038) HID_MIN: Demo Task[0m
+[0;32mI (2640038) HID_MIN: Demo Task[0m
+[0;32mI (2642038) HID_MIN: Demo Task[0m
+[0;32mI (2644038) HID_MIN: Demo Task[0m
+[0;32mI (2646038) HID_MIN: Demo Task[0m
+[0;32mI (2648038) HID_MIN: Demo Task[0m
+[0;32mI (2650038) HID_MIN: Demo Task[0m
+[0;32mI (2652038) HID_MIN: Demo Task[0m
+[0;32mI (2654038) HID_MIN: Demo Task[0m
+[0;32mI (2656038) HID_MIN: Demo Task[0m
+[0;32mI (2658038) HID_MIN: Demo Task[0m
+[0;32mI (2660038) HID_MIN: Demo Task[0m
+[0;32mI (2662038) HID_MIN: Demo Task[0m
+[0;32mI (2664038) HID_MIN: Demo Task[0m
+[0;32mI (2666038) HID_MIN: Demo Task[0m
+[0;32mI (2668038) HID_MIN: Demo Task[0m
+[0;32mI (2670038) HID_MIN: Demo Task[0m
+[0;32mI (2672038) HID_MIN: Demo Task[0m
+[0;32mI (2674038) HID_MIN: Demo Task[0m
+[0;32mI (2676038) HID_MIN: Demo Task[0m
+[0;32mI (2678038) HID_MIN: Demo Task[0m
+[0;32mI (2680038) HID_MIN: Demo Task[0m
+[0;32mI (2682038) HID_MIN: Demo Task[0m
+[0;32mI (2684038) HID_MIN: Demo Task[0m
+[0;32mI (2686038) HID_MIN: Demo Task[0m
+[0;32mI (2688038) HID_MIN: Demo Task[0m
+[0;32mI (2690038) HID_MIN: Demo Task[0m
+[0;32mI (2692038) HID_MIN: Demo Task[0m
+[0;32mI (2694038) HID_MIN: Demo Task[0m
+[0;32mI (2696038) HID_MIN: Demo Task[0m
+[0;32mI (2698038) HID_MIN: Demo Task[0m
+[0;32mI (2700038) HID_MIN: Demo Task[0m
+[0;32mI (2702038) HID_MIN: Demo Task[0m
+[0;32mI (2704038) HID_MIN: Demo Task[0m
+[0;32mI (2706038) HID_MIN: Demo Task[0m
+[0;32mI (2708038) HID_MIN: Demo Task[0m
+[0;32mI (2710038) HID_MIN: Demo Task[0m
+[0;32mI (2712038) HID_MIN: Demo Task[0m
+[0;32mI (2714038) HID_MIN: Demo Task[0m
+[0;32mI (2716038) HID_MIN: Demo Task[0m
+[0;32mI (2718038) HID_MIN: Demo Task[0m
+[0;32mI (2720038) HID_MIN: Demo Task[0m
+[0;32mI (2722038) HID_MIN: Demo Task[0m
+[0;32mI (2724038) HID_MIN: Demo Task[0m
+[0;32mI (2726038) HID_MIN: Demo Task[0m
+[0;32mI (2728038) HID_MIN: Demo Task[0m
+[0;32mI (2730038) HID_MIN: Demo Task[0m
+[0;32mI (2732038) HID_MIN: Demo Task[0m
+[0;32mI (2734038) HID_MIN: Demo Task[0m
+[0;32mI (2736038) HID_MIN: Demo Task[0m
+[0;32mI (2738038) HID_MIN: Demo Task[0m
+[0;32mI (2740038) HID_MIN: Demo Task[0m
+[0;32mI (2742038) HID_MIN: Demo Task[0m
+[0;32mI (2744038) HID_MIN: Demo Task[0m
+[0;32mI (2746038) HID_MIN: Demo Task[0m
+[0;32mI (2748038) HID_MIN: Demo Task[0m
+[0;32mI (2750038) HID_MIN: Demo Task[0m
+[0;32mI (2752038) HID_MIN: Demo Task[0m
+[0;32mI (2754038) HID_MIN: Demo Task[0m
+[0;32mI (2756038) HID_MIN: Demo Task[0m
+[0;32mI (2758038) HID_MIN: Demo Task[0m
+[0;32mI (2760038) HID_MIN: Demo Task[0m
+[0;32mI (2762038) HID_MIN: Demo Task[0m
+[0;32mI (2764038) HID_MIN: Demo Task[0m
+[0;32mI (2766038) HID_MIN: Demo Task[0m
+[0;32mI (2768038) HID_MIN: Demo Task[0m
+[0;32mI (2770038) HID_MIN: Demo Task[0m
+[0;32mI (2772038) HID_MIN: Demo Task[0m
+[0;32mI (2774038) HID_MIN: Demo Task[0m
+[0;32mI (2776038) HID_MIN: Demo Task[0m
+[0;32mI (2778038) HID_MIN: Demo Task[0m
+[0;32mI (2780038) HID_MIN: Demo Task[0m
+[0;32mI (2782038) HID_MIN: Demo Task[0m
+[0;32mI (2784038) HID_MIN: Demo Task[0m
+[0;32mI (2786038) HID_MIN: Demo Task[0m
+[0;32mI (2788038) HID_MIN: Demo Task[0m
+[0;32mI (2790038) HID_MIN: Demo Task[0m
+[0;32mI (2792038) HID_MIN: Demo Task[0m
+[0;32mI (2794038) HID_MIN: Demo Task[0m
+[0;32mI (2796038) HID_MIN: Demo Task[0m
+[0;32mI (2798038) HID_MIN: Demo Task[0m
+[0;32mI (2800038) HID_MIN: Demo Task[0m
+[0;32mI (2802038) HID_MIN: Demo Task[0m
+[0;32mI (2804038) HID_MIN: Demo Task[0m
+[0;32mI (2806038) HID_MIN: Demo Task[0m
+[0;32mI (2808038) HID_MIN: Demo Task[0m
+[0;32mI (2810038) HID_MIN: Demo Task[0m
+[0;32mI (2812038) HID_MIN: Demo Task[0m
+[0;32mI (2814038) HID_MIN: Demo Task[0m
+[0;32mI (2816038) HID_MIN: Demo Task[0m
+[0;32mI (2818038) HID_MIN: Demo Task[0m
+[0;32mI (2820038) HID_MIN: Demo Task[0m
+[0;32mI (2822038) HID_MIN: Demo Task[0m
+[0;32mI (2824038) HID_MIN: Demo Task[0m
+[0;32mI (2826038) HID_MIN: Demo Task[0m
+[0;32mI (2828038) HID_MIN: Demo Task[0m
+[0;32mI (2830038) HID_MIN: Demo Task[0m
+[0;32mI (2832038) HID_MIN: Demo Task[0m
+[0;32mI (2834038) HID_MIN: Demo Task[0m
+[0;32mI (2836038) HID_MIN: Demo Task[0m
+[0;32mI (2838038) HID_MIN: Demo Task[0m
+[0;32mI (2840038) HID_MIN: Demo Task[0m
+[0;32mI (2842038) HID_MIN: Demo Task[0m
+[0;32mI (2844038) HID_MIN: Demo Task[0m
+[0;32mI (2846038) HID_MIN: Demo Task[0m
+[0;32mI (2848038) HID_MIN: Demo Task[0m
+[0;32mI (2850038) HID_MIN: Demo Task[0m
+[0;32mI (2852038) HID_MIN: Demo Task[0m
+[0;32mI (2854038) HID_MIN: Demo Task[0m
+[0;32mI (2856038) HID_MIN: Demo Task[0m
+[0;32mI (2858038) HID_MIN: Demo Task[0m
+[0;32mI (2860038) HID_MIN: Demo Task[0m
+[0;32mI (2862038) HID_MIN: Demo Task[0m
+[0;32mI (2864038) HID_MIN: Demo Task[0m
+[0;32mI (2866038) HID_MIN: Demo Task[0m
+[0;32mI (2868038) HID_MIN: Demo Task[0m
+[0;32mI (2870038) HID_MIN: Demo Task[0m
+[0;32mI (2872038) HID_MIN: Demo Task[0m
+[0;32mI (2874038) HID_MIN: Demo Task[0m
+[0;32mI (2876038) HID_MIN: Demo Task[0m
+[0;32mI (2878038) HID_MIN: Demo Task[0m
+[0;32mI (2880038) HID_MIN: Demo Task[0m
+[0;32mI (2882038) HID_MIN: Demo Task[0m
+[0;32mI (2884038) HID_MIN: Demo Task[0m
+[0;32mI (2886038) HID_MIN: Demo Task[0m
+[0;32mI (2888038) HID_MIN: Demo Task[0m
+[0;32mI (2890038) HID_MIN: Demo Task[0m
+[0;32mI (2892038) HID_MIN: Demo Task[0m
+[0;32mI (2894038) HID_MIN: Demo Task[0m
+[0;32mI (2896038) HID_MIN: Demo Task[0m
+[0;32mI (2898038) HID_MIN: Demo Task[0m
+[0;32mI (2900038) HID_MIN: Demo Task[0m
+[0;32mI (2902038) HID_MIN: Demo Task[0m
+[0;32mI (2904038) HID_MIN: Demo Task[0m
+[0;32mI (2906038) HID_MIN: Demo Task[0m
+[0;32mI (2908038) HID_MIN: Demo Task[0m
+[0;32mI (2910038) HID_MIN: Demo Task[0m
+[0;32mI (2912038) HID_MIN: Demo Task[0m
+[0;32mI (2914038) HID_MIN: Demo Task[0m
+[0;32mI (2916038) HID_MIN: Demo Task[0m
+[0;32mI (2918038) HID_MIN: Demo Task[0m
+[0;32mI (2920038) HID_MIN: Demo Task[0m
+[0;32mI (2922038) HID_MIN: Demo Task[0m
+[0;32mI (2924038) HID_MIN: Demo Task[0m
+[0;32mI (2926038) HID_MIN: Demo Task[0m
+[0;32mI (2928038) HID_MIN: Demo Task[0m
+[0;32mI (2930038) HID_MIN: Demo Task[0m
+[0;32mI (2932038) HID_MIN: Demo Task[0m
+[0;32mI (2934038) HID_MIN: Demo Task[0m
+[0;32mI (2936038) HID_MIN: Demo Task[0m
+[0;32mI (2938038) HID_MIN: Demo Task[0m
+[0;32mI (2940038) HID_MIN: Demo Task[0m
+[0;32mI (2942038) HID_MIN: Demo Task[0m
+[0;32mI (2944038) HID_MIN: Demo Task[0m
+[0;32mI (2946038) HID_MIN: Demo Task[0m
+[0;32mI (2948038) HID_MIN: Demo Task[0m
+[0;32mI (2950038) HID_MIN: Demo Task[0m
+[0;32mI (2952038) HID_MIN: Demo Task[0m
+[0;32mI (2954038) HID_MIN: Demo Task[0m
+[0;32mI (2956038) HID_MIN: Demo Task[0m
+[0;32mI (2958038) HID_MIN: Demo Task[0m
+[0;32mI (2960038) HID_MIN: Demo Task[0m
+[0;32mI (2962038) HID_MIN: Demo Task[0m
+[0;32mI (2964038) HID_MIN: Demo Task[0m
+[0;32mI (2966038) HID_MIN: Demo Task[0m
+[0;32mI (2968038) HID_MIN: Demo Task[0m
+[0;32mI (2970038) HID_MIN: Demo Task[0m
+[0;32mI (2972038) HID_MIN: Demo Task[0m
+[0;32mI (2974038) HID_MIN: Demo Task[0m
+[0;32mI (2976038) HID_MIN: Demo Task[0m
+[0;32mI (2978038) HID_MIN: Demo Task[0m
+[0;32mI (2980038) HID_MIN: Demo Task[0m
+[0;32mI (2982038) HID_MIN: Demo Task[0m
+[0;32mI (2984038) HID_MIN: Demo Task[0m
+[0;32mI (2986038) HID_MIN: Demo Task[0m
+[0;32mI (2988038) HID_MIN: Demo Task[0m
+[0;32mI (2990038) HID_MIN: Demo Task[0m
+[0;32mI (2992038) HID_MIN: Demo Task[0m
+[0;32mI (2994038) HID_MIN: Demo Task[0m
+[0;32mI (2996038) HID_MIN: Demo Task[0m
+[0;32mI (2998038) HID_MIN: Demo Task[0m
+[0;32mI (3000038) HID_MIN: Demo Task[0m
+[0;32mI (3002038) HID_MIN: Demo Task[0m
+[0;32mI (3004038) HID_MIN: Demo Task[0m
+[0;32mI (3006038) HID_MIN: Demo Task[0m
+[0;32mI (3008038) HID_MIN: Demo Task[0m
+[0;32mI (3010038) HID_MIN: Demo Task[0m
+[0;32mI (3012038) HID_MIN: Demo Task[0m
+[0;32mI (3014038) HID_MIN: Demo Task[0m
+[0;32mI (3016038) HID_MIN: Demo Task[0m
+[0;32mI (3018038) HID_MIN: Demo Task[0m
+[0;32mI (3020038) HID_MIN: Demo Task[0m
+[0;32mI (3022038) HID_MIN: Demo Task[0m
+[0;32mI (3024038) HID_MIN: Demo Task[0m
+[0;32mI (3026038) HID_MIN: Demo Task[0m
+[0;32mI (3028038) HID_MIN: Demo Task[0m
+[0;32mI (3030038) HID_MIN: Demo Task[0m
+[0;32mI (3032038) HID_MIN: Demo Task[0m
+[0;32mI (3034038) HID_MIN: Demo Task[0m
+[0;32mI (3036038) HID_MIN: Demo Task[0m
+[0;32mI (3038038) HID_MIN: Demo Task[0m
+[0;32mI (3040038) HID_MIN: Demo Task[0m
+[0;32mI (3042038) HID_MIN: Demo Task[0m
+[0;32mI (3044038) HID_MIN: Demo Task[0m
+[0;32mI (3046038) HID_MIN: Demo Task[0m
+[0;32mI (3048038) HID_MIN: Demo Task[0m
+[0;32mI (3050038) HID_MIN: Demo Task[0m
+[0;32mI (3052038) HID_MIN: Demo Task[0m
+[0;32mI (3054038) HID_MIN: Demo Task[0m
+[0;32mI (3056038) HID_MIN: Demo Task[0m
+[0;32mI (3058038) HID_MIN: Demo Task[0m
+[0;32mI (3060038) HID_MIN: Demo Task[0m
+[0;32mI (3062038) HID_MIN: Demo Task[0m
+[0;32mI (3064038) HID_MIN: Demo Task[0m
+[0;32mI (3066038) HID_MIN: Demo Task[0m
+[0;32mI (3068038) HID_MIN: Demo Task[0m
+[0;32mI (3070038) HID_MIN: Demo Task[0m
+[0;32mI (3072038) HID_MIN: Demo Task[0m
+[0;32mI (3074038) HID_MIN: Demo Task[0m
+[0;32mI (3076038) HID_MIN: Demo Task[0m
+[0;32mI (3078038) HID_MIN: Demo Task[0m
+[0;32mI (3080038) HID_MIN: Demo Task[0m
+[0;32mI (3082038) HID_MIN: Demo Task[0m
+[0;32mI (3084038) HID_MIN: Demo Task[0m
+[0;32mI (3086038) HID_MIN: Demo Task[0m
+[0;32mI (3088038) HID_MIN: Demo Task[0m
+[0;32mI (3090038) HID_MIN: Demo Task[0m
+[0;32mI (3092038) HID_MIN: Demo Task[0m
+[0;32mI (3094038) HID_MIN: Demo Task[0m
+[0;32mI (3096038) HID_MIN: Demo Task[0m
+[0;32mI (3098038) HID_MIN: Demo Task[0m
+[0;32mI (3100038) HID_MIN: Demo Task[0m
+[0;32mI (3102038) HID_MIN: Demo Task[0m
+[0;32mI (3104038) HID_MIN: Demo Task[0m
+[0;32mI (3106038) HID_MIN: Demo Task[0m
+[0;32mI (3108038) HID_MIN: Demo Task[0m
+[0;32mI (3110038) HID_MIN: Demo Task[0m
+[0;32mI (3112038) HID_MIN: Demo Task[0m
+[0;32mI (3114038) HID_MIN: Demo Task[0m
+[0;32mI (3116038) HID_MIN: Demo Task[0m
+[0;32mI (3118038) HID_MIN: Demo Task[0m
+[0;32mI (3120038) HID_MIN: Demo Task[0m
+[0;32mI (3122038) HID_MIN: Demo Task[0m
+[0;32mI (3124038) HID_MIN: Demo Task[0m
+[0;32mI (3126038) HID_MIN: Demo Task[0m
+[0;32mI (3128038) HID_MIN: Demo Task[0m
+[0;32mI (3130038) HID_MIN: Demo Task[0m
+[0;32mI (3132038) HID_MIN: Demo Task[0m
+[0;32mI (3134038) HID_MIN: Demo Task[0m
+[0;32mI (3136038) HID_MIN: Demo Task[0m
+[0;32mI (3138038) HID_MIN: Demo Task[0m
+[0;32mI (3140038) HID_MIN: Demo Task[0m
+[0;32mI (3142038) HID_MIN: Demo Task[0m
+[0;32mI (3144038) HID_MIN: Demo Task[0m
+[0;32mI (3146038) HID_MIN: Demo Task[0m
+[0;32mI (3148038) HID_MIN: Demo Task[0m
+[0;32mI (3150038) HID_MIN: Demo Task[0m
+[0;32mI (3152038) HID_MIN: Demo Task[0m
+[0;32mI (3154038) HID_MIN: Demo Task[0m
+[0;32mI (3156038) HID_MIN: Demo Task[0m
+[0;32mI (3158038) HID_MIN: Demo Task[0m
+[0;32mI (3160038) HID_MIN: Demo Task[0m
+[0;32mI (3162038) HID_MIN: Demo Task[0m
+[0;32mI (3164038) HID_MIN: Demo Task[0m
+[0;32mI (3166038) HID_MIN: Demo Task[0m
+[0;32mI (3168038) HID_MIN: Demo Task[0m
+[0;32mI (3170038) HID_MIN: Demo Task[0m
+[0;32mI (3172038) HID_MIN: Demo Task[0m
+[0;32mI (3174038) HID_MIN: Demo Task[0m
+[0;32mI (3176038) HID_MIN: Demo Task[0m
+[0;32mI (3178038) HID_MIN: Demo Task[0m
+[0;32mI (3180038) HID_MIN: Demo Task[0m
+[0;32mI (3182038) HID_MIN: Demo Task[0m
+[0;32mI (3184038) HID_MIN: Demo Task[0m
+[0;32mI (3186038) HID_MIN: Demo Task[0m
+[0;32mI (3188038) HID_MIN: Demo Task[0m
+[0;32mI (3190038) HID_MIN: Demo Task[0m
+[0;32mI (3192038) HID_MIN: Demo Task[0m
+[0;32mI (3194038) HID_MIN: Demo Task[0m
+[0;32mI (3196038) HID_MIN: Demo Task[0m
+[0;32mI (3198038) HID_MIN: Demo Task[0m
+[0;32mI (3200038) HID_MIN: Demo Task[0m
+[0;32mI (3202038) HID_MIN: Demo Task[0m
+[0;32mI (3204038) HID_MIN: Demo Task[0m
+[0;32mI (3206038) HID_MIN: Demo Task[0m
+[0;32mI (3208038) HID_MIN: Demo Task[0m
+[0;32mI (3210038) HID_MIN: Demo Task[0m
+[0;32mI (3212038) HID_MIN: Demo Task[0m
+[0;32mI (3214038) HID_MIN: Demo Task[0m
+[0;32mI (3216038) HID_MIN: Demo Task[0m
+[0;32mI (3218038) HID_MIN: Demo Task[0m
+[0;32mI (3220038) HID_MIN: Demo Task[0m
+[0;32mI (3222038) HID_MIN: Demo Task[0m
+[0;32mI (3224038) HID_MIN: Demo Task[0m
+[0;32mI (3226038) HID_MIN: Demo Task[0m
+[0;32mI (3228038) HID_MIN: Demo Task[0m
+[0;32mI (3230038) HID_MIN: Demo Task[0m
+[0;32mI (3232038) HID_MIN: Demo Task[0m
+[0;32mI (3234038) HID_MIN: Demo Task[0m
+[0;32mI (3236038) HID_MIN: Demo Task[0m
+[0;32mI (3238038) HID_MIN: Demo Task[0m
+[0;32mI (3240038) HID_MIN: Demo Task[0m
+[0;32mI (3242038) HID_MIN: Demo Task[0m
+[0;32mI (3244038) HID_MIN: Demo Task[0m
+[0;32mI (3246038) HID_MIN: Demo Task[0m
+[0;32mI (3248038) HID_MIN: Demo Task[0m
+[0;32mI (3250038) HID_MIN: Demo Task[0m
+[0;32mI (3252038) HID_MIN: Demo Task[0m
+[0;32mI (3254038) HID_MIN: Demo Task[0m
+[0;32mI (3256038) HID_MIN: Demo Task[0m
+[0;32mI (3258038) HID_MIN: Demo Task[0m
+[0;32mI (3260038) HID_MIN: Demo Task[0m
+[0;32mI (3262038) HID_MIN: Demo Task[0m
+[0;32mI (3264038) HID_MIN: Demo Task[0m
+[0;32mI (3266038) HID_MIN: Demo Task[0m
+[0;32mI (3268038) HID_MIN: Demo Task[0m
+[0;32mI (3270038) HID_MIN: Demo Task[0m
+[0;32mI (3272038) HID_MIN: Demo Task[0m
+[0;32mI (3274038) HID_MIN: Demo Task[0m
+[0;32mI (3276038) HID_MIN: Demo Task[0m
+[0;32mI (3278038) HID_MIN: Demo Task[0m
+[0;32mI (3280038) HID_MIN: Demo Task[0m
+[0;32mI (3282038) HID_MIN: Demo Task[0m
+[0;32mI (3284038) HID_MIN: Demo Task[0m
+[0;32mI (3286038) HID_MIN: Demo Task[0m
+[0;32mI (3288038) HID_MIN: Demo Task[0m
+[0;32mI (3290038) HID_MIN: Demo Task[0m
+[0;32mI (3292038) HID_MIN: Demo Task[0m
+[0;32mI (3294038) HID_MIN: Demo Task[0m
+[0;32mI (3296038) HID_MIN: Demo Task[0m
+[0;32mI (3298038) HID_MIN: Demo Task[0m
+[0;32mI (3300038) HID_MIN: Demo Task[0m
+[0;32mI (3302038) HID_MIN: Demo Task[0m
+[0;32mI (3304038) HID_MIN: Demo Task[0m
+[0;32mI (3306038) HID_MIN: Demo Task[0m
+[0;32mI (3308038) HID_MIN: Demo Task[0m
+[0;32mI (3310038) HID_MIN: Demo Task[0m
+[0;32mI (3312038) HID_MIN: Demo Task[0m
+[0;32mI (3314038) HID_MIN: Demo Task[0m
+[0;32mI (3316038) HID_MIN: Demo Task[0m
+[0;32mI (3318038) HID_MIN: Demo Task[0m
+[0;32mI (3320038) HID_MIN: Demo Task[0m
+[0;32mI (3322038) HID_MIN: Demo Task[0m
+[0;32mI (3324038) HID_MIN: Demo Task[0m
+[0;32mI (3326038) HID_MIN: Demo Task[0m
+[0;32mI (3328038) HID_MIN: Demo Task[0m
+[0;32mI (3330038) HID_MIN: Demo Task[0m
+[0;32mI (3332038) HID_MIN: Demo Task[0m
+[0;32mI (3334038) HID_MIN: Demo Task[0m
+[0;32mI (3336038) HID_MIN: Demo Task[0m
+[0;32mI (3338038) HID_MIN: Demo Task[0m
+[0;32mI (3340038) HID_MIN: Demo Task[0m
+[0;32mI (3342038) HID_MIN: Demo Task[0m
+[0;32mI (3344038) HID_MIN: Demo Task[0m
+[0;32mI (3346038) HID_MIN: Demo Task[0m
+[0;32mI (3348038) HID_MIN: Demo Task[0m
+[0;32mI (3350038) HID_MIN: Demo Task[0m
+[0;32mI (3352038) HID_MIN: Demo Task[0m
+[0;32mI (3354038) HID_MIN: Demo Task[0m
+[0;32mI (3356038) HID_MIN: Demo Task[0m
+[0;32mI (3358038) HID_MIN: Demo Task[0m
+[0;32mI (3360038) HID_MIN: Demo Task[0m
+[0;32mI (3362038) HID_MIN: Demo Task[0m
+[0;32mI (3364038) HID_MIN: Demo Task[0m
+[0;32mI (3366038) HID_MIN: Demo Task[0m
+[0;32mI (3368038) HID_MIN: Demo Task[0m
+[0;32mI (3370038) HID_MIN: Demo Task[0m
+[0;32mI (3372038) HID_MIN: Demo Task[0m
+[0;32mI (3374038) HID_MIN: Demo Task[0m
+[0;32mI (3376038) HID_MIN: Demo Task[0m
+[0;32mI (3378038) HID_MIN: Demo Task[0m
+[0;32mI (3380038) HID_MIN: Demo Task[0m
+[0;32mI (3382038) HID_MIN: Demo Task[0m
+[0;32mI (3384038) HID_MIN: Demo Task[0m
+[0;32mI (3386038) HID_MIN: Demo Task[0m
+[0;32mI (3388038) HID_MIN: Demo Task[0m
+[0;32mI (3390038) HID_MIN: Demo Task[0m
+[0;32mI (3392038) HID_MIN: Demo Task[0m
+[0;32mI (3394038) HID_MIN: Demo Task[0m
+[0;32mI (3396038) HID_MIN: Demo Task[0m
+[0;32mI (3398038) HID_MIN: Demo Task[0m
+[0;32mI (3400038) HID_MIN: Demo Task[0m
+[0;32mI (3402038) HID_MIN: Demo Task[0m
+[0;32mI (3404038) HID_MIN: Demo Task[0m
+[0;32mI (3406038) HID_MIN: Demo Task[0m
+[0;32mI (3408038) HID_MIN: Demo Task[0m
+[0;32mI (3410038) HID_MIN: Demo Task[0m
+[0;32mI (3412038) HID_MIN: Demo Task[0m
+[0;32mI (3414038) HID_MIN: Demo Task[0m
+[0;32mI (3416038) HID_MIN: Demo Task[0m
+[0;32mI (3418038) HID_MIN: Demo Task[0m
+[0;32mI (3420038) HID_MIN: Demo Task[0m
+[0;32mI (3422038) HID_MIN: Demo Task[0m
+[0;32mI (3424038) HID_MIN: Demo Task[0m
+[0;32mI (3426038) HID_MIN: Demo Task[0m
+[0;32mI (3428038) HID_MIN: Demo Task[0m
+[0;32mI (3430038) HID_MIN: Demo Task[0m
+[0;32mI (3432038) HID_MIN: Demo Task[0m
+[0;32mI (3434038) HID_MIN: Demo Task[0m
+[0;32mI (3436038) HID_MIN: Demo Task[0m
+[0;32mI (3438038) HID_MIN: Demo Task[0m
+[0;32mI (3440038) HID_MIN: Demo Task[0m
+[0;32mI (3442038) HID_MIN: Demo Task[0m
+[0;32mI (3444038) HID_MIN: Demo Task[0m
+[0;32mI (3446038) HID_MIN: Demo Task[0m
+[0;32mI (3448038) HID_MIN: Demo Task[0m
+[0;32mI (3450038) HID_MIN: Demo Task[0m
+[0;32mI (3452038) HID_MIN: Demo Task[0m
+[0;32mI (3454038) HID_MIN: Demo Task[0m
+[0;32mI (3456038) HID_MIN: Demo Task[0m
+[0;32mI (3458038) HID_MIN: Demo Task[0m
+[0;32mI (3460038) HID_MIN: Demo Task[0m
+[0;32mI (3462038) HID_MIN: Demo Task[0m
+[0;32mI (3464038) HID_MIN: Demo Task[0m
+[0;32mI (3466038) HID_MIN: Demo Task[0m
+[0;32mI (3468038) HID_MIN: Demo Task[0m
+[0;32mI (3470038) HID_MIN: Demo Task[0m
+[0;32mI (3472038) HID_MIN: Demo Task[0m
+[0;32mI (3474038) HID_MIN: Demo Task[0m
+[0;32mI (3476038) HID_MIN: Demo Task[0m
+[0;32mI (3478038) HID_MIN: Demo Task[0m
+[0;32mI (3480038) HID_MIN: Demo Task[0m
+[0;32mI (3482038) HID_MIN: Demo Task[0m
+[0;32mI (3484038) HID_MIN: Demo Task[0m
+[0;32mI (3486038) HID_MIN: Demo Task[0m
+[0;32mI (3488038) HID_MIN: Demo Task[0m
+[0;32mI (3490038) HID_MIN: Demo Task[0m
+[0;32mI (3492038) HID_MIN: Demo Task[0m
+[0;32mI (3494038) HID_MIN: Demo Task[0m
+[0;32mI (3496038) HID_MIN: Demo Task[0m
+[0;32mI (3498038) HID_MIN: Demo Task[0m
+[0;32mI (3500038) HID_MIN: Demo Task[0m
+[0;32mI (3502038) HID_MIN: Demo Task[0m
+[0;32mI (3504038) HID_MIN: Demo Task[0m
+[0;32mI (3506038) HID_MIN: Demo Task[0m
+[0;32mI (3508038) HID_MIN: Demo Task[0m
+---------------------------------------------------------
+[0;32mI (3508548) HID_MIN: Custom Write received (10 bytes): 1234567890[0m
+[0;32mI (3508548) HID_MIN: Typing string: 1234567890[0m
+[0;32mI (3508548) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (3508558) NimBLE: att_handle=44[0m
+
+[0;32mI (3508558) NimBLE: notify_tx event; conn_handle=1 attr_handle=44 status=0 is_indication=0[0m
+[0;32mI (3508578) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (3508578) NimBLE: att_handle=44[0m
+
+[0;32mI (3508578) NimBLE: notify_tx event; conn_handle=1 attr_handle=44 status=0 is_indication=0[0m
+[0;32mI (3508608) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (3508608) NimBLE: att_handle=44[0m
+
+[0;32mI (3508608) NimBLE: notify_tx event; conn_handle=1 attr_handle=44 status=0 is_indication=0[0m
+[0;32mI (3508618) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (3508618) NimBLE: att_handle=44[0m
+
+[0;32mI (3508618) NimBLE: notify_tx event; conn_handle=1 attr_handle=44 status=0 is_indication=0[0m
+[0;32mI (3508648) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (3508648) NimBLE: att_handle=44[0m
+
+[0;32mI (3508648) NimBLE: notify_tx event; conn_handle=1 attr_handle=44 status=0 is_indication=0[0m
+[0;32mI (3508658) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (3508658) NimBLE: att_handle=44[0m
+
+[0;32mI (3508658) NimBLE: notify_tx event; conn_handle=1 attr_handle=44 status=0 is_indication=0[0m
+[0;32mI (3508688) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (3508688) NimBLE: att_handle=44[0m
+
+[0;32mI (3508688) NimBLE: notify_tx event; conn_handle=1 attr_handle=44 status=0 is_indication=0[0m
+[0;32mI (3508698) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (3508698) NimBLE: att_handle=44[0m
+
+[0;32mI (3508698) NimBLE: notify_tx event; conn_handle=1 attr_handle=44 status=0 is_indication=0[0m
+[0;32mI (3508728) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (3508728) NimBLE: att_handle=44[0m
+
+[0;32mI (3508728) NimBLE: notify_tx event; conn_handle=1 attr_handle=44 status=0 is_indication=0[0m
+[0;32mI (3508738) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (3508738) NimBLE: att_handle=44[0m
+
+[0;32mI (3508738) NimBLE: notify_tx event; conn_handle=1 attr_handle=44 status=0 is_indication=0[0m
+[0;32mI (3508768) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (3508768) NimBLE: att_handle=44[0m
+
+[0;32mI (3508768) NimBLE: notify_tx event; conn_handle=1 attr_handle=44 status=0 is_indication=0[0m
+[0;32mI (3508778) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (3508778) NimBLE: att_handle=44[0m
+
+[0;32mI (3508778) NimBLE: notify_tx event; conn_handle=1 attr_handle=44 status=0 is_indication=0[0m
+[0;32mI (3508808) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (3508808) NimBLE: att_handle=44[0m
+
+[0;32mI (3508808) NimBLE: notify_tx event; conn_handle=1 attr_handle=44 status=0 is_indication=0[0m
+[0;32mI (3508818) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (3508818) NimBLE: att_handle=44[0m
+
+[0;32mI (3508818) NimBLE: notify_tx event; conn_handle=1 attr_handle=44 status=0 is_indication=0[0m
+[0;32mI (3508848) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (3508848) NimBLE: att_handle=44[0m
+
+[0;32mI (3508848) NimBLE: notify_tx event; conn_handle=1 attr_handle=44 status=0 is_indication=0[0m
+[0;32mI (3508858) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (3508858) NimBLE: att_handle=44[0m
+
+[0;32mI (3508858) NimBLE: notify_tx event; conn_handle=1 attr_handle=44 status=0 is_indication=0[0m
+[0;32mI (3508888) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (3508888) NimBLE: att_handle=44[0m
+
+[0;32mI (3508888) NimBLE: notify_tx event; conn_handle=1 attr_handle=44 status=0 is_indication=0[0m
+[0;32mI (3508898) NimBLE: GATT procedure initiated: notify; [0m
+[0;32mI (3508898) NimBLE: att_handle=44[0m
+
+[0;32mI (3508898) NimBLE: notify_tx event; conn_handle=1 attr_handle=44 status=0 is_indication=0[0m
+[1;31mE (3508928) NIMBLE_HIDD: Unable to fetch protocol_mode[0m
+
+[1;31mE (3508938) NIMBLE_HIDD: Unable to fetch protocol_mode[0m
+
+[0;32mI (3510038) HID_MIN: Demo Task[0m
+[0;32mI (3512038) HID_MIN: Demo Task[0m
+[0;32mI (3514038) HID_MIN: Demo Task[0m
+[0;32mI (3516038) HID_MIN: Demo Task[0m
+[0;32mI (3518038) HID_MIN: Demo Task[0m
+[0;32mI (3520038) HID_MIN: Demo Task[0m
+[0;32mI (3522038) HID_MIN: Demo Task[0m
+[0;32mI (3524038) HID_MIN: Demo Task[0m
+[0;32mI (3526038) HID_MIN: Demo Task[0m
+[0;32mI (3528038) HID_MIN: Demo Task[0m
+[0;32mI (3530038) HID_MIN: Demo Task[0m
+[0;32mI (3532038) HID_MIN: Demo Task[0m
+[0;32mI (3534038) HID_MIN: Demo Task[0m
+[0;32mI (3536038) HID_MIN: Demo Task[0m
+[0;32mI (3538038) HID_MIN: Demo Task[0m
+[0;32mI (3540038) HID_MIN: Demo Task[0m
+[0;32mI (3542038) HID_MIN: Demo Task[0m
+[0;32mI (3544038) HID_MIN: Demo Task[0m
+[0;32mI (3546038) HID_MIN: Demo Task[0m
+[0;32mI (3548038) HID_MIN: Demo Task[0m
+[0;32mI (3550038) HID_MIN: Demo Task[0m
+[0;32mI (3552038) HID_MIN: Demo Task[0m
+[0;32mI (3554038) HID_MIN: Demo Task[0m
+[0;32mI (3556038) HID_MIN: Demo Task[0m
+[0;32mI (3558038) HID_MIN: Demo Task[0m
+[0;32mI (3560038) HID_MIN: Demo Task[0m
+[0;32mI (3562038) HID_MIN: Demo Task[0m
+[0;32mI (3564038) HID_MIN: Demo Task[0m
+[0;32mI (3566038) HID_MIN: Demo Task[0m
+[0;32mI (3568038) HID_MIN: Demo Task[0m
+[0;32mI (3570038) HID_MIN: Demo Task[0m
+[0;32mI (3572038) HID_MIN: Demo Task[0m
+[0;32mI (3574038) HID_MIN: Demo Task[0m
+[0;32mI (3576038) HID_MIN: Demo Task[0m
+[0;32mI (3578038) HID_MIN: Demo Task[0m
+[0;32mI (3580038) HID_MIN: Demo Task[0m
+[0;32mI (3582038) HID_MIN: Demo Task[0m
+[0;32mI (3584038) HID_MIN: Demo Task[0m
+[0;32mI (3586038) HID_MIN: Demo Task[0m
+[0;32mI (3588038) HID_MIN: Demo Task[0m
+[0;32mI (3590038) HID_MIN: Demo Task[0m
+[0;32mI (3592038) HID_MIN: Demo Task[0m
+[0;32mI (3594038) HID_MIN: Demo Task[0m
+[0;32mI (3596038) HID_MIN: Demo Task[0m
+[0;32mI (3598038) HID_MIN: Demo Task[0m
+[0;32mI (3600038) HID_MIN: Demo Task[0m
+[0;32mI (3602038) HID_MIN: Demo Task[0m
+[0;32mI (3604038) HID_MIN: Demo Task[0m
+[0;32mI (3606038) HID_MIN: Demo Task[0m
+[0;32mI (3608038) HID_MIN: Demo Task[0m
+[0;32mI (3610038) HID_MIN: Demo Task[0m
+[0;32mI (3612038) HID_MIN: Demo Task[0m
+[0;32mI (3614038) HID_MIN: Demo Task[0m
+[0;32mI (3616038) HID_MIN: Demo Task[0m
+[0;32mI (3618038) HID_MIN: Demo Task[0m
+[0;32mI (3620038) HID_MIN: Demo Task[0m
+[0;32mI (3622038) HID_MIN: Demo Task[0m
+[0;32mI (3624038) HID_MIN: Demo Task[0m
+[0;32mI (3626038) HID_MIN: Demo Task[0m
+[0;32mI (3628038) HID_MIN: Demo Task[0m
+[0;32mI (3630038) HID_MIN: Demo Task[0m
+[0;32mI (3632038) HID_MIN: Demo Task[0m
+[0;32mI (3634038) HID_MIN: Demo Task[0m
+[0;32mI (3636038) HID_MIN: Demo Task[0m
+[0;32mI (3638038) HID_MIN: Demo Task[0m
+[0;32mI (3640038) HID_MIN: Demo Task[0m
+[0;32mI (3642038) HID_MIN: Demo Task[0m
+[0;32mI (3644038) HID_MIN: Demo Task[0m
+[0;32mI (3646038) HID_MIN: Demo Task[0m
+[0;32mI (3648038) HID_MIN: Demo Task[0m
+[0;32mI (3650038) HID_MIN: Demo Task[0m
+[0;32mI (3652038) HID_MIN: Demo Task[0m
+[0;32mI (3654038) HID_MIN: Demo Task[0m
+[0;32mI (3656038) HID_MIN: Demo Task[0m
+[0;32mI (3658038) HID_MIN: Demo Task[0m
+[0;32mI (3660038) HID_MIN: Demo Task[0m
+[0;32mI (3662038) HID_MIN: Demo Task[0m
+[0;32mI (3664038) HID_MIN: Demo Task[0m
+[0;32mI (3666038) HID_MIN: Demo Task[0m
+[0;32mI (3668038) HID_MIN: Demo Task[0m
+[0;32mI (3670038) HID_MIN: Demo Task[0m
+[0;32mI (3672038) HID_MIN: Demo Task[0m
+[0;32mI (3674038) HID_MIN: Demo Task[0m
+[0;32mI (3676038) HID_MIN: Demo Task[0m
+[0;32mI (3678038) HID_MIN: Demo Task[0m
+[0;32mI (3680038) HID_MIN: Demo Task[0m
+[0;32mI (3682038) HID_MIN: Demo Task[0m
+[0;32mI (3684038) HID_MIN: Demo Task[0m
+[0;32mI (3686038) HID_MIN: Demo Task[0m
+[0;32mI (3688038) HID_MIN: Demo Task[0m
+[0;32mI (3690038) HID_MIN: Demo Task[0m
+[0;32mI (3692038) HID_MIN: Demo Task[0m
+[0;32mI (3694038) HID_MIN: Demo Task[0m
+[0;32mI (3696038) HID_MIN: Demo Task[0m
+[0;32mI (3698038) HID_MIN: Demo Task[0m
+[0;32mI (3700038) HID_MIN: Demo Task[0m
+[0;32mI (3702038) HID_MIN: Demo Task[0m
+[0;32mI (3704038) HID_MIN: Demo Task[0m
+[0;32mI (3706038) HID_MIN: Demo Task[0m
+[0;32mI (3708038) HID_MIN: Demo Task[0m
+[0;32mI (3710038) HID_MIN: Demo Task[0m
+[0;32mI (3712038) HID_MIN: Demo Task[0m
+[0;32mI (3714038) HID_MIN: Demo Task[0m
+[0;32mI (3716038) HID_MIN: Demo Task[0m
+[0;32mI (3718038) HID_MIN: Demo Task[0m
+[0;32mI (3720038) HID_MIN: Demo Task[0m
+[0;32mI (3722038) HID_MIN: Demo Task[0m
+[0;32mI (3724038) HID_MIN: Demo Task[0m
+[0;32mI (3726038) HID_MIN: Demo Task[0m
+[0;32mI (3728038) HID_MIN: Demo Task[0m
+[0;32mI (3730038) HID_MIN: Demo Task[0m
+[0;32mI (3732038) HID_MIN: Demo Task[0m
+[0;32mI (3734038) HID_MIN: Demo Task[0m
+[0;32mI (3736038) HID_MIN: Demo Task[0m
+[0;32mI (3738038) HID_MIN: Demo Task[0m
+[0;32mI (3740038) HID_MIN: Demo Task[0m
+[0;32mI (3742038) HID_MIN: Demo Task[0m
+[0;32mI (3744038) HID_MIN: Demo Task[0m
+[0;32mI (3746038) HID_MIN: Demo Task[0m
+[0;32mI (3748038) HID_MIN: Demo Task[0m
+[0;32mI (3750038) HID_MIN: Demo Task[0m
+[0;32mI (3752038) HID_MIN: Demo Task[0m
+[0;32mI (3754038) HID_MIN: Demo Task[0m
+[0;32mI (3756038) HID_MIN: Demo Task[0m
+[0;32mI (3758038) HID_MIN: Demo Task[0m
+[0;32mI (3760038) HID_MIN: Demo Task[0m
+[0;32mI (3762038) HID_MIN: Demo Task[0m
+[0;32mI (3764038) HID_MIN: Demo Task[0m
+[0;32mI (3766038) HID_MIN: Demo Task[0m
+[0;32mI (3768038) HID_MIN: Demo Task[0m
+[0;32mI (3770038) HID_MIN: Demo Task[0m
+[0;32mI (3772038) HID_MIN: Demo Task[0m
+[0;32mI (3774038) HID_MIN: Demo Task[0m
+[0;32mI (3776038) HID_MIN: Demo Task[0m
+[0;32mI (3778038) HID_MIN: Demo Task[0m
+[0;32mI (3780038) HID_MIN: Demo Task[0m
+[0;32mI (3782038) HID_MIN: Demo Task[0m
+[0;32mI (3784038) HID_MIN: Demo Task[0m
+[0;32mI (3786038) HID_MIN: Demo Task[0m
+[0;32mI (3788038) HID_MIN: Demo Task[0m
+[0;32mI (3790038) HID_MIN: Demo Task[0m
+[0;32mI (3792038) HID_MIN: Demo Task[0m
+[0;32mI (3794038) HID_MIN: Demo Task[0m
+[0;32mI (3796038) HID_MIN: Demo Task[0m
+[0;32mI (3798038) HID_MIN: Demo Task[0m
+[0;32mI (3800038) HID_MIN: Demo Task[0m
+[0;32mI (3802038) HID_MIN: Demo Task[0m
+[0;32mI (3804038) HID_MIN: Demo Task[0m
+[0;32mI (3806038) HID_MIN: Demo Task[0m
+[0;32mI (3808038) HID_MIN: Demo Task[0m
+[0;32mI (3810038) HID_MIN: Demo Task[0m
+[0;32mI (3812038) HID_MIN: Demo Task[0m
+[0;32mI (3814038) HID_MIN: Demo Task[0m
+[0;32mI (3816038) HID_MIN: Demo Task[0m
+[0;32mI (3818038) HID_MIN: Demo Task[0m
+[0;32mI (3820038) HID_MIN: Demo Task[0m
+[0;32mI (3822038) HID_MIN: Demo Task[0m
+[0;32mI (3824038) HID_MIN: Demo Task[0m
+[0;32mI (3826038) HID_MIN: Demo Task[0m
+[0;32mI (3828038) HID_MIN: Demo Task[0m
+[0;32mI (3830038) HID_MIN: Demo Task[0m
+[0;32mI (3832038) HID_MIN: Demo Task[0m
+[0;32mI (3834038) HID_MIN: Demo Task[0m
+[0;32mI (3836038) HID_MIN: Demo Task[0m
+[0;32mI (3838038) HID_MIN: Demo Task[0m
+[0;32mI (3840038) HID_MIN: Demo Task[0m
+[0;32mI (3842038) HID_MIN: Demo Task[0m
+[0;32mI (3844038) HID_MIN: Demo Task[0m
+[0;32mI (3846038) HID_MIN: Demo Task[0m
+[0;32mI (3848038) HID_MIN: Demo Task[0m
+[0;32mI (3850038) HID_MIN: Demo Task[0m
+[0;32mI (3852038) HID_MIN: Demo Task[0m
+[0;32mI (3854038) HID_MIN: Demo Task[0m
+[0;32mI (3856038) HID_MIN: Demo Task[0m
+[0;32mI (3858038) HID_MIN: Demo Task[0m
+[0;32mI (3860038) HID_MIN: Demo Task[0m
+[0;32mI (3862038) HID_MIN: Demo Task[0m
+[0;32mI (3864038) HID_MIN: Demo Task[0m
+[0;32mI (3866038) HID_MIN: Demo Task[0m
+[0;32mI (3868038) HID_MIN: Demo Task[0m
+[0;32mI (3870038) HID_MIN: Demo Task[0m
+[0;32mI (3872038) HID_MIN: Demo Task[0m
+[0;32mI (3874038) HID_MIN: Demo Task[0m
+[0;32mI (3876038) HID_MIN: Demo Task[0m
+[0;32mI (3878038) HID_MIN: Demo Task[0m
+[0;32mI (3880038) HID_MIN: Demo Task[0m
+[0;32mI (3882038) HID_MIN: Demo Task[0m
+[0;32mI (3884038) HID_MIN: Demo Task[0m
+[0;32mI (3886038) HID_MIN: Demo Task[0m
+[0;32mI (3888038) HID_MIN: Demo Task[0m
+[0;32mI (3890038) HID_MIN: Demo Task[0m
+[0;32mI (3892038) HID_MIN: Demo Task[0m
+[0;32mI (3894038) HID_MIN: Demo Task[0m
+[0;32mI (3896038) HID_MIN: Demo Task[0m
+[0;32mI (3898038) HID_MIN: Demo Task[0m
+[0;32mI (3900038) HID_MIN: Demo Task[0m
+[0;32mI (3902038) HID_MIN: Demo Task[0m
+[0;32mI (3904038) HID_MIN: Demo Task[0m
+[0;32mI (3906038) HID_MIN: Demo Task[0m
+[0;32mI (3908038) HID_MIN: Demo Task[0m
+[0;32mI (3910038) HID_MIN: Demo Task[0m
+[0;32mI (3912038) HID_MIN: Demo Task[0m
+[0;32mI (3914038) HID_MIN: Demo Task[0m
+[0;32mI (3916038) HID_MIN: Demo Task[0m
+[0;32mI (3918038) HID_MIN: Demo Task[0m
+[0;32mI (3920038) HID_MIN: Demo Task[0m
+[0;32mI (3922038) HID_MIN: Demo Task[0m
+[0;32mI (3924038) HID_MIN: Demo Task[0m
+[0;32mI (3926038) HID_MIN: Demo Task[0m
+[0;32mI (3928038) HID_MIN: Demo Task[0m
+[0;32mI (3930038) HID_MIN: Demo Task[0m
+[0;32mI (3932038) HID_MIN: Demo Task[0m
+[0;32mI (3934038) HID_MIN: Demo Task[0m
+[0;32mI (3936038) HID_MIN: Demo Task[0m
+[0;32mI (3938038) HID_MIN: Demo Task[0m
+[0;32mI (3940038) HID_MIN: Demo Task[0m
+[0;32mI (3942038) HID_MIN: Demo Task[0m
+[0;32mI (3944038) HID_MIN: Demo Task[0m
+[0;32mI (3946038) HID_MIN: Demo Task[0m
+[0;32mI (3948038) HID_MIN: Demo Task[0m
+[0;32mI (3950038) HID_MIN: Demo Task[0m
+[0;32mI (3952038) HID_MIN: Demo Task[0m
+[0;32mI (3954038) HID_MIN: Demo Task[0m
+[0;32mI (3956038) HID_MIN: Demo Task[0m
+[0;32mI (3958038) HID_MIN: Demo Task[0m
+[0;32mI (3960038) HID_MIN: Demo Task[0m
+[0;32mI (3962038) HID_MIN: Demo Task[0m
+[0;32mI (3964038) HID_MIN: Demo Task[0m
+[0;32mI (3966038) HID_MIN: Demo Task[0m
+[0;32mI (3968038) HID_MIN: Demo Task[0m
+[0;32mI (3970038) HID_MIN: Demo Task[0m
+[0;32mI (3972038) HID_MIN: Demo Task[0m
+[0;32mI (3974038) HID_MIN: Demo Task[0m
+[0;32mI (3976038) HID_MIN: Demo Task[0m
+[0;32mI (3978038) HID_MIN: Demo Task[0m
+[0;32mI (3980038) HID_MIN: Demo Task[0m
+[0;32mI (3982038) HID_MIN: Demo Task[0m
+[0;32mI (3984038) HID_MIN: Demo Task[0m
+[0;32mI (3986038) HID_MIN: Demo Task[0m
+[0;32mI (3988038) HID_MIN: Demo Task[0m
+[0;32mI (3990038) HID_MIN: Demo Task[0m
+[0;32mI (3992038) HID_MIN: Demo Task[0m
+[0;32mI (3994038) HID_MIN: Demo Task[0m
+[0;32mI (3996038) HID_MIN: Demo Task[0m
+[0;32mI (3998038) HID_MIN: Demo Task[0m
+[0;32mI (4000038) HID_MIN: Demo Task[0m
+[0;32mI (4002038) HID_MIN: Demo Task[0m
+[0;32mI (4004038) HID_MIN: Demo Task[0m
+[0;32mI (4006038) HID_MIN: Demo Task[0m
+[0;32mI (4008038) HID_MIN: Demo Task[0m
+[0;32mI (4010038) HID_MIN: Demo Task[0m
+[0;32mI (4012038) HID_MIN: Demo Task[0m
+[0;32mI (4014038) HID_MIN: Demo Task[0m
+[0;32mI (4016038) HID_MIN: Demo Task[0m
+[0;32mI (4018038) HID_MIN: Demo Task[0m
+[0;32mI (4020038) HID_MIN: Demo Task[0m
+[0;32mI (4022038) HID_MIN: Demo Task[0m
+[0;32mI (4024038) HID_MIN: Demo Task[0m
+[0;32mI (4026038) HID_MIN: Demo Task[0m
+[0;32mI (4028038) HID_MIN: Demo Task[0m
+[0;32mI (4030038) HID_MIN: Demo Task[0m
+[0;32mI (4032038) HID_MIN: Demo Task[0m
+[0;32mI (4034038) HID_MIN: Demo Task[0m
+[0;32mI (4036038) HID_MIN: Demo Task[0m
+[0;32mI (4038038) HID_MIN: Demo Task[0m
+[0;32mI (4040038) HID_MIN: Demo Task[0m
+[0;32mI (4042038) HID_MIN: Demo Task[0m
+[0;32mI (4044038) HID_MIN: Demo Task[0m
+[0;32mI (4046038) HID_MIN: Demo Task[0m
+[0;32mI (4048038) HID_MIN: Demo Task[0m
+[0;32mI (4050038) HID_MIN: Demo Task[0m
+[0;32mI (4052038) HID_MIN: Demo Task[0m
+[0;32mI (4054038) HID_MIN: Demo Task[0m
+[0;32mI (4056038) HID_MIN: Demo Task[0m
+[0;32mI (4058038) HID_MIN: Demo Task[0m
+[0;32mI (4060038) HID_MIN: Demo Task[0m
+[0;32mI (4062038) HID_MIN: Demo Task[0m
+[0;32mI (4064038) HID_MIN: Demo Task[0m
+[0;32mI (4066038) HID_MIN: Demo Task[0m
+[0;32mI (4068038) HID_MIN: Demo Task[0m
+[0;32mI (4070038) HID_MIN: Demo Task[0m
+[0;32mI (4072038) HID_MIN: Demo Task[0m
+[0;32mI (4074038) HID_MIN: Demo Task[0m
+[0;32mI (4076038) HID_MIN: Demo Task[0m
+[0;32mI (4078038) HID_MIN: Demo Task[0m
+[0;32mI (4080038) HID_MIN: Demo Task[0m
+[0;32mI (4082038) HID_MIN: Demo Task[0m
+[0;32mI (4084038) HID_MIN: Demo Task[0m
+[0;32mI (4086038) HID_MIN: Demo Task[0m
+[0;32mI (4088038) HID_MIN: Demo Task[0m
+[0;32mI (4090038) HID_MIN: Demo Task[0m
+[0;32mI (4092038) HID_MIN: Demo Task[0m
+[0;32mI (4094038) HID_MIN: Demo Task[0m
+[0;32mI (4096038) HID_MIN: Demo Task[0m
+[0;32mI (4098038) HID_MIN: Demo Task[0m
+[0;32mI (4100038) HID_MIN: Demo Task[0m
+[0;32mI (4102038) HID_MIN: Demo Task[0m
+[0;32mI (4104038) HID_MIN: Demo Task[0m
+[0;32mI (4106038) HID_MIN: Demo Task[0m
+[0;32mI (4108038) HID_MIN: Demo Task[0m
+[0;32mI (4110038) HID_MIN: Demo Task[0m
+[0;32mI (4112038) HID_MIN: Demo Task[0m
+[0;32mI (4114038) HID_MIN: Demo Task[0m
+[0;32mI (4116038) HID_MIN: Demo Task[0m
+[0;32mI (4118038) HID_MIN: Demo Task[0m
+[0;32mI (4120038) HID_MIN: Demo Task[0m
+[0;32mI (4122038) HID_MIN: Demo Task[0m
+[0;32mI (4124038) HID_MIN: Demo Task[0m
+[0;32mI (4126038) HID_MIN: Demo Task[0m
+[0;32mI (4128038) HID_MIN: Demo Task[0m
+[0;32mI (4130038) HID_MIN: Demo Task[0m
+[0;32mI (4132038) HID_MIN: Demo Task[0m
+[0;32mI (4134038) HID_MIN: Demo Task[0m
+[0;32mI (4136038) HID_MIN: Demo Task[0m
+[0;32mI (4138038) HID_MIN: Demo Task[0m
+[0;32mI (4140038) HID_MIN: Demo Task[0m
+[0;32mI (4142038) HID_MIN: Demo Task[0m
+[0;32mI (4144038) HID_MIN: Demo Task[0m
+[0;32mI (4146038) HID_MIN: Demo Task[0m
+[0;32mI (4148038) HID_MIN: Demo Task[0m
+[0;32mI (4150038) HID_MIN: Demo Task[0m
+[0;32mI (4152038) HID_MIN: Demo Task[0m
+[0;32mI (4154038) HID_MIN: Demo Task[0m
+[0;32mI (4156038) HID_MIN: Demo Task[0m
+[0;32mI (4158038) HID_MIN: Demo Task[0m
+[0;32mI (4160038) HID_MIN: Demo Task[0m
+[0;32mI (4162038) HID_MIN: Demo Task[0m
+[0;32mI (4164038) HID_MIN: Demo Task[0m
+[0;32mI (4166038) HID_MIN: Demo Task[0m
+[0;32mI (4168038) HID_MIN: Demo Task[0m
+[0;32mI (4170038) HID_MIN: Demo Task[0m
+[0;32mI (4172038) HID_MIN: Demo Task[0m
+[0;32mI (4174038) HID_MIN: Demo Task[0m
+[0;32mI (4176038) HID_MIN: Demo Task[0m
+[0;32mI (4178038) HID_MIN: Demo Task[0m
+[0;32mI (4180038) HID_MIN: Demo Task[0m
+[0;32mI (4182038) HID_MIN: Demo Task[0m
+[0;32mI (4184038) HID_MIN: Demo Task[0m
+[0;32mI (4186038) HID_MIN: Demo Task[0m
+[0;32mI (4188038) HID_MIN: Demo Task[0m
+[0;32mI (4190038) HID_MIN: Demo Task[0m
+[0;32mI (4192038) HID_MIN: Demo Task[0m
+[0;32mI (4194038) HID_MIN: Demo Task[0m
+[0;32mI (4196038) HID_MIN: Demo Task[0m
+[0;32mI (4198038) HID_MIN: Demo Task[0m
+[0;32mI (4200038) HID_MIN: Demo Task[0m
+[0;32mI (4202038) HID_MIN: Demo Task[0m
+[0;32mI (4204038) HID_MIN: Demo Task[0m
+[0;32mI (4206038) HID_MIN: Demo Task[0m
+[0;32mI (4208038) HID_MIN: Demo Task[0m
+[0;32mI (4210038) HID_MIN: Demo Task[0m
+[0;32mI (4212038) HID_MIN: Demo Task[0m
+[0;32mI (4214038) HID_MIN: Demo Task[0m
+[0;32mI (4216038) HID_MIN: Demo Task[0m
+[0;32mI (4218038) HID_MIN: Demo Task[0m
+[0;32mI (4220038) HID_MIN: Demo Task[0m
+[0;32mI (4222038) HID_MIN: Demo Task[0m
+[0;32mI (4224038) HID_MIN: Demo Task[0m
+[0;32mI (4226038) HID_MIN: Demo Task[0m
+[0;32mI (4228038) HID_MIN: Demo Task[0m

@@ -1,0 +1,33 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM11 instead...[0m
+[0;33m--- esp-idf-monitor 1.6.2 on \\.\COM11 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x4200c66a: find_report at C:/Users/AWAN/esp/v5.4.2/esp-idf/components/esp_hid/src/nimble_hidd.c:329
+[0m
+[0;33m--- 0x40056f08: __memcpy_aux in ROM
+--- 0x40056f12: __memcpy_aux in ROM
+[0m
+[0;33m--- 0x4200c667: find_report at C:/Users/AWAN/esp/v5.4.2/esp-idf/components/esp_hid/src/nimble_hidd.c:328
+--- 0x4200cbe3: nimble_hidd_dev_input_set at C:/Users/AWAN/esp/v5.4.2/esp-idf/components/esp_hid/src/nimble_hidd.c:380
+--- 0x4205b01d: esp_hidd_dev_input_set at C:/Users/AWAN/esp/v5.4.2/esp-idf/components/esp_hid/src/esp_hidd.c:96
+--- 0x4200b89d: send_key at E:/BLE_HID/main/mainHid.c:240
+--- 0x4200be29: custom_write_cb at E:/BLE_HID/main/mainHid.c:431
+--- 0x4201b659: ble_gatts_val_access at C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gatts.c:500
+--- 0x4201b699: ble_gatts_chr_val_access at C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gatts.c:527
+--- 0x42011be1: ble_att_svr_write at C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_att_svr.c:590
+--- 0x42012445: ble_att_svr_write_handle at C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_att_svr.c:621
+--- 0x42012edb: ble_att_svr_rx_write_no_rsp at C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_att_svr.c:2403
+--- 0x42014bd2: ble_att_rx_extended at C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_att.c:567
+--- 0x42014c04: ble_att_rx at C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_att.c:588
+--- 0x42014932: ble_hs_hci_evt_acl_process at C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs_hci_evt.c:1416
+--- 0x42013d79: ble_hs_process_rx_data_queue at C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c:263
+--- 0x42013d8b: ble_hs_event_rx_data at C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c:563
+--- 0x4205baab: npl_freertos_event_run at C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c:457
+--- 0x403773ea: ble_npl_event_run at C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include/nimble/nimble_npl_os.h:185
+---  (inlined by) nimble_port_run at C:/Users/AWAN/esp/v5.4.2/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/nimble_port.c:313
+--- 0x4200b842: ble_host_task at E:/BLE_HID/main/mainHid.c:313
+--- 0x403812d9: vPortTaskWrapper at C:/Users/AWAN/esp/v5.4.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375b1c: esp_restart_noos at C:/Users/AWAN/esp/v5.4.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:162
+[0m
+[0m
