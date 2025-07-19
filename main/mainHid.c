@@ -1,5 +1,5 @@
 /*  Minimal BLE HID Consumer-Control demo for ESP32-S3 (NimBLE)
- *  Sends VOL-UP / VOL-DOWN alternately every 2 s.
+ *  Replays the commands received over BLE via BLE-HID
  *  Build: idf.py menuconfig → Component-config → Bluetooth → NimBLE
  */
 #include "esp_log.h"
@@ -209,7 +209,7 @@ static const uint8_t consumer_map[] = {
 /* ───────────────────────── Globals ─────────────────────────────── */
 static esp_hidd_dev_t *hid_dev;
 
-/* ───────────────────────── Helpers ─────────────────────────────── */
+/* ───────────────────────── Media Keys ─────────────────────────────── */
 static void send_consumer(uint16_t usage)
 {
     uint8_t rpt[2] = {usage & 0xFF, usage >> 8}; // Little endian
@@ -223,6 +223,7 @@ static void send_consumer(uint16_t usage)
     esp_hidd_dev_input_set(hid_dev, 0, 1, rpt, sizeof(rpt));
 }
 
+/* ───────────────────────── Keyboard Function ────────────────────────────── */
 void send_key(uint8_t modifier, uint8_t keycode)
 {
     uint8_t report[8] = {0};
@@ -240,6 +241,7 @@ void send_key(uint8_t modifier, uint8_t keycode)
     vTaskDelay(pdMS_TO_TICKS(10)); // delay again
 }
 
+/* ───────────────────────── Mouse Function ────────────────────────────── */
 void send_mouse(int8_t dx, int8_t dy, uint8_t buttons)
 {
     uint8_t mouse_report[4] = {
@@ -252,6 +254,8 @@ void send_mouse(int8_t dx, int8_t dy, uint8_t buttons)
     esp_hidd_dev_input_set(hid_dev, 0, mouse_report[0], &mouse_report[1], 3);
 }
 
+/* ───────────────────────── simple freeRTOS task ────────────────────────────── */
+//You Can remove it or might be use it for the random purposes
 void ble_hid_task(void *pvParameters)
 {
     while (1)
@@ -309,6 +313,7 @@ static void ble_host_task(void *param)
     nimble_port_freertos_deinit();
 }
 
+/* ───────────────────────── BLE Callback Function ────────────────────────────── */
 static int custom_write_cb(uint16_t conn_handle, uint16_t attr_handle,
                            struct ble_gatt_access_ctxt *ctxt, void *arg)
 {
@@ -333,13 +338,12 @@ static int custom_write_cb(uint16_t conn_handle, uint16_t attr_handle,
     if (strncmp((char *)buffer, "volup", 5) == 0)
     {
         send_consumer(VOLUME_UP);
-        send_key(KEY_MOD_LSHIFT, KEY_G); // Sends 'G'
+        // send_key(KEY_MOD_LSHIFT, KEY_G); // Sends 'G'
     }
     else if (strncmp((char *)buffer, "voldown", 7) == 0)
     {
         ESP_LOGI(TAG, "Command parsed");
         send_consumer(VOLUME_DOWN);
-        send_key(KEY_MOD_NONE, KEY_G); // Sends 'g'
     }
     else if (strncmp((char *)buffer, "mute", 4) == 0)
     {
